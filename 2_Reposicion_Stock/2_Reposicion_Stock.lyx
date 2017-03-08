@@ -1,0 +1,1115 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass IEEEtran
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Business Intelligence
+\end_layout
+
+\begin_layout Subsection
+Concepto
+\end_layout
+
+\begin_layout Standard
+Business intelligence abarca un conjunto de conceptos, técnicas y herramientas
+ que se utiliza para la transformación de simples datos en información útil
+ y significativa para el análisis de negocios.
+ Las tecnologías de business intelligence son capaces de manejar grandes
+ volúmenes de datos que ayudan a identificar, desarrollar y crear nuevas
+ estrategias de negocios.
+\end_layout
+
+\begin_layout Standard
+El primero que acuñó el término fue Howard Dresner, quién cuando era consultor
+ de Gartner Group lo utilizó para describir un conjunto de conceptos y métodos
+ que mejoran la toma de decisiones, partiendo de la información disponible
+ acerca de los hechos.
+ Entonces, partiendo de la definición del glosario de términos de Gartner
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "GART06"
+
+\end_inset
+
+: 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Quotes eld
+\end_inset
+
+
+\emph on
+Business Intelligence es un proceso interactivo para explorar y analizar
+ información estructurada sobre un área (normalmente almacenada en un datawareho
+use), para descubrir tendencias o patrones, a partir de las cuales derivar
+ ideas y extraer conclusiones.
+ Las áreas incluyen clientes, proveedores, productos, servicios y competidores.
+ El proceso de business intelligence incluye la comunicación de los descubrimien
+tos y efectuar los cambios
+\emph default
+
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Indica que business intelligence es un proceso que se prolonga en el tiempo,
+ que no es sólo para un momento puntual de la gestión empresarial, en el
+ que podremos ver tendencias, patrones, cambios, variables, etc.
+ Al explorar iremos descubriendo nuevas relaciones que hasta el momento
+ desconocíamos.
+ Al analizar de lo nuevo que hemos descubierto, veremos relaciones entre
+ variables, tendencias, patrones y cuál puede ser la evolución de los mismos.
+\end_layout
+
+\begin_layout Standard
+La información estructurada está en tablas relacionadas, dichas tablas a
+ la vez están en un datawarehouse o almacén de datos.
+ Nos podemos centrar en áreas específicas del negocio y en objetivos concretos
+ como por ejemplo: reducir costes, incrementar ventas, aumentar la participación
+ en el mercado, cumplir los objetivos de ventas presupuestados.
+ Finalmente, lo descubierto y analizado se debe comunicar a aquellas personas
+ en la organización que realizarán los cambios apropiados para mejorar la
+ competitividad
+\end_layout
+
+\begin_layout Standard
+La definición
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ekerson-Howson"
+
+\end_inset
+
+ que propone The Datawarehouse Institute es:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Quotes eld
+\end_inset
+
+
+\emph on
+Business Intelligence es un término paraguas que abarca los procesos, las
+ herramientas y las tecnologías para convertir datos en información, información
+ en conocimiento y planes para conducir de forma eficaz las actividades
+ de los negocios.
+ BI abarca las tecnologías de datawarehousing, los procesos en el 'back
+ end'
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+
+\emph on
+Los términos “back end” y “front end” comúnmente usados en Sistemas de Informaci
+ón significan, respectivamente, la parte más cercana al área tecnológica
+ y la más cercana a los usuarios.
+ Si hiciéramos un paralelismo con una tienda, serían la “trastienda” y el
+ “mostrador
+\end_layout
+
+\end_inset
+
+, consultas, informes, análisis y las herramientas para mostrar información
+ (estas son las herramientas de BI) y los procesos en el 'front end'
+\emph default
+
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Objetivos
+\end_layout
+
+\begin_layout Standard
+Según lo expuesto en la definición del término business intelligence podemos
+ decir que tiene los siguientes objetivos principales:
+\end_layout
+
+\begin_layout Itemize
+Convertir datos en información, información en conocimiento y conocimiento
+ en planes operativos o estratégicos.
+\end_layout
+
+\begin_layout Itemize
+Facilitar la disponibilidad de información a los usuarios de negocios, que
+ les ayude a tomar decisiones más rápidamente.
+\end_layout
+
+\begin_layout Itemize
+Apoyar de forma sostenible y continuada a las organizaciones para mejorar
+ su competitividad, ante el entorno de negocios cambiante de forma que puedan
+ adaptarse a él.
+\end_layout
+
+\begin_layout Itemize
+Ante la cantidad de información que va creciendo, disponer de más tiempo
+ en analizarla, en vez de gastar mucho tiempo en prepararla, organizarla
+ y estructurarla.
+\end_layout
+
+\begin_layout Itemize
+Permitir a las organizaciones dirigir de mejor forma, decidir, medir, gestionar
+ y optimizar el alcance de la eficiencia y los resultados financieros.
+\end_layout
+
+\begin_layout Itemize
+Disminuir sustancialmente la incertidumbre que existe ante la toma de decisiones
+ respecto a un plan estratégico.
+\end_layout
+
+\begin_layout Subsection
+Componentes de BI
+\end_layout
+
+\begin_layout Subsubsection
+Fuentes de información
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/fuentes_informacion.png
+	scale 55
+	rotateOrigin center
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Fuentes de información
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Las fuentes de información a las que podemos acceder son:
+\end_layout
+
+\begin_layout Itemize
+Básicamente, de los sistemas operacionales o transaccionales, que incluyen
+ aplicaciones desarrolladas a medida, ERP, CRM, SCM, etc.
+\end_layout
+
+\begin_layout Itemize
+Sistemas de información departamentales: previsiones, presupuestos, hojas
+ de cálculo, etcétera.
+\end_layout
+
+\begin_layout Itemize
+Fuentes de información externa, en algunos casos comprada a terceros, como
+ por ejemplo estudios de mercado (Nielsen en distribución de gran consumo,
+ IMS de la industria farmacéutica).
+ Las fuentes de información externas son fundamentales para enriquecer la
+ información que tenemos de nuestros clientes.
+ En algunos casos es interesante incorporar información referente, por ejemplo,
+ a población, número de habitantes, etc.
+ Podemos acceder a información de este tipo en la web del Instituto Nacional
+ de Estadística (www.
+ ine.es).
+\end_layout
+
+\begin_layout Standard
+Existen muchos factores que contribuyen a la complejidad de cargar la informació
+n en un datawarehouse.
+ Uno de los principales es el número de fuentes de información distintas
+ de las que cargamos la información.
+ Además, el número de fuentes de información varía de una organización a
+ otra: en grandes corporaciones se habla de una media de 8 bases de datos,
+ y en algunos casos puede llegar a 50.
+\end_layout
+
+\begin_layout Standard
+Cada vez más la tecnología nos permite trabajar con información no estructurada,
+ y se espera que este tipo de información sea cada vez más importante.
+ Una encuesta
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Blumberg, R.
+ y S.
+ Atre “The Problem with Unstructured Data”, DM Review, http://dmreview.com/master.
+cfm?NavID=55&EdID=6287 (12 Septiembre 2003)
+\end_layout
+
+\end_inset
+
+ ha indicado que el 60% de los directores de Sistemas de Información y los
+ de Tecnología consideran que la información semiestructurada es crítica
+ para mejorar las operaciones y para la creación de nuevas oportunidades
+ de negocio.
+\end_layout
+
+\begin_layout Subsubsection
+ETL
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+ETL corresponde a las siglas del inglés Extract, Transform and Load (Extracción,
+ transformación y carga)
+\end_layout
+
+\end_inset
+
+ – Proceso de extracción, transformación y carga
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/proceso_ETL.png
+	scale 55
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Proceso ETL
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Antes de almacenar los datos en un datawarehouse, éstos deben ser transformados,
+ limpiados, filtrados y redefinidos.
+ Normalmente, la información que tenemos en los sistemas transaccionales
+ no está preparada para la toma de decisiones.
+ El proceso trata de recuperar los datos de las fuentes de información y
+ alimentar el datawarehouse.
+ El proceso de ETL
+\begin_inset CommandInset citation
+LatexCommand cite
+key "EW03"
+
+\end_inset
+
+ consume entre el 60% y el 80% del tiempo de un proyecto de business intelligenc
+e, por lo que es un proceso clave que requiere recursos, estrategia, habilidades
+ y tecnologías.
+\end_layout
+
+\begin_layout Standard
+La extracción, transformación y carga (el proceso ETL) es necesario para
+ acceder a los datos de las fuentes de información al datawarehouse.
+ El proceso ETL se divide en 5 subprocesos:
+\end_layout
+
+\begin_layout Subsubsection*
+
+\series bold
+\emph on
+Extracción
+\end_layout
+
+\begin_layout Standard
+Este proceso recupera los datos físicamente de las distintas fuentes de
+ información.
+ En este momento disponemos de los datos en bruto.
+ El principal objetivo es extraer tan sólo aquellos datos de los sistemas
+ transaccionales que son necesarios y prepararlos para el resto de los subproces
+os de ETL.
+ Para ello se deben determinar las mejores fuentes de información, las de
+ mejor calidad.
+ Con tal finalidad, deberemos analizar las fuentes disponibles y escoger
+ aquellas que sean mejores.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/problemas_acceso_datos.png
+	scale 55
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Problemas del acceso a datos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En la figura 3 mostramos los principales problemas con los que nos podemos
+ encontrar al acceder a los datos para extraerlos: básicamente se refieren
+ a que provienen de distintas fuentes, BBDD, plataformas tecnológicas, protocolo
+s de comunicaciones, juegos de caracteres, y tipos de datos
+\end_layout
+
+\begin_layout Subsubsection*
+
+\series bold
+\emph on
+Limpieza
+\end_layout
+
+\begin_layout Standard
+Este proceso recupera los datos en bruto y comprueba su calidad, elimina
+ los duplicados y, cuando es posible, corrige los valores erróneos y completa
+ los valores vacíos, es decir se transforman los datos -siempre que sea
+ posible- para reducir los errores de carga.
+ En este momento disponemos de datos limpios y de alta calidad.
+\end_layout
+
+\begin_layout Standard
+Los sistemas transaccionales contienen datos que no han sido depurados y
+ que deben ser limpiados.
+ Algunas causas que provocan que los datos estén “sucios” son:
+\end_layout
+
+\begin_layout Itemize
+Valores por defecto.
+\end_layout
+
+\begin_layout Itemize
+Ausencia de valor.
+\end_layout
+
+\begin_layout Itemize
+Campos que tienen distintas utilidades.
+\end_layout
+
+\begin_layout Itemize
+Valores contradictorios.
+\end_layout
+
+\begin_layout Itemize
+Uso inapropiado de los campos.
+\end_layout
+
+\begin_layout Itemize
+Reutilización de claves primarias.
+\end_layout
+
+\begin_layout Itemize
+Selección del primer valor de una lista.
+\end_layout
+
+\begin_layout Itemize
+Problemas de carga de antiguos sistemas o de integración entre sistemas.
+\end_layout
+
+\begin_layout Standard
+La limpieza de datos se divide en distintas etapas:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\emph on
+Depurar los valores
+\series default
+ (parsing)
+\emph default
+: localiza e identifica los elementos individuales de información en las
+ fuentes de datos.
+ Por ejemplo: separa el nombre completo en: nombre, primer apellido, segundo
+ apellido; o la dirección en: calle, número, etc.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\emph on
+Corregir
+\series default
+ (correcting)
+\emph default
+: corrige los valores individuales de los atributos usando algoritmos de
+ corrección y fuentes de datos externas.
+ Por ejemplo: comprueba la dirección y su código postal correspondiente.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\emph on
+Estandarizar
+\series default
+ (standardizing)
+\emph default
+: aplica rutinas de conversión para transformar valores en formatos definidos
+ y consistentes.
+ Por ejemplo: trato de Sra.
+ o Sr.
+ cambiar a sus correspondientes nombres completos.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\emph on
+Relacionar
+\series default
+ (matching)
+\emph default
+: busca y relaciona los valores de registros, corrigiéndolos y estandarizándolos
+ para eliminar duplicados.
+ Por ejemplo: identificando nombres y direcciones similares.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\series bold
+\emph on
+Transformación
+\end_layout
+
+\begin_layout Standard
+Este proceso recupera los datos limpios y de alta calidad y los estructura
+ y sumariza en los distintos modelos de análisis.
+ El resultado de este proceso es la obtención de datos limpios, consistentes,
+ sumarizados y útiles.
+\end_layout
+
+\begin_layout Standard
+La transformación incluye:
+\end_layout
+
+\begin_layout Itemize
+Cambios de formato.
+\end_layout
+
+\begin_layout Itemize
+Sustitución de códigos.
+\end_layout
+
+\begin_layout Itemize
+Valores derivados y agregados.
+\end_layout
+
+\begin_layout Standard
+Los agregados como las sumas de las ventas normalmente se precalculan y
+ se almacenan para conseguir mayores rendimientos.
+ En este proceso también ajustamos el nivel de granularidad o detalle, por
+ ejemplo: podemos tener detalles a nivel de lineas de factura en los datos
+ extraídos, pero en el datawarehouse lo que almacenamos son las ventas semanales
+ o mensuales.
+ La diferencia del nivel de detalle en el análisis es lo que denominamos
+ granularidad.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\series bold
+\emph on
+Integración
+\end_layout
+
+\begin_layout Standard
+Este proceso valida que los datos que cargamos en el datawarehouseson consistent
+es con las definiciones y formatos del datawarehouse; los integra en los
+ distintos modelos de las distintas áreas de negocio que hemos definido
+ en el mismo.
+ Estos procesos pueden ser complejos
+\end_layout
+
+\begin_layout Subsubsection*
+
+\series bold
+\emph on
+Actualización
+\end_layout
+
+\begin_layout Standard
+Este proceso es el que nos permite añadir los nuevos datos al datawarehouse,
+ determina la periodicidad con el que haremos nuevas cargas de datos al
+ datawarehouse
+\end_layout
+
+\begin_layout Subsubsection
+Datawarehouse o almacén de datos
+\end_layout
+
+\begin_layout Standard
+Un datawarehouse es un repositorio de datos que proporciona una visión global,
+ común e integrada de los datos de la organización con las siguientes propiedade
+s: estable, coherente, fiable y con información histórica
+\begin_inset CommandInset citation
+LatexCommand cite
+key "CJ20"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/datawarehouse.png
+	scale 55
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Datawarehouse
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La aparición de los datawarehouses son la respuesta a las necesidades de
+ los usuarios que necesitan información consistente, integrada, histórica
+ y preparada para ser analizada y poder tomar decisiones.
+ Si el datawarehouse está construido adecuadamente proporciona un entorno
+ de información que nos permitirá encontrar nuevo conocimiento y generar
+ valor.
+\end_layout
+
+\begin_layout Standard
+El profesor Hugh J.
+ Watson 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "WJ06"
+
+\end_inset
+
+ lo define como: 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+“Un datawarehouse es una colección de información creada para soportar las
+ aplicaciones de toma de decisiones.
+ Datawarehousing es el proceso completo de extraer información, transformarla
+ y cargarla en un datawarehouse y el acceso a esta información por los usuarios
+ finales y las aplicaciones.”
+\end_layout
+
+\begin_layout Standard
+Bill Inmon
+\begin_inset CommandInset citation
+LatexCommand cite
+key "INMON92"
+
+\end_inset
+
+ fue el que definió las características que debe cumplir un datawarehouse:
+\end_layout
+
+\begin_layout Itemize
+Orientado a un área: cada parte del datawarehouse está construida para resolver
+ un problema de negocio.
+ Por ejemplo: entender los hábitos de compra de nuestros clientes, analizar
+ la calidad de nuestros productos, analizar la productividad de una línea
+ de fabricación.
+\end_layout
+
+\begin_layout Itemize
+Integrado: la información debe ser transformada en medidas comunes, códigos
+ comunes y formatos comunes para ser útil.
+ Por ejemplo: la moneda en que están expresadas los importes es común.
+\end_layout
+
+\begin_layout Itemize
+Indexado en el tiempo: se mantiene la información histórica.
+ Ello nos permite por ejemplo: analizar la evolución de las ventas en los
+ periodos que queramos.
+\end_layout
+
+\begin_layout Itemize
+No volátil: los usuarios no la mantienen como lo harían en los entornos
+ transaccionales.
+ No se ve actualizado continuamente, sino periódicamente de forma preestablecida.
+ La información se almacena para la toma de decisiones
+\end_layout
+
+\begin_layout Standard
+Ralph Kimbal
+\begin_inset CommandInset citation
+LatexCommand cite
+key "KIM92"
+
+\end_inset
+
+ define los objetivos que debería cumplir un datawarehouse:
+\end_layout
+
+\begin_layout Itemize
+El alcance de un datawarehouse puede ser bien un departamento o bien corporativo.
+\end_layout
+
+\begin_layout Itemize
+El datawarehouse no es sólo información sino también las herramientas de
+ consulta, análisis y presentación de la información.
+\end_layout
+
+\begin_layout Itemize
+La información del datawarehouse es consistente.
+\end_layout
+
+\begin_layout Itemize
+La calidad de información en el datawarehouse es el motor de business reengineer
+ing.
+\end_layout
+
+\begin_layout Standard
+Se deben tener en cuenta que existen otros elementos en el contexto de un
+ datawarehouse :
+\end_layout
+
+\begin_layout Itemize
+Datawarehousing: es el proceso de extraer y filtrar datos de las operaciones
+ procedentes de los distintos sistemas de información operacionales y sistemas
+ externos, para transformarlos, integrarlos y almacenarlos en un almacén
+ de datos con el fin de acceder a ellos para dar soporte en el proceso de
+ toma de decisiones.
+\end_layout
+
+\begin_layout Itemize
+Data Mart: es un subconjunto de los datos del datawarehouse cuyo objetivo
+ es responder a un determinado análisis.
+\end_layout
+
+\begin_layout Itemize
+Operational Data Store (ODS): es un tipo de almacén de datos que proporciona
+ sólo los últimos valores de los datos y no su historial.
+\end_layout
+
+\begin_layout Itemize
+Staging Area: es el sistema que permanece entre las fuentes de datos y el
+ datawarehouse con el objetivo de:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Facilitar la extracción de datos desde fuentes de origen con una heterogeneidad
+ y complejidad grande.
+\end_layout
+
+\begin_layout Itemize
+Mejorar la calidad de los datos.
+\end_layout
+
+\begin_layout Itemize
+Ser usado como caché de datos operacionales con el que posteriormente se
+ realiza el proceso de datawarehousing.
+\end_layout
+
+\begin_layout Itemize
+Uso de la misma para acceder en detalle a información no contenida en el
+ datawarehouse.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Procesos ETL: tecnología de integración de datos basada en la consolidación
+ de datos que se usa tradicionalmente para alimentar el datawarehouse, data
+ mart, staging area y ODS.
+\end_layout
+
+\begin_layout Itemize
+Metadatos: datos estructurados y codificados que describen características
+ de instancias; aportan informaciones para ayudar a identificar, descubrir,
+ valorar y administrar las instancias descritas.
+\end_layout
+
+\begin_layout Subsubsection*
+Elementos de una datawarehouse
+\end_layout
+
+\begin_layout Standard
+La estructura relacional de una base de datos operacional sigue las formas
+ normales en su diseño.
+ Un datawarehouse no debe seguir ese patrón de diseño.
+ La idea principal es que la información sea presentada desnormalizada para
+ optimizar las consultas.
+ Para ello debemos identificar, en la organización, los procesos de negocio,
+ las vistas para el proceso de negocio y las medidas cuantificables asociadas
+ a los mismos.
+ De esta manera hablaremos de:
+\end_layout
+
+\begin_layout Itemize
+Tablas de hecho: es la representación en el datawarehouse de los procesos
+ de negocio de la organización.
+ A nivel de diseño es una tabla que permite guardar dos tipos de atributos
+ diferenciados: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Medidas del proceso de trabajo que se pretende modelizar
+\end_layout
+
+\begin_layout Itemize
+Claves foráneas hacia registros de una tabla de dimensión 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Dimensión: es la representación en el datawarehouse de una vista para un
+ cierto proceso de negocio.
+\end_layout
+
+\begin_layout Itemize
+Métrica: son los indicadores de negocio de un proceso de negocio.
+ Aquellos conceptos cuantificables que permiten medir nuestro proceso de
+ negocio.
+\end_layout
+
+\begin_layout Subsubsection*
+Tipos de esquemas para estructurar los datos en un datawarehouse
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Esquema en estrella:
+\series default
+ consiste en estructurar la información en procesos, vistas y métricas recordand
+o a una estrella.
+ A nivel de diseño, consiste en una tabla de hechos en el centro para el
+ hecho objeto de análisis y una o varias tablas de dimensión por cada punto
+ de vista del análisis que participan en la descripción de ese hecho.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Esquema en copo de nieve:
+\series default
+ es un esquema de representación derivado del esquema en estrella, en el
+ que las tablas de dimensión se normalizan en múltiples tablas.
+ Por esta razón la tabla de hechos deja de ser la única tabla del esquema
+ que se relaciona con otras tablas.
+\end_layout
+
+\begin_layout Subsubsection
+Herramientas de Business Intelligence
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/Herramientas de BI.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Herramientas de Bussines Intelligence
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Existen distintas tecnologías que nos permiten analizar y visualizar la
+ información que reside en un datawarehouse, pero la más extendida es la
+ OLAP (Online Analytical Processing).
+ Los usuarios
+\begin_inset CommandInset citation
+LatexCommand cite
+key "INMON96"
+
+\end_inset
+
+ necesitan analizar información a distintos niveles de agregación y sobre
+ múltiples dimensiones.
+ Por ejemplo: ventas de productos por clientes o tipo de cliente, por zona
+ de venta y por fecha.
+ OLAP provee de estas funcionalidades y algunas más.
+\end_layout
+
+\begin_layout Paragraph*
+Las principales herramientas
+\begin_inset CommandInset citation
+LatexCommand cite
+key "EH05"
+
+\end_inset
+
+ de Business Intelligence son: 
+\end_layout
+
+\begin_layout Itemize
+Generadores de informes: Utilizadas por desarrolladores profesionales para
+ crear informes estándar para grupos, departamentos o la organización.
+\end_layout
+
+\begin_layout Itemize
+Herramientas de usuario final de consultas e informes: Empleadas por usuarios
+ finales para crear informes para ellos mismos o para otros; no requieren
+ programación.
+\end_layout
+
+\begin_layout Itemize
+Herramientas OLAP: Permiten a los usuarios finales tratar la información
+ de forma multidimensional para explorarla desde distintas perspectivas
+ y periodos de tiempo.
+\end_layout
+
+\begin_layout Itemize
+Herramientas de Dashboard y Scorecard: Permiten a los usuarios finales ver
+ información crítica para el rendimiento con un simple vistazo utilizando
+ iconos gráficos y con la posibilidad de ver más detalle para analizar informaci
+ón detallada e informes, si lo desean.
+\end_layout
+
+\begin_layout Itemize
+Herramientas de planificación, modelización y consolidación: Permite a los
+ analistas y a los usuarios finales crear planes de negocio y simulaciones
+ con la información de Business Intelligence.
+ Pueden ser para elaborar la planificación, los presupuestos, las previsiones.
+ Estas herramientas proveen a los dashboards y los scorecards con los objetivos
+ y los umbrales de las métricas.
+\end_layout
+
+\begin_layout Itemize
+Herramientas datamining: Permiten a estadísticos o analistas de negocio
+ crear modelos estadísticos de las actividades de los negocios.
+ Datamining es el proceso para descubrir e interpretar patrones desconocidos
+ en la información mediante los cuales resolver problemas de negocio.
+ Los usos más habituales del datamining son: segmentación, venta cruzada,
+ sendas de consumo, clasificación, previsiones, optimizaciones, etc.
+\end_layout
+
+\begin_layout Subsubsection
+KPI
+\end_layout
+
+\begin_layout Standard
+Son la iniciales de 
+\emph on
+Key Performance Indicators
+\emph default
+ que traducido el español vendrían a ser lo 
+\emph on
+Indicadores Claves de Desempeño.
+
+\emph default
+ Se trata de indicadores que son determinantes para analizar de forma rápida
+ la marcha del negocio y que nos permiten tomar decisiones.
+ Todos los KPI son indicadores, pero no todos los indicadores son KPI
+\begin_inset CommandInset citation
+LatexCommand cite
+key "CMR13"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Un cuadro de gestión o de mando no debe excederse en la cantidad de indicadores
+ claves, porque puede darse el problema de 
+\begin_inset Quotes eld
+\end_inset
+
+la parálisis por el análisis
+\begin_inset Quotes erd
+\end_inset
+
+ y una de las caracteristicas de nuestro entorno competitivo actual es que
+ tenemos que tomar decisiones de forma rápida y antes de que lo hagan los
+ demás.
+ 
+\end_layout
+
+\begin_layout Standard
+Otra característica que define a los KPI es que cada empresa ha de definir
+ cuáles son aquellos indicadores que quiere tener siempres presentes para
+ manejar su rumbo.
+\end_layout
+
+\begin_layout Standard
+El tercer elemento definitorio de los KPI es que no tienen que estar referidos
+ exclusivamente a resultados de tipo financiero.
+\end_layout
+
+\end_body
+\end_document

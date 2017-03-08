@@ -1,0 +1,869 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass IEEEtran
+\begin_preamble
+% Bibliografia en español
+\usepackage[fixlanguage]{babelbib}
+\selectbiblanguage{spanish}
+
+% Bibliografia
+\usepackage[authoryear,square,sort]{natbib}
+\bibliographystyle{plainnat}
+\bibpunct{[}{]}{,}{a}{}{;}
+\renewcommand\cite{\citep}
+\end_preamble
+\options journal
+\use_default_options true
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command bibtex
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\topmargin 2.5cm
+\rightmargin 1.5cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Aprendizaje Automático o Machine Learning
+\end_layout
+
+\begin_layout Standard
+En 1959 Arthur Samuel en una publicación escribió: 
+\shape italic
+
+\begin_inset Quotes eld
+\end_inset
+
+Programming computers to learn from experience should eventually eliminate
+ the need for much of this detailed programming effort
+\begin_inset Quotes erd
+\end_inset
+
+
+\shape default
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Arthur1959"
+
+\end_inset
+
+.
+ Lo que nos lleva a pensar que uno pioneros del aprendizaje automático ya
+ dejaba visualizar que los programas, a partir del aprendizaje sobre los
+ datos históricos (la experiencia), podrían efectuar tareas de toma de decisione
+s sin ser programadas explícitamente dichas decisiones.
+ Samuel define al aprendizaje automático como sigue: 
+\shape italic
+
+\begin_inset Quotes eld
+\end_inset
+
+El aprendizaje automático es un campo de estudio que da a las computadoras
+ la capacidad de aprender sin ser explícitamente programadas
+\begin_inset Quotes erd
+\end_inset
+
+
+\shape default
+.
+\end_layout
+
+\begin_layout Standard
+Otro investigador de aprendizaje automático Tom Mitchell propuso en 1998
+ la siguiente definición: 
+\shape italic
+
+\begin_inset Quotes eld
+\end_inset
+
+Well posed Learning Problem: A computer program is said to learn from experience
+ E with respect to some task T and some performance measure P, if its performanc
+e on T, as measured by P, improves with experience E
+\begin_inset Quotes erd
+\end_inset
+
+
+\shape default
+.
+ Donde se nos indica que el aprendizaje en las máquinas deberá ser parecido
+ al aprendizaje en los humanos, por ejemplo cuando una criatura comienza
+ a hablar a través de la experiencia de pronunciar las palabras y de su
+ interacción con otras personas, entonces sucede que su capacidad de hablar
+ se va perfeccionando o mejorando.
+\end_layout
+
+\begin_layout Subsection
+Definición
+\end_layout
+
+\begin_layout Standard
+
+\shape italic
+\begin_inset Quotes eld
+\end_inset
+
+The purpose of machine learning is to learn from training data in order
+ to make as good as possible predictions on new, unseen, data
+\begin_inset Quotes erd
+\end_inset
+
+
+\shape default
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Jean2016"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+La dificultad radica en que debemos construir modelos que nos acerquen a
+ una buan predicción sobre datos aún no conocidos o imprevistos.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figuras/mldef.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Definición presentada por Peter Prettenhofer y Gille Louppe.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Categoría de algoritmos
+\end_layout
+
+\begin_layout Standard
+Los algoritmos de aprendizaje automático se pueden categorizar según la
+ forma en que se realiza el aprendizaje, pero teniendo en cuenta que todos
+ reciben un conjunto de ejemplos para aprender desde los mismos.
+\end_layout
+
+\begin_layout Subsubsection
+Aprendizaje supervisado (supervised learning): El algoritmo recibe datos
+ de entrenamiento que contienen la respuesta correcta para cada ejemplo.
+\end_layout
+
+\begin_layout Subsubsection
+Aprendizaje no supervisado (unsupervised learning): El algoritmo busca estructur
+as en los datos de entrenamiento, como encontrar qué ejemplos son similares
+ entre sí, y agruparlos en clusters.
+\end_layout
+
+\begin_layout Subsection
+Tipos de problemas
+\end_layout
+
+\begin_layout Standard
+Teniendo en cuenta las clases de problemas que los algoritmos de aprendizaje
+ pueden resolver, los tipos de problemas se pueden agrupar como sigue.
+\end_layout
+
+\begin_layout Subsubsection
+Regresión: Un problema de aprendizaje supervisado donde la respuesta a aprender
+ es un valor continuo.
+\end_layout
+
+\begin_layout Subsubsection
+Clasificación: Un problema de aprendizaje supervisado donde la respuesta
+ a aprender es un valor de un conjunto finito de posibles valores discretos.
+ Classifiation learning is sometimes called supervised, because, in a sense,
+ the scheme operates under supervision by being provided with the actual
+ outcome for each of the training examples
+\end_layout
+
+\begin_layout Subsubsection
+Segmentación: Un problema de aprendizaje no supervisado donde la estructura
+ a aprender es un conjunto de clusters donde cada cluster tiene similares
+ ejemplos.
+\end_layout
+
+\begin_layout Subsubsection
+Análisis de red: Un problema de aprendizaje no supervisado donde la estructura
+ a aprender es información acerca de la importancia y el rol de los nodos
+ en una red.
+\end_layout
+
+\begin_layout Subsection
+Componentes esenciales
+\end_layout
+
+\begin_layout Subsubsection
+Ejemplos o instancias (examples): La entrada de un esquema de aprendizaje
+ automático es un conjunto de instancias.
+ Estas instancias son las cosas que deben ser clasificadas, asociadas o
+ agrupadas.
+ En el escenario estándar, cada instancia es un ejemplo individual e independien
+te del concepto que se debe aprender.
+\end_layout
+
+\begin_layout Subsubsection
+Características o atributos (features): Las instancias son caracterizadas
+ mediante los valores de un conjunto predeterminado de atributos.
+ Cada instancia proporciona una entrada al aprendizaje automático es caracteriza
+do por los valores en un conjunto fijo y predefinido de características
+ o atributos 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "DM2011"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Etiquetas (labels): Las cantidades nominales tienen valores que son símbolos
+ distintos.
+ Los valores mismos sirven como etiquetas o nombres, de ahí el término nominal,
+ que viene de la palabra latina para nombre.
+ Los atributos nominales a veces se llaman categorizados, enumerados o discretos.
+\end_layout
+
+\begin_layout Subsubsection
+Conjunto de entrenamiento (training set): son los ejemplos o instancias
+ utilizadas en el proceso de entrenamiento del algoritmo de aprendizaje
+ automático.
+\end_layout
+
+\begin_layout Subsubsection
+Algoritmos de aprendizaje (learning algorithms): Hipótesis, Parámetros,
+ Función de costo, Objetivo.
+\end_layout
+
+\begin_layout Subsubsection
+Conjunto de prueba (test set): Para predecir el rendimiento de un clasificador
+ sobre nuevos datos, necesitamos evaluar su tasa de error en un conjunto
+ de datos que no desempeñó ningún papel en la formación del clasificador.
+ Este conjunto de datos independiente se denomina conjunto de prueba.
+\end_layout
+
+\begin_layout Subsection
+El problema de la clasificación
+\end_layout
+
+\begin_layout Standard
+En los problemas de clasificación el modelo creado debe predecir la clase,
+ tipo o categoría de la salida.
+\end_layout
+
+\begin_layout Subsubsection
+Clasificación binaria (binary classification): En su forma más simple se
+ reduce a la pregunta: dado un patrón x extraído de un dominio X, estimar
+ qué valor asumirá una variable aleatoria binaria asociada y ∈ {± 1} 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "IntroML2008"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Clasificación multiclase (multiclass classification): Es la extensión lógica
+ de la clasificación binaria.
+ La principal diferencia es que ahora y ∈ {1, ...
+ , N} puede asumir un rango de valores diferentes 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "IntroML2008"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Algoritmos de clasificación en WEKA
+\end_layout
+
+\begin_layout Standard
+Weka es una colección de algoritmos de aprendizaje automático para tareas
+ de minería de datos.
+ Los algoritmos pueden ser aplicados directamente a un conjunto de datos
+ o llamados desde código Java.
+ Weka contiene herramientas para pre-procesamiento de datos, clasificación,
+ regresión, clustering, reglas de asociación y visualización.
+ También es adecuado para desarrollar nuevos esquemas de aprendizaje automático
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Weka3"
+
+\end_inset
+
+.
+ Los algoritmos de clasificación de Weka que se utilizarán es el siguiente
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "WekaCla"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Subsubsection
+BayesNet: Bayes Network learning using various search algorithms and quality
+ measures.
+ Base class for a Bayes Network classifier.
+ Provides datastructures (network structure, conditional probability distributio
+ns, etc.) and facilities common to Bayes Network learning algorithms like
+ K2 and B.
+\end_layout
+
+\begin_layout Subsubsection
+NaiveBayes: Class for a Naive Bayes classifier using estimator classes.
+ Numeric estimator precision values are chosen based on analysis of the
+ training data.
+ For this reason, the classifier is not an UpdateableClassifier (which in
+ typical usage are initialized with zero training instances).
+\end_layout
+
+\begin_layout Subsubsection
+NaiveBayesUpdateable: Class for a Naive Bayes classifier using estimator
+ classes.
+ This is the updateable version of NaiveBayes.
+ This classifier will use a default precision of 0.1 for numeric attributes
+ when buildClassifier is called with zero training instances.
+\end_layout
+
+\begin_layout Subsubsection
+Logistic: Class for building and using a multinomial logistic regression
+ model with a ridge estimator.
+ If there are k classes for n instances with m attributes, the parameter
+ matrix B to be calculated will be an m*(k-1) matrix.
+\end_layout
+
+\begin_layout Subsubsection
+MultilayerPerceptron: A Classifier that uses backpropagation to classify
+ instances.
+ This network can be built by hand, created by an algorithm or both.
+ The network can also be monitored and modified during training time.
+ The nodes in this network are all sigmoid (except for when the class is
+ numeric in which case the the output nodes become unthresholded linear
+ units).
+\end_layout
+
+\begin_layout Subsubsection
+SimpleLogistic: Classifier for building linear logistic regression models.
+ LogitBoost with simple regression functions as base learners is used for
+ fitting the logistic models.
+ The optimal number of LogitBoost iterations to perform is cross-validated,
+ which leads to automatic attribute selection.
+\end_layout
+
+\begin_layout Subsubsection
+SMO: Implements John Platt's sequential minimal optimization algorithm for
+ training a support vector classifier.
+ This implementation globally replaces all missing values and transforms
+ nominal attributes into binary ones.
+ It also normalizes all attributes by default.
+ (In that case the coefficients in the output are based on the normalized
+ data, not the original data --- this is important for interpreting the
+ classifier).
+ Multi-class problems are solved using pairwise classification (aka 1-vs-1).
+ To obtain proper probability estimates, use the option that fits calibration
+ models to the outputs of the support vector machine.
+ In the multi-class case, the predicted probabilities are coupled using
+ Hastie and Tibshirani's pairwise coupling method.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+OneR: Class for building and using a 1R classifier; in other words, uses
+ the minimum-error attribute for prediction, discretizing numeric attributes.
+\end_layout
+
+\begin_layout Subsubsection
+DecisionTable: Class for building and using a simple decision table majority
+ classifier.
+\end_layout
+
+\begin_layout Subsubsection
+JRip: This class implements a propositional rule learner, Repeated Incremental
+ Pruning to Produce Error Reduction (RIPPER), which was proposed by William
+ W.
+ Cohen as an optimized version of IREP.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+PART: Class for generating a PART decision list.
+ Uses separate-and-conquer.
+ Builds a partial C4.5 decision tree in each iteration and makes the "best"
+ leaf into a rule.
+\end_layout
+
+\begin_layout Subsubsection
+ZeroR: Class for building and using a 0-R classifier.
+ Predicts the mean (for a numeric class) or the mode (for a nominal class).
+\end_layout
+
+\begin_layout Subsubsection
+DecisionStump: Class for building and using a decision stump.
+ Usually used in conjunction with a boosting algorithm.
+ Does regression (based on mean-squared error) or classification (based
+ on entropy).
+ Missing is treated as a separate value.
+\end_layout
+
+\begin_layout Subsubsection
+J48: Class for generating a pruned or unpruned C4.5 decision tree.
+\end_layout
+
+\begin_layout Subsubsection
+LMT: Classifier for building 'logistic model trees', which are classification
+ trees with logistic regression functions at the leaves.
+ The algorithm can deal with binary and multi-class target variables, numeric
+ and nominal attributes and missing values.
+\end_layout
+
+\begin_layout Subsubsection
+RandomForest: Class for constructing a forest of random trees.
+\end_layout
+
+\begin_layout Subsubsection
+RandomTree: Class for constructing a tree that considers K randomly chosen
+ attributes at each node.
+ Performs no pruning.
+ Also has an option to allow estimation of class probabilities (or target
+ mean in the regression case) based on a hold-out set (backfitting).
+ 
+\end_layout
+
+\begin_layout Subsubsection
+REPTree: Fast decision tree learner.
+ Builds a decision/regression tree using information gain/variance and prunes
+ it using reduced-error pruning (with backfitting).
+ Only sorts values for numeric attributes once.
+ Missing values are dealt with by splitting the corresponding instances
+ into pieces (i.e.
+ as in C4.5).
+\end_layout
+
+\begin_layout Subsection
+Evaluación de lo aprendido
+\end_layout
+
+\begin_layout Standard
+La evaluación es la clave para lograr avances reales en el aprendizaje automátic
+o.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Validación Cruzada (cross-validation): En la validación cruzada, usted decide
+ sobre un número fijo de pliegues, o particiones, de los datos.
+ Supongamos que usamos tres.
+ Luego los datos se dividen en tres particiones aproximadamente iguales;
+ cada uno a su vez se utiliza para las pruebas y el resto se utiliza para
+ el entrenamiento.
+ Es decir, utilizar dos tercios de los datos para el entrenamiento y un
+ tercio para las pruebas, y repetir el procedimiento tres veces para que
+ al final, cada instancia se haya utilizado exactamente una vez para la
+ prueba.
+ Esto se denomina triple validación cruzada, y si la estratificación se
+ adopta también, lo que es a menudo, triple validación cruzada estratificada.
+\end_layout
+
+\begin_layout Subsubsection
+Validación Cruzada K-fold Estratificado (stratified k-fold cross validation):
+ La manera estándar de predecir la tasa de error de una técnica de aprendizaje
+ dada una única muestra fija de datos es usar la validación cruzada diez
+ veces estratificada.
+ Los datos se dividen aleatoriamente en 10 partes en las que la clase se
+ representa en aproximadamente las mismas proporciones que en el conjunto
+ de datos completo.
+ Cada parte se extiende a su vez y el esquema de aprendizaje entrenado en
+ los restantes nueve décimos; entonces su tasa de error se calcula en el
+ conjunto de retención.
+ Así, el procedimiento de aprendizaje se ejecuta un total de 10 veces en
+ diferentes conjuntos de entrenamiento (cada conjunto tiene mucho en común
+ con los demás).
+ Finalmente, las 10 estimaciones de error se promedian para obtener una
+ estimación del error global.
+ Pruebas extensas en numerosos conjuntos de datos diferentes, con diferentes
+ técnicas de aprendizaje, han demostrado que 10 es sobre el número correcto
+ de pliegues para obtener la mejor estimación de error, y también hay algunas
+ pruebas teóricas que apoya esto.
+ Aunque estos argumentos no son en absoluto concluyentes, y el debate continúa
+ enfurecido en los círculos de aprendizaje automático y de minería de datos
+ sobre cuál es el mejor esquema de evaluación, la validación cruzada diez
+ veces se ha convertido en el método estándar en términos prácticos.
+ Las pruebas también han demostrado que el uso de la estratificación mejora
+ ligeramente los resultados.
+ Por lo tanto, la técnica de evaluación estándar en situaciones en las que
+ sólo se dispone de datos limitados es la validación cruzada diez veces
+ estratificada.
+ La estratificación reduce la variación, ciertamente no la elimina completamente.
+ Cuando se busca una estimación exacta del error, es un procedimiento estándar
+ repetir el proceso de validación cruzada 10 veces, es decir, diez veces
+ la validación cruzada diez veces, y el promedio de los resultados.
+ Esto implica invocar el algoritmo de aprendizaje 100 veces en conjuntos
+ de datos que son todas las nueve décimas del tamaño del original.
+ Obtener una buena medida de rendimiento es una empresa de computación intensiva.
+\end_layout
+
+\begin_layout Subsubsection
+Porcentaje de división (percentage split): Con el que puede retener para
+ la prueba un determinado porcentaje de los datos.
+ Es una alternativa, utilizar un conjunto de pruebas separado o una división
+ porcentual de los datos de entrenamiento.
+ Si elegimos 60% como porcentaje de división, entonces el conjunto de prueba
+ se constituirá con el 40% de las instancias y el conjunto de entrenamiento
+ con el 60% de las instancias.
+\end_layout
+
+\begin_layout Subsection
+Resultados de la evaluación
+\end_layout
+
+\begin_layout Standard
+Para los problemas de clasificación, es natural medir el rendimiento de
+ un clasificador en términos de la tasa de error (error rate).
+ El clasificador predice la clase de cada instancia: si es correcta, se
+ cuenta como un éxito; sino, es un error.
+ La tasa de error es sólo la proporción de errores cometidos sobre un conjunto
+ de instancias, y mide el rendimiento general del clasificador.
+ Por supuesto, lo que nos interesa es el probable desempeño futuro en nuevos
+ datos, no el rendimiento pasado en datos antiguos.
+ Ya sabemos las clasificaciones de cada instancia en el conjunto de entrenamient
+o, que después de todo es por qué podemos usarlo para el entrenamiento.
+ La tasa de error en el conjunto de entrenamiento no es probable que sea
+ un buen indicador de rendimiento futuro debido a que el clasificador se
+ ha aprendido de los mismos datos de entrenamiento, cualquier estimación
+ de rendimiento basada en esos datos será optimista, incluso excesivamente
+ optimista.
+\end_layout
+
+\begin_layout Standard
+La tasa de error en los datos de entrenamiento se llama error de resustitución
+ porque se calcula resusstituyendo las instancias de entrenamiento en un
+ clasificador que se construyó a partir de ellas.
+ Para predecir el rendimiento de un clasificador en nuevos datos, necesitamos
+ evaluar su tasa de error en un conjunto de datos que no desempeñó ningún
+ papel en la formación del clasificador.
+ Este conjunto de datos independiente se denomina conjunto de pruebas.
+\end_layout
+
+\begin_layout Standard
+En tales situaciones, la gente suele hablar de tres conjuntos de datos:
+ los datos de entrenamiento, los datos de validación y los datos de prueba.
+ Los datos de entrenamiento son utilizados por uno o más esquemas de aprendizaje
+ para conocer clasificadores.
+ Los datos de validación se utilizan para optimizar los parámetros de los
+ clasificadores, o para seleccionar uno determinado.
+ A continuación, los datos de prueba se utilizan para calcular la tasa de
+ error del método final optimizado.
+ Cada uno de los tres conjuntos debe ser independiente: El conjunto de validació
+n debe ser diferente del conjunto de entrenamiento para obtener un buen
+ desempeño en la etapa de optimización o selección y el conjunto de pruebas
+ debe ser diferente de ambos para obtener una estimación confiable de la
+ tasa de error real.
+\end_layout
+
+\begin_layout Standard
+Generalmente, cuanto mayor es la muestra de entrenamiento, mejor es el clasifica
+dor, aunque los retornos comienzan a disminuir una vez que se sobrepasa
+ un cierto volumen de datos de entrenamiento.
+ Y cuanto mayor es la muestra de prueba, más precisa es la estimación del
+ error.
+ La precisión de la estimación del error puede ser cuantificada estadísticamente.
+\end_layout
+
+\begin_layout Standard
+El verdadero problema ocurre cuando no hay una gran cantidad de datos disponible
+s.
+\end_layout
+
+\begin_layout Standard
+En términos prácticos, es común tener un tercio de los datos para la prueba
+ y utilizar los dos tercios restantes para el entrenamiento.
+\end_layout
+
+\begin_layout Standard
+En general, no se puede saber si una muestra es representativa o no.
+ Pero hay una comprobación simple que puede ser útil: Cada clase en el conjunto
+ de datos completo debe estar representada en la proporción correcta en
+ los conjuntos de entrenamiento y prueba.
+ Deberían estar representados en la proporción adecuada en los conjuntos
+ de entrenamiento y prueba.
+ Si, por mala suerte, todos los ejemplos con una cierta clase se omitieran
+ en el conjunto de entrenamiento, difícilmente podría esperar que una clase
+ aprendiera de esos datos para funcionar bien en los ejemplos de esa clase.
+\end_layout
+
+\begin_layout Standard
+Debe asegurarse de que el muestreo aleatorio se realiza de una manera que
+ garantiza que cada clase esté representada correctamente en los conjuntos
+ de entrenamiento y prueba.
+ Este procedimiento se denomina estratificación, y hablamos de la retención
+ estratificada (stratified holdout).
+ Aunque en general vale la pena hacerlo, la estratificación sólo proporciona
+ una salvaguardia primitiva contra la representación desigual en los conjuntos
+ de entrenamiento y pruebas.
+\end_layout
+
+\begin_layout Standard
+Una manera más general de mitigar cualquier sesgo causado por la muestra
+ particular escogida para retener, es repetir todo el proceso, entrenamiento
+ y prueba, varias veces con diferentes muestras aleatorias.
+ En cada iteración, una cierta proporción, digamos dos tercios, de los datos
+ se selecciona al azar para el entrenamiento, posiblemente con estratificación,
+ y el resto se utiliza para la prueba.
+ Las tasas de error en las diferentes iteraciones se promedian para obtener
+ una tasa de error global.
+ Este es el método de retención repetida de la estimación de la tasa de
+ error.
+\end_layout
+
+\begin_layout Subsubsection
+Aciertos: Número de instancias correctamente clasificadas.
+ En WEKA el método correct() obtiene el número de instancias correctamente
+ clasificadas (es decir, para las que se realizó una predicción correcta),
+ en realidad es la suma de los pesos de estas instancias.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Porcentaje de Aciertos: Porcentaje de instancias correctamente clasificadas.
+ En WEKA el método pctCorrect() obtiene el porcentaje de instancias correctament
+e clasificadas (es decir, para las que se realizó una predicción correcta).
+\end_layout
+
+\begin_layout Subsubsection
+Estadística Kappa (Kappa Statistic): Ejemplos en los que los errores cuestan
+ diferentes cantidades incluyen las decisiones de préstamo: El costo de
+ prestar a un deudor es mucho mayor que el costo de negocio perdido de rechazar
+ un préstamo a un no deudor.
+ Y la detección de mancha de aceite: El costo de no detectar una mancha
+ real que amenaza el medio ambiente es mucho mayor que el costo de una falsa
+ alarma.
+ El costo de identificar malos problemas con una máquina que resulta estar
+ libre de fallas es menor que el costo de pasar por alto los problemas con
+ uno que está a punto de fallar.
+ Los verdaderos positivos (TP) y negativos verdaderos (TN) son clasificaciones
+ correctas.
+ Un falso positivo (PF) es cuando el resultado se predice incorrectamente
+ como sí (o positivo) cuando es realmente no (negativo).
+ Un falso negativo (FN) es cuando el resultado se predice incorrectamente
+ como negativo cuando es realmente positivo.
+ La tasa positiva verdadera es TP dividida por el número total de positivos,
+ que es TP + FN; la tasa de falsos positivos es FP dividida por el número
+ total de negativos, que es FP + TN.
+ La tasa de éxito global es el número de clasificaciones correctas dividido
+ por el número total de clasificaciones: TP +TN/ TP+ TN +FP +FN, por último,
+ la tasa de error es 1 menos esto.
+ En la predicción multiclase, cada elemento de matriz muestra el número
+ de ejemplos de prueba para los que la clase real es la fila y la clase
+ prevista es la columna.
+ Los buenos resultados corresponden a grandes números en la diagonal principal
+ y pequeños, idealmente cero, fuera de los elementos diagonales.
+ Una medida denominada Kappa Statistic tiene en cuenta este factor previsto
+ deduciéndolo de los éxitos del predictor y expresando el resultado como
+ una proporción del total para un predictor perfecto.
+ El valor máximo de Kappa es 100%, y el valor esperado para un predictor
+ aleatorio con los mismos totales de columna es 0.
+ En resumen, la estadística Kappa se utiliza para medir el acuerdo entre
+ categorizaciones predichas y observadas de un conjunto de datos, mientras
+ se corrige un acuerdo que se produce por casualidad.
+ Sin embargo, al igual que la tasa de éxito simple, no toma en cuenta los
+ costos.
+ En WEKA el método kappa() devuelve el valor de la estadística kappa si
+ la clase es nominal.
+\end_layout
+
+\begin_layout Subsubsection
+Curvas ROC (ROC Curves): Están estrechamente relacionados con una técnica
+ gráfica para evaluar los esquemas de minería de datos conocidos como curvas
+ ROC, que se utilizan en la misma situación, donde el alumno está tratando
+ de seleccionar muestras de instancias de prueba que tienen una alta proporción
+ de positivos.
+ El acrónimo significa la característica de funcionamiento del receptor
+ (Receiver Operating Characteristic), un término usado en la detección de
+ señal para caracterizar la compensación entre la tasa de acierto y la tasa
+ de falsa alarma sobre un canal ruidoso.
+ Representan la tasa de positivos verdaderos en el eje vertical con respecto
+ a la tasa de verdaderos negativos en el eje horizontal.
+ El primero es el número de positivos incluidos en la muestra, expresado
+ como un porcentaje del número total de positivos (TP Rate = 100 × TP/(TP
+ + FN)); el último es el número de negativos incluidos en la muestra, expresado
+ como porcentaje del número total de negativos (FP Rate = 100 × FP/(FP +
+ TN)).
+ El eje vertical es el mismo que el gráfico de elevación excepto que se
+ expresa como un porcentaje.
+ El eje horizontal es ligeramente diferente: es el número de negativos en
+ lugar del tamaño de la muestra.
+ Each point corresponds to drawing a line at a certain position on the ranked
+ list, counting the yes’s and no’s above it, and plotting them vertically
+ and horizontally, respectively.
+ Esto es sólo una forma de usar la validación cruzada para generar curvas
+ ROC.
+ Un enfoque más simple es recopilar las probabilidades predichas para todos
+ los conjuntos de prueba diferentes (de los cuales hay 10 en un 10-fold
+ validación cruzada), junto con las etiquetas de clase verdadera de las
+ instancias correspondientes, y generar una única lista rankeada basada
+ en estos datos.
+ Si el esquema de aprendizaje no permite ordenar las instancias, primero
+ puede hacer que sea sensible al costo como se describió anteriormente.
+ Para cada fold de una 10-fold validación cruzada, ponderar las instancias
+ para una selección de diferentes ratios de coste, entrenar el esquema en
+ cada conjunto ponderado, contar los verdaderos positivos y falsos positivos
+ en el conjunto de pruebas y trazar el punto resultante en los ejes ROC.
+ En WEKA el método areaUnderROC(int classIndex) devuelve el área bajo ROC
+ para las predicciones que se han recogido en el método evaluateClassifier(Class
+ifier, Instances).
+\end_layout
+
+\begin_layout Subsubsection
+Sensibilidad (Recall) y Precisión (Precision): La gente ha lidiado con la
+ compensación fundamental ilustrada por los gráficos de elevación y las
+ curvas ROC en una amplia variedad de dominios.
+ Comparar un sistema que localiza 100 documentos, 40 de los cuales son relevante
+s, con otro que localiza 400 documentos, 80 de los cuales son relevantes.
+ ¿Cual es mejor? La respuesta ahora debe ser obvia: depende del costo relativo
+ de falsos positivos, documentos devueltos que no sean relevantes, y falsos
+ negativos, documentos que son relevantes pero que no se devuelven.
+ Los investigadores de recuperación de información definen parámetros llamados
+ recall y precisión.
+ Recall = number of documents retrieved that are relevant / total number
+ of documents that are relevant.
+ Precision: number of documents retrieved that are relevant / total number
+ of documents that are retrieved.
+ En WEKA el método recall(int classIndex) calcula la sensibilidad con respecto
+ a una clase en particular, esto se define como: positivos correctamente
+ clasificados / positivos totales.
+ En WEKA el método precision(int classIndex) calcula la precisión con respecto
+ a una clase en particular, esto se define como: positivos correctamente
+ clasificados / total predicho como positivo.
+\end_layout
+
+\begin_layout Subsubsection
+Medida-F o Puntuación-F (F-Measure o F-Score): En el análisis estadístico
+ de clasificación binaria, la Puntuación-F es una medida de la exactitud
+ de una prueba.
+ La Puntuación-F puede interpretarse como un promedio ponderado de la precisión
+ y sensibilidad, donde alcanza su mejor valor en 1 y el peor en 0.
+ En WEKA el método fMeasure(int classIndex) calcula la Puntuación-F con
+ respecto a una clase en particular, esto se define como: 2 * recall * precision
+ / recall + precision.
+\end_layout
+
+\begin_layout Subsubsection
+Curvas Sensibilidad-Precisión (Recall-Precision Curves): Los expertos en
+ recuperación de información usan curvas recall-precision que trazan una
+ contra la otra, para diferentes números de documentos recuperados de la
+ misma manera que las curvas ROC y los gráficos de elevación, excepto que
+ debido a que los ejes son diferentes, las curvas son de forma hiperbólica
+ y el punto de operación deseado está hacia la parte superior derecha.
+ Table 5.7 summarizes the three different ways introduced for evaluating
+ the same basic tradeoff; TP, FP, TN, and FN are the numbers of true positives,
+ false positives, true negatives, and false negatives, respectively.
+ Diferentes técnicas dan diferentes compensaciones, y se pueden trazar como
+ líneas diferentes en cualquiera de estas gráficas.
+ En WEKA el método areaUnderPRC(int classIndex) devuelve el área bajo la
+ curva sensibilidad-precisión para las predicciones que se han recogido
+ en el método evaluateClassifier (Classifier, Instances).
+\end_layout
+
+\end_body
+\end_document
