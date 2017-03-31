@@ -133,8 +133,8 @@ En la etapa de Machine Learning se utiliza como entrada las series de KPI
  automático supervisado.
  Luego tienen lugar los procesos propios de esta etapa que son el entrenamiento
  y testeo para finalmente evaluar los distintos desempeños a fin de determinar
- los algoritmos más adecuados que serán utilizados para estimar las cantidades
- de las ordenes de compra por cada producto.
+ los más adecuados que permitan estimar la cantidad de compra eficiente
+ para el siguiente periodo de venta.
 \end_layout
 
 \end_body

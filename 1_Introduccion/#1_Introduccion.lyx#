@@ -128,13 +128,13 @@ En la etapa de Business Intelligence el objetivo principal es calcular los
 
 \begin_layout Standard
 En la etapa de Machine Learning se utiliza como entrada las series de KPI
- obtenidos en la etapa de Business Intelligence y que constituyen las instancias
- que alimentan los distintos algoritmos de clasificación del aprendizaje
- automático supervisado.
- Luego tienen lugar los procesos propios de esta etapa que son el entrenamiento
- y testeo para finalmente evaluar los distintos desempeños a fin de determinar
- los algoritmos más adecuados que serán utilizados para estimar las cantidades
- de las ordenes de compra por cada producto.
+ obtenidos en la etapa de Business Intelligence.
+ Estas entradas son las instancias que alimentan los distintos algoritmos
+ de clasificación del Aprendizaje Automático supervisado.
+ Luego a traves del entrenamiento y testeo son evaluados para finalmente
+ se evalúan los desempeños a fin de determinar los más adecuados para la
+ creación de un modelo que permita estimar la cantidad de compra eficiente
+ para el siguiente periodo de venta.
 \end_layout
 
 \end_body
