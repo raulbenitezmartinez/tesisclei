@@ -90,7 +90,7 @@
 \begin_layout Title
 
 \lang english
-“Automatización en la toma de decisiones de compra de productos para reposición
+“Automatización en la toma de decisiones de compras de productos para reposición
  de stock a través de un modelo basado en Business Intelligence y Machine
  Learning”
 \end_layout
@@ -185,15 +185,15 @@ La gestión de compras en empresas retail supone uno de los procesos más
  es acerca del volumen a adquirir de un producto determinado para así reponer
  el stock o si realmente hay que seguir adquiriendo un producto específico
  y en qué cantidades.
- En este trabajo se propone un modelo que ayuda a tomar la decisión del
- volumen de compra de un producto en stock, un modelo basado en business
- intelligence y machine learning.
+ En este trabajo se propone un modelo que ayuda a tomar las decisiones de
+ volumen de compra de productos disponibilizado para la venta, a traves
+ de un modelo basado en business intelligence y machine learning.
 \end_layout
 
 \begin_layout Keywords
 
 \lang american
-optical networks, optical layer multicast, node failure, protection.
+retail, compras, business intelligence, machine learning.
 \end_layout
 
 \begin_layout Standard
@@ -206,59 +206,14 @@ filename "1_Introduccion/1_Introduccion.lyx"
 
 \begin_inset CommandInset include
 LatexCommand input
-filename "2_bussines_intelligence/2_bussines_intelligence.lyx"
+filename "2_Administracion_Compras/2_Administracion_Compras.lyx"
 
 \end_inset
 
 
-\begin_inset CommandInset include
-LatexCommand input
-filename "3_Machine_Learning/03_Machine_Learning.lyx"
-
-\end_inset
-
-
-\begin_inset CommandInset include
-LatexCommand input
-filename "4_Modelado/4_Modelado_bussines_intelligence.lyx"
-
-\end_inset
-
-
-\begin_inset CommandInset include
-LatexCommand input
-filename "4_Modelado/5_Modelado_Machine_Learning.lyx"
-
-\end_inset
-
-
-\begin_inset CommandInset include
-LatexCommand input
-filename "5_Resultados/6_Resultados_bussines_intelligence.lyx"
-
-\end_inset
-
-
-\begin_inset CommandInset include
-LatexCommand input
-filename "5_Resultados/7_Resultados_Machine_Learning.lyx"
-
-\end_inset
-
-
-\begin_inset CommandInset include
-LatexCommand input
-filename "6_Conclusiones/8_Conclusiones.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-bibfiles "BibliografiaPaper"
+bibfiles "BibliografiaPaperClei"
 options "plain"
 
 \end_inset
