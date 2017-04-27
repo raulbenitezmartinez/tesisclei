@@ -521,6 +521,48 @@ Estadística Kappa (Kappa Statistic): Ejemplos en los que los errores cuestan
 \end_layout
 
 \begin_layout Subsubsection
+Curvas ROC (ROC Curves): Están estrechamente relacionados con una técnica
+ gráfica para evaluar los esquemas de minería de datos conocidos como curvas
+ ROC, que se utilizan en la misma situación, donde el alumno está tratando
+ de seleccionar muestras de instancias de prueba que tienen una alta proporción
+ de positivos.
+ El acrónimo significa la característica de funcionamiento del receptor
+ (Receiver Operating Characteristic), un término usado en la detección de
+ señal para caracterizar la compensación entre la tasa de acierto y la tasa
+ de falsa alarma sobre un canal ruidoso.
+ Representan la tasa de positivos verdaderos en el eje vertical con respecto
+ a la tasa de verdaderos negativos en el eje horizontal.
+ El primero es el número de positivos incluidos en la muestra, expresado
+ como un porcentaje del número total de positivos (TP Rate = 100 × TP/(TP
+ + FN)); el último es el número de negativos incluidos en la muestra, expresado
+ como porcentaje del número total de negativos (FP Rate = 100 × FP/(FP +
+ TN)).
+ El eje vertical es el mismo que el gráfico de elevación excepto que se
+ expresa como un porcentaje.
+ El eje horizontal es ligeramente diferente: es el número de negativos en
+ lugar del tamaño de la muestra.
+ Each point corresponds to drawing a line at a certain position on the ranked
+ list, counting the yes’s and no’s above it, and plotting them vertically
+ and horizontally, respectively.
+ Esto es sólo una forma de usar la validación cruzada para generar curvas
+ ROC.
+ Un enfoque más simple es recopilar las probabilidades predichas para todos
+ los conjuntos de prueba diferentes (de los cuales hay 10 en un 10-fold
+ validación cruzada), junto con las etiquetas de clase verdadera de las
+ instancias correspondientes, y generar una única lista rankeada basada
+ en estos datos.
+ Si el esquema de aprendizaje no permite ordenar las instancias, primero
+ puede hacer que sea sensible al costo como se describió anteriormente.
+ Para cada fold de una 10-fold validación cruzada, ponderar las instancias
+ para una selección de diferentes ratios de coste, entrenar el esquema en
+ cada conjunto ponderado, contar los verdaderos positivos y falsos positivos
+ en el conjunto de pruebas y trazar el punto resultante en los ejes ROC.
+ En WEKA el método areaUnderROC(int classIndex) devuelve el área bajo ROC
+ para las predicciones que se han recogido en el método evaluateClassifier(Class
+ifier, Instances).
+\end_layout
+
+\begin_layout Subsubsection
 Sensibilidad (Recall) y Precisión (Precision): La gente ha lidiado con la
  compensación fundamental ilustrada por los gráficos de elevación y las
  curvas ROC en una amplia variedad de dominios.
@@ -552,6 +594,23 @@ Medida-F o Puntuación-F (F-Measure o F-Score): En el análisis estadístico
  En WEKA el método fMeasure(int classIndex) calcula la Puntuación-F con
  respecto a una clase en particular, esto se define como: 2 * recall * precision
  / recall + precision.
+\end_layout
+
+\begin_layout Subsubsection
+Curvas Sensibilidad-Precisión (Recall-Precision Curves): Los expertos en
+ recuperación de información usan curvas recall-precision que trazan una
+ contra la otra, para diferentes números de documentos recuperados de la
+ misma manera que las curvas ROC y los gráficos de elevación, excepto que
+ debido a que los ejes son diferentes, las curvas son de forma hiperbólica
+ y el punto de operación deseado está hacia la parte superior derecha.
+ Table 5.7 summarizes the three different ways introduced for evaluating
+ the same basic tradeoff; TP, FP, TN, and FN are the numbers of true positives,
+ false positives, true negatives, and false negatives, respectively.
+ Diferentes técnicas dan diferentes compensaciones, y se pueden trazar como
+ líneas diferentes en cualquiera de estas gráficas.
+ En WEKA el método areaUnderPRC(int classIndex) devuelve el área bajo la
+ curva sensibilidad-precisión para las predicciones que se han recogido
+ en el método evaluateClassifier (Classifier, Instances).
 \end_layout
 
 \end_body
