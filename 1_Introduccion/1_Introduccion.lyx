@@ -85,41 +85,43 @@ Introducción
 
 \begin_layout Standard
 En las empresas retail o de ventas minoristas uno de los principales problemas
- que enfrentan es el manejo eficiente del stock de manera a no tener los
- productos en exceso en los depósitos y que incurran en sobrecostos, o en
- el otro extremo la falta de dichos productos o ruptura de stock lo cual
- conlleva a pérdidas de oportunidades de ventas por no disponer del producto
- que a su vez repercute directamente en las utilidades.
- Uno de los mayores desafíos se encuentran en estimar o predecir la cantidad
- a ser vendida en el siguiente periodo de tiempo.
+ con que se enfrentan es el manejo eficiente del stock de manera a evitar
+ tener los productos en exceso en los depósitos que incurran en sobrecostos,
+ o en el otro extremo la falta de dichos productos o ruptura de stock lo
+ cual conlleva a pérdidas de oportunidades de ventas por no disponer del
+ producto que puede generar insatisfacción de los clientes y a su vez repercute
+ en las utilidades de la empresa.
+ Uno de los mayores desafíos de las empresas es la de estimar o predecir
+ la cantidad de ventas para el próximo periodo de tiempo.
 \end_layout
 
 \begin_layout Standard
 En el proceso de gestión de compras en empresas como las retail, se utilizan
- técnicas de pronósticos para determinar las cantidades de las ordenes de
+ técnicas de pronósticos para determinar las cantidades de las órdenes de
  compra y que pueden estar basadas en pronósticos cuantitativos o en pronósticos
  cualitativos.
  Los modelos de cantidad fija y los modelos de periodo fijo son ampliamente
  utilizados.
  Independientemente de la técnica elegida, el problema real de los pronósticos
- es su falta de confiabilidad, ya que por lo general son incorrectos, y
- entonces la interrogante que siempre surge es si serán superiores o inferiores
- a la demanda real y en qué medida.
+ es su falta de confiabilidad, ya que por lo general no son precisos, entonces,
+ la interrogante que siempre surge es si serán superiores o inferiores a
+ la demanda real y en qué medida.
 \end_layout
 
 \begin_layout Standard
-En el presente trabajo se elabora un nuevo modelo de estimación de cantidades
- eficientes en las ordenes de compra de productos, que serán para reposición
- de stock y para el siguiente periodo de venta.
- En este nuevo modelo se utilizan herramientas de Inteligencia de Negocios
- (Business Intelligence) y de Aprendizaje Automático (Machine Learning).
+En el presente trabajo se elabora un modelo de estimación de cantidades
+ eficientes en las órdenes de compra de productos para la reposición de
+ stock del siguiente periodo de venta.
+ En este modelo se utilizan herramientas de Inteligencia de Negocios (Business
+ Intelligence) y de Aprendizaje Automático (Machine Learning).
  
 \end_layout
 
 \begin_layout Standard
 En la etapa de Business Intelligence el objetivo principal es calcular los
  Indicadores Claves de Rendimiento (KPI - Key Performance Indicators) de
- los productos en base a los datos históricos de la base de datos.
+ los productos en base a los datos históricos obtenidos de la base de datos
+ transaccional.
  Luego cada serie de KPI obtenidos pasan por un proceso de etiquetado, donde
  el experto en compras los analiza y determina qué nivel de compra conviene
  para cada serie de KPI.
@@ -135,6 +137,11 @@ En la etapa de Machine Learning se utiliza como entrada las series de KPI
  y testeo para finalmente evaluar los distintos desempeños a fin de determinar
  los algoritmos más adecuados que serán utilizados para estimar las cantidades
  de las ordenes de compra por cada producto.
+\end_layout
+
+\begin_layout Standard
+Por ultimo se realiza el análisis de los resultados obtenidos de los algorimos
+ utilizados y se realiza la evaluación del desempeño de los mismos.
 \end_layout
 
 \end_body
