@@ -84,7 +84,7 @@ Los términos compras, adquisiciones, administración de materiales, logística,
  abastecimiento, administración del suministro y administración de la cadena
  de suministro se utilizan de manera indistinta ya que no existe un concenso
  general sobre la terminología.
- El proceso de adquisición es el eje central de la activdad empresarial
+ El proceso de adquisición es el eje central de la actividad empresarial
  de administración de compras y del suministro.
  Cualquier organización requiere de proveedores por lo que es muy importante
  acoplarlos con efectividad al entorno organizacional, y que las decisiones
@@ -97,40 +97,66 @@ Las empresas centran sus esfuerzos en aumentar sus ingresos, desminuir sus
  más eficiente posible.
  Este trabajo intenta contribuir lograr decisiones eficientes de compras
  basadas en estimaciones eficientes de ventas.
- Consideramos que es una decisión importantísima estimar o predecir eficientemen
+ Se considera que es una decisión importantísima estimar o predecir eficientemen
 te la cantidad o volumen de productos a comprar para reposición de stock
  y que sirvan para el periodo de ventas que está por llegar.
 \end_layout
 
 \begin_layout Standard
-El caso ideal por supuesto sería poder adivinar la cantidad que se va a
- vender en el siguiente periodo de venta (puede ser para el siguiente período
- semanal, quincenal, mensual, trimestral o semestral, etc.), y esto por cada
- producto que disponibilizamos para la venta.
- En este caso al término de cada periodo de venta dispondríamos de stock
- cero, con lo cual llegaríamos a una máxima eficiencia en compras.
- Adivinar es imposible, pero lo que si podemos hacer es estimar eficientemente
- esta cantidad o volumen a vender.
+El stock o existencia de una empresa es el conjunto de materiales y artículos
+ que se almacenan, tanto aquellos que son necesarios para el proceso productivo
+ como los destinados a la venta.
+ La función que desempeña el stock o existencia en una empresa son:
+\end_layout
+
+\begin_layout Itemize
+Evitar la escasez, ante la incertidumbre de la demanda o ante un posible
+ retraso en la reposición o suministro de los pedidos.
+\end_layout
+
+\begin_layout Itemize
+Aprovechar la disminución de los costes a medida que aumenta el volumen
+ de compras o de fabricación.
+\end_layout
+
+\begin_layout Itemize
+Lograr un equilibrio entre las compras y las ventas para alcanzar la máxima
+ competitividad.
 \end_layout
 
 \begin_layout Standard
-Del por qué es tan importante estimar de forma correcta esta cantidad o
- volumen, los expertos en negocios nos explican que los productos parados
- en stock mientras no se vendan es dinero en estantería, además que generan
+En el proceso de compras el caso ideal por supuesto sería poder adivinar
+ la cantidad que se va a vender en el siguiente periodo de venta (puede
+ ser para el siguiente período semanal, quincenal, mensual, trimestral o
+ semestral, etc.), y esto por cada producto que disponibilizamos para la
+ venta.
+ En este caso al término de cada periodo de venta se dispondría de stock
+ cero, con lo cual se llega a una máxima eficiencia en compras.
+ Adivinar es imposible, pero lo que si se puede hacer es estimar eficientemente
+ la cantidad o volumen a vender.
+\end_layout
+
+\begin_layout Standard
+Del por qué la importancia de estimar de forma correcta esta cantidad o
+ volumen, los expertos en negocios explican que los productos parados en
+ stock mientras no se vendan es dinero en estantería, además que generan
  sobrecostos de mantenimiento como seguros, personal encargado, fecha de
  vencimiento de los productos, etc.
- También otro hecho no deseado es la ruptura de stock, es decir el no disponer
- en stock cuando haya clientes interesados en comprarlo, lo cual también
- es considerado pérdida para la empresa.
- Si bien nuestro trabajo no está enfocado en medir estos costos, lo que
- sí buscamos es comprar de forma eficiente porque las herramientas de business
- intelligence y machine learning que utilizamos nos estiman lo que se va
- a vender en el siguiente periodo.
+ Otro hecho no deseado es la ruptura de stock, es decir el no disponer de
+ un producto en stock cuando haya clientes interesados en comprarlo, lo
+ cual también es considerado pérdida para la empresa.
+ Lo que se desea es mantener un nivel de stock óptimo, es decir, por una
+ parte tener suficiente cantidad para satisfacer la demanda sin caer en
+ roturas de stock y, por otra, evitar que haya un exceso inútil del mismo.
+ Si bien el presente trabajo no está enfocado en medir los costos, lo que
+ sí se busca es comprar de forma eficiente utilizando las herramientas de
+ business intelligence y machine learning que ayudan a estimar lo que se
+ va a vender en el siguiente periodo.
 \end_layout
 
 \begin_layout Standard
 Una administración efectiva de las compras y del suministro contribuye de
- manera signifiativa al éxito organizacional.
+ manera significativa al éxito organizacional.
  La función del suministro evoluciona a medida que la tecnología y el ambiente
  competitivo mundial requieren enfoques innovadores.
 \begin_inset CommandInset citation
@@ -157,8 +183,25 @@ El proceso de compra se trata mas bien de un conjunto de etapas: a) Detectar
 \end_layout
 
 \begin_layout Standard
-Entre las técnicas de pronósticos de demanda se destacan los Modelos de
- Pronóstico Cualitativo y los Modelos de Pronóstico Cuantitativo.
+Antes de realizar una compra surgen las siguientes preguntas:
+\end_layout
+
+\begin_layout Itemize
+¿Cuándo debemos realizar un pedido?
+\end_layout
+
+\begin_layout Itemize
+¿Qué cantidad debemos solicitar en cada pedido?
+\end_layout
+
+\begin_layout Itemize
+¿Cuántas unidades de cada artículo debemos mantener en stock?
+\end_layout
+
+\begin_layout Standard
+Para responder a estas preguntas actualmente se tienen las técnicas de pronóstic
+os de demanda entre las que se destacan los Modelos de Pronóstico Cualitativo
+ y los Modelos de Pronóstico Cuantitativo.
 \end_layout
 
 \begin_layout Subsubsection
