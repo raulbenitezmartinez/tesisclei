@@ -112,11 +112,12 @@ La salida de business intelligence se constituye de archivos CSV que podemos
 \end_layout
 
 \begin_layout Standard
-La Figura 1 es una porción de un archivo CSV que contiene la salida de business
- intelligence calculada sobre las ventas mensuales de un determinado producto.
+La Figura 11 es una porción de un archivo CSV que contiene la salida de
+ business intelligence calculada sobre las ventas mensuales de un determinado
+ producto.
  Hay 309 productos diferentes analizados para períodos mensuales, lo que
  equivale a 309 archivos CSV.
- En realidad la tabla de la Figura 1 tiene un máximo de 34 filas sin incluir
+ En realidad la tabla de la Figura 11 tiene un máximo de 34 filas sin incluir
  el encabezado, lo que corresponde directamente a 34 instancias o ejemplos.
  Entonces, por cada producto analizado tenemos disponibles un máximo de
  34 instancias.
@@ -251,8 +252,8 @@ Basados en árboles: DecisionStump, J48, LMT, RandomForest, RandomTree, REPTree.
 \end_layout
 
 \begin_layout Standard
-En la Figura 2 se muestra un fragmento del algoritmo que realiza el entrenamient
-o y la evaluación con la API de WEKA.
+En la Figura 12 se muestra un fragmento del algoritmo que realiza el entrenamien
+to y la evaluación con la API de WEKA.
  Los 
 \begin_inset Quotes eld
 \end_inset
@@ -312,7 +313,7 @@ Métricas de los resultados de la evaluación
 \end_layout
 
 \begin_layout Standard
-En la Figura 3 se muestra qué métricas de evaluación son obtenidas de la
+En la Figura 13 se muestra qué métricas de evaluación son obtenidas de la
  API WEKA.
  Entonces por cada modelo procesado, luego de construir su clasificador
  y evaluarlo se obtienen las métricas Cantidad de Aciertos o el Porcentaje
@@ -368,7 +369,7 @@ Se muestran tablas de ejemplo que contienen los resultados de las métricas
 \end_layout
 
 \begin_layout Standard
-En la Figura 4 se muestra una pequeña parte de la tabla con los resultados
+En la Figura 14 se muestra una pequeña parte de la tabla con los resultados
  de evaluación del aprendizaje automático con el método Percentage Split
  para los periodos mensuales, quincenales y semanales.
 \end_layout
@@ -409,7 +410,7 @@ Resultados de la evaluación del aprendizaje automático con el método Percenta
 \end_layout
 
 \begin_layout Standard
-En la Figura 5 se muestra una pequeña parte de la tabla con los resultados
+En la Figura 15 se muestra una pequeña parte de la tabla con los resultados
  de evaluación del aprendizaje automático con el método Stratified K-fold
  Cross Validation para los periodos mensuales, quincenales y semanales.
 \end_layout
@@ -456,9 +457,91 @@ Análisis de los resultados experimentales
 
 \begin_layout Standard
 El análisis global de los resultados se basa en la métrica Kappa.
+ Por cada producto analizado se elige como clasificador aquel que haya alcanzado
+ el mayor valor de Kappa.
+ Entonces luego se calculan los promedios de porcentaje de aciertos para
+ periodos mensuales, quincenales y semanales.
 \end_layout
 
 \begin_layout Standard
+En la Figura 16 se muestra un gráfico de barras con promedios del porcentaje
+ de aciertos utilizando Stratified k-fold Cross Validation como método de
+ evaluación.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Recursos/aciertos_cross.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Promedios del porcentaje de aciertos utilizando Stratified k-fold Cross
+ Validation.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En la Figura 17 se muestra un gráfico de barras con promedios del porcentaje
+ de aciertos utilizando Percentage Split Validation como método de evaluación.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Recursos/aciertos_split.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Promedios del porcentaje de aciertos utilizando Percentage Split Validation.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
 
 \end_layout
 

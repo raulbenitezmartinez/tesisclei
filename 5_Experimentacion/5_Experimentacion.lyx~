@@ -454,5 +454,95 @@ Resultados de la evaluación del aprendizaje automático con el método Stratifi
 Análisis de los resultados experimentales
 \end_layout
 
+\begin_layout Standard
+El análisis global de los resultados se basa en la métrica Kappa.
+ Por cada producto analizado se elige como clasificador aquel que haya alcanzado
+ el mayor valor de Kappa.
+ Entonces luego se calculan los promedios de porcentaje de aciertos para
+ periodos mensuales, quincenales y semanales.
+\end_layout
+
+\begin_layout Standard
+En la Figura 6 se muestra un gráfico de barras con promedios del porcentaje
+ de aciertos utilizando Stratified k-fold Cross Validation como método de
+ evaluación.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Recursos/aciertos_cross.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Promedios del porcentaje de aciertos utilizando Stratified k-fold Cross
+ Validation.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En la Figura 7 se muestra un gráfico de barras con promedios del porcentaje
+ de aciertos utilizando Percentage Split Validation como método de evaluación.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Recursos/aciertos_split.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Promedios del porcentaje de aciertos utilizando Percentage Split Validation.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
