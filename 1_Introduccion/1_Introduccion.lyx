@@ -92,10 +92,10 @@ En las empresas retail o de ventas minoristas uno de los principales problemas
 \begin_layout Standard
 
 \lang spanish
-En el proceso de gestión de compras en empresas como las retail, se utilizan
- técnicas de pronósticos para determinar las cantidades de las órdenes de
- compra y que pueden estar basadas en pronósticos cuantitativos o en pronósticos
- cualitativos.
+Actualmente en el proceso de gestión de compras en empresas como las retail,
+ se utilizan algunas de las técnicas de pronósticos para determinar las
+ cantidades de las órdenes de compra, las cuales pueden estar basadas en
+ pronósticos cuantitativos o cualitativos.
  Los modelos de cantidad fija y los modelos de periodo fijo son ampliamente
  utilizados.
  Independientemente de la técnica elegida, el problema real de los pronósticos
@@ -107,12 +107,11 @@ En el proceso de gestión de compras en empresas como las retail, se utilizan
 \begin_layout Standard
 
 \lang spanish
-En el presente trabajo se elabora un modelo de estimación de cantidades
+Con el presente trabajo se elabora un nuevo modelo de estimación de cantidades
  eficientes en las órdenes de compra de productos para la reposición de
  stock del siguiente periodo de venta.
- En este modelo se utilizan herramientas de Inteligencia de Negocios (Business
- Intelligence) y de Aprendizaje Automático (Machine Learning).
- 
+ En este nuevo modelo se integran técnicas de Business Intelligence y Machine
+ Learning.
 \end_layout
 
 \begin_layout Standard
@@ -125,7 +124,6 @@ En la etapa de Business Intelligence el objetivo principal es calcular los
  Luego cada serie de KPI obtenidos pasan por un proceso de etiquetado, donde
  el experto en compras los analiza y determina qué nivel de compra conviene
  para cada serie de KPI.
- 
 \end_layout
 
 \begin_layout Standard
@@ -133,8 +131,8 @@ En la etapa de Business Intelligence el objetivo principal es calcular los
 \lang spanish
 En la etapa de Machine Learning se utiliza como entrada las series de KPI
  obtenidos en la etapa de Business Intelligence y que constituyen las instancias
- que alimentan los distintos algoritmos de clasificación del aprendizaje
- automático supervisado.
+ que alimentan los distintos algoritmos de clasificación de Machine Learning
+ supervisado.
  Luego tienen lugar los procesos propios de esta etapa que son el entrenamiento
  y testeo para finalmente evaluar los distintos desempeños a fin de determinar
  los algoritmos más adecuados que serán utilizados para estimar las cantidades
@@ -142,10 +140,23 @@ En la etapa de Machine Learning se utiliza como entrada las series de KPI
 \end_layout
 
 \begin_layout Standard
+En cuanto a las limitaciones de este nuevo modelo se puede mencionar que
+ no toma en cuenta los costes relacionados al inventario: como costes de
+ mantenimiento, de personal, seguros, etc.
+ El modelo planteado se aplica a empresas retail dedicadas a las venta de
+ productos terminados.
+\end_layout
+
+\begin_layout Standard
 
 \lang spanish
-Por ultimo se realiza el análisis de los resultados obtenidos de los algorimos
- utilizados y se realiza la evaluación del desempeño de los mismos.
+En la segunda sección se abordan los conceptos de Administración de Compras.
+ En la tercera sección se definen los conceptos de Business Intelligence
+ y su modelado del problema.
+ La cuarta sección aborda los conceptos de Machine Learning.
+ En la quinta sección se realiza el modelado con Machine Learning y se analizan
+ los resultados experimentales.
+ En la última sección se realiza la conclusión general.
 \end_layout
 
 \end_body

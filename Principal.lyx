@@ -90,9 +90,8 @@
 \begin_layout Title
 
 \lang english
-“Automatización en la toma de decisiones de compras de productos para reposición
- de stock a través de un modelo basado en Business Intelligence y Machine
- Learning”
+Toma de decisiones para reposición de stock basado en Business Intelligence
+ y Machine Learning
 \end_layout
 
 \begin_layout Author
@@ -180,14 +179,15 @@ target "vazquez.aditardo@gmail.com"
 
 \lang english
 La gestión de compras en empresas retail supone uno de los procesos más
- importante que tienen impacto económico en toda la organización.
+ importantes que tiene un impacto económico en toda la organización.
  Dentro de la gestión de compras, una decisión que regularmente debe tomarse
  es acerca del volumen a adquirir de un producto determinado para así reponer
- el stock o si realmente hay que seguir adquiriendo un producto específico
- y en qué cantidades.
- En este trabajo se propone un modelo que ayuda a tomar las decisiones de
- volumen de compra de productos disponibilizado para la venta, a traves
- de un modelo basado en business intelligence y machine learning.
+ el stock, o si realmente hay que seguir adquiriendo dicho producto.
+ En este trabajo se propone un modelo que ayuda a tomar las decisiones del
+ volumen de compra de productos disponibilizados para la venta, a través
+ de técnicas de Business Intelligence y Machine Learning integradas.
+ Los experimentos indican que se puede automatizar la compra de productos
+ para reposición de stock a través del modelo propuesto en este trabajo.
 \end_layout
 
 \begin_layout Keywords
