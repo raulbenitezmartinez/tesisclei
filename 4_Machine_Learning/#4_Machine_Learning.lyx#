@@ -538,9 +538,9 @@ key "DM2011"
 
 \begin_layout Standard
 \begin_inset Formula 
-\begin{equation}
-\kappa=\frac{Pr\left(a\right)-Pr\left(e\right)}{1-Pr\left(e\right)}
-\end{equation}
+\[
+\kappa\text{=}
+\]
 
 \end_inset
 

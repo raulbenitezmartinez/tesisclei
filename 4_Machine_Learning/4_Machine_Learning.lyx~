@@ -88,7 +88,7 @@
 \begin_body
 
 \begin_layout Section
-Aprendizaje Automático o Machine Learning
+Machine Learning
 \end_layout
 
 \begin_layout Standard
@@ -113,29 +113,34 @@ key "Arthur1959"
 \end_inset
 
 .
- Lo que nos lleva a pensar que uno pioneros del aprendizaje automático ya
- dejaba visualizar que los programas, a partir del aprendizaje sobre los
- datos históricos (la experiencia), podrían efectuar tareas de toma de decisione
-s sin ser programadas explícitamente dichas decisiones.
- Samuel define al aprendizaje automático como sigue: 
+ Lo que nos lleva a pensar que uno pioneros de machine learning ya dejaba
+ visualizar que los programas, a partir del aprendizaje sobre los datos
+ históricos (la experiencia), podrían efectuar tareas de toma de decisiones
+ sin ser programadas explícitamente dichas decisiones.
+ 
+\end_layout
+
+\begin_layout Subsection
+Definición
+\end_layout
+
+\begin_layout Standard
+Samuel define machine learning como sigue: 
 \shape italic
 
 \begin_inset Quotes eld
 \end_inset
 
-El aprendizaje automático es un campo de estudio que da a las computadoras
- la capacidad de aprender sin ser explícitamente programadas
+Machine Learning es un campo de estudio que da a las computadoras la capacidad
+ de aprender sin ser explícitamente programadas
 \begin_inset Quotes erd
 \end_inset
 
 
 \shape default
 .
-\end_layout
-
-\begin_layout Standard
-Otro investigador de aprendizaje automático Tom Mitchell propuso en 1998
- la siguiente definición: 
+ Otro investigador de machine learning Tom Mitchell propuso en 1998 la siguiente
+ definición: 
 \shape italic
 
 \begin_inset Quotes eld
@@ -150,10 +155,6 @@ e on T, as measured by P, improves with experience E
 
 \shape default
 .
-\end_layout
-
-\begin_layout Subsection
-Definición
 \end_layout
 
 \begin_layout Standard
@@ -178,32 +179,90 @@ key "Jean2016"
 
 .
  La dificultad radica en que debemos construir modelos que nos acerquen
- a una buan predicción sobre datos aún no conocidos o imprevistos.
+ a una buena predicción sobre datos aún no conocidos o imprevistos.
+ Peter Prettenhofer y Gille Louppe presentan la siguiente definición:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
+\begin_inset Float algorithm
 placement H
 wide false
 sideways false
 status open
 
 \begin_layout Plain Layout
-\begin_inset Graphics
-	filename figuras/mldef.png
-	scale 50
+Data comes as...
+\end_layout
 
+\begin_layout Itemize
+A set of examples 
+\begin_inset Formula $\left\{ \left(x_{i},y_{i}\right)\mid0\leq i<n\_samples\right\} $
+\end_inset
+
+, with
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Feature vector 
+\begin_inset Formula $x\in\mathbb{R}^{n\_features}$
+\end_inset
+
+, and
+\end_layout
+
+\begin_layout Itemize
+Response 
+\begin_inset Formula $y\in\mathbb{R}$
+\end_inset
+
+(regression) or 
+\begin_inset Formula $y\in\left\{ -1,1\right\} $
+\end_inset
+
+ (classification)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Goal is to...
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Find a function 
+\begin_inset Formula $ŷ=f\left(x\right)$
 \end_inset
 
 
+\end_layout
+
+\begin_layout Itemize
+Such that error 
+\begin_inset Formula $L\left(y,ŷ\right)$
+\end_inset
+
+on new (unseen) 
+\begin_inset Formula $x$
+\end_inset
+
+ is minimal
+\end_layout
+
+\end_deeper
+\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Definición presentada por Peter Prettenhofer y Gille Louppe.
+Definición de Machine Learning - Peter Prettenhofer y Gille Louppe
 \end_layout
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -265,24 +324,7 @@ Análisis de red: Un problema de aprendizaje no supervisado donde la estructura
 \end_layout
 
 \begin_layout Subsection
-Componentes esenciales
-\end_layout
-
-\begin_layout Subsubsection
-Ejemplos o instancias (examples): La entrada de un esquema de aprendizaje
- automático es un conjunto de instancias.
- Estas instancias son las cosas que deben ser clasificadas, asociadas o
- agrupadas.
- En el escenario estándar, cada instancia es un ejemplo individual e independien
-te del concepto que se debe aprender.
-\end_layout
-
-\begin_layout Subsubsection
-Características o atributos (features): Las instancias son caracterizadas
- mediante los valores de un conjunto predeterminado de atributos.
- Cada instancia proporciona una entrada al aprendizaje automático es caracteriza
-do por los valores en un conjunto fijo y predefinido de características
- o atributos 
+Componentes esenciales 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "DM2011"
@@ -290,33 +332,22 @@ key "DM2011"
 \end_inset
 
 .
- 
 \end_layout
 
-\begin_layout Subsubsection
-Etiquetas (labels): Las cantidades nominales tienen valores que son símbolos
- distintos.
- Los valores mismos sirven como etiquetas o nombres, de ahí el término nominal,
- que viene de la palabra latina para nombre.
- Los atributos nominales a veces se llaman categorizados, enumerados o discretos.
-\end_layout
-
-\begin_layout Subsubsection
-Conjunto de entrenamiento (training set): son los ejemplos o instancias
- utilizadas en el proceso de entrenamiento del algoritmo de aprendizaje
- automático.
-\end_layout
-
-\begin_layout Subsubsection
-Algoritmos de aprendizaje (learning algorithms): Hipótesis, Parámetros,
- Función de costo, Objetivo.
-\end_layout
-
-\begin_layout Subsubsection
-Conjunto de prueba (test set): Para predecir el rendimiento de un clasificador
- sobre nuevos datos, necesitamos evaluar su tasa de error en un conjunto
- de datos que no desempeñó ningún papel en la formación del clasificador.
- Este conjunto de datos independiente se denomina conjunto de prueba.
+\begin_layout Standard
+La entrada de un esquema de aprendizaje automático es un conjunto de instancias
+ o ejemplos (examples).
+ Estas instancias son las cosas que deben ser clasificadas, asociadas o
+ agrupadas.
+ Las instancias son caracterizadas mediante los valores de un conjunto predeterm
+inado de atributos (features).
+ Los ejemplos o instancias utilizadas en el proceso de entrenamiento del
+ algoritmo de aprendizaje automático constituye el conjunto de entrenamiento
+ (training set).
+ Para predecir el rendimiento de un clasificador sobre nuevos datos, necesitamos
+ evaluar su tasa de error en un conjunto de datos que no desempeñó ningún
+ papel en la formación del clasificador, este conjunto de datos independiente
+ se denomina conjunto de prueba (test set).
 \end_layout
 
 \begin_layout Subsection
@@ -379,7 +410,7 @@ key "Weka3"
  
 \begin_inset CommandInset citation
 LatexCommand cite
-key "WekaCla"
+key "DM2016"
 
 \end_inset
 
@@ -395,49 +426,32 @@ Evaluación de lo aprendido
 \begin_layout Standard
 La evaluación es la clave para lograr avances reales en el aprendizaje automátic
 o.
- 
+ Entre las técnicas se destaca la Validación Cruzada (Cross-Validation)
+ que consiste dividir los datos en un número de pliegues o particiones.
+ Si por ejemplo elegimos cuatro, entonces cada partición se utiliza para
+ las pruebas y las demás para el entrenamiento.
+ Al repetir este proceso 4 veces se consigue que cada partición se haya
+ utilizado una vez como conjunto de pruebas.
+ La técnica estándar para predecir la tasa de error es la Validación Cruzada
+ Estratificada (Stratified k-fold Cross-Validation).
+ La estratificación se refiere al proceso de reorganizar los datos de tal
+ manera a asegurar que cada pliegue sea una buena representación del conjunto.
+ Comúnmente se acepta que 10 es el número de pliegues con el que se obtiene
+ la mejor estimación de error, idea basada en diversas pruebas sobre conjuntos
+ de datos diferentes y para distintas técnicas de aprendizaje 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "DM2011"
+
+\end_inset
+
+.
 \end_layout
 
-\begin_layout Subsubsection
-Validación Cruzada (cross-validation): En la validación cruzada, usted decide
- sobre un número fijo de pliegues, o particiones, de los datos.
- Supongamos que usamos tres, luego los datos se dividen en tres particiones
- aproximadamente iguales; cada uno a su vez se utiliza para las pruebas
- y el resto se utiliza para el entrenamiento.
- Es decir, utilizar dos tercios de los datos para el entrenamiento y un
- tercio para las pruebas, y repetir el procedimiento tres veces para que
- al final, cada instancia se haya utilizado exactamente una vez para la
- prueba.
- Esto se denomina triple validación cruzada, y si la estratificación se
- adopta también, lo que es a menudo, triple validación cruzada estratificada.
-\end_layout
-
-\begin_layout Subsubsection
-Validación Cruzada K-fold Estratificado (stratified k-fold cross validation):
- La manera estándar de predecir la tasa de error de una técnica de aprendizaje
- dada una única muestra fija de datos es usar la validación cruzada diez
- veces estratificada.
- Los datos se dividen aleatoriamente en 10 partes en las que la clase se
- representa en aproximadamente las mismas proporciones que en el conjunto
- de datos completo.
- Cada parte se extiende a su vez y el esquema de aprendizaje entrenado en
- los restantes nueve décimos; entonces su tasa de error se calcula en el
- conjunto de retención.
- Así, el procedimiento de aprendizaje se ejecuta un total de 10 veces en
- diferentes conjuntos de entrenamiento (cada conjunto tiene mucho en común
- con los demás).
- Finalmente, las 10 estimaciones de error se promedian para obtener una
- estimación del error global.
- Pruebas extensas en numerosos conjuntos de datos diferentes, con diferentes
- técnicas de aprendizaje, han demostrado que 10 es sobre el número correcto
- de pliegues para obtener la mejor estimación de error, y también hay algunas
- pruebas teóricas que apoyan esto.
-\end_layout
-
-\begin_layout Subsubsection
-Porcentaje de división (percentage split): Con el que puede retener para
- la prueba un determinado porcentaje de los datos.
- Es una alternativa, utilizar un conjunto de pruebas separado o una división
+\begin_layout Standard
+Otra técnica es el Porcentaje de División (Percentage Split) con el que
+ puede retener para la prueba un determinado porcentaje de los datos.
+ Es una alternativa utilizar un conjunto de pruebas separado o una división
  porcentual de los datos de entrenamiento.
  Si elegimos 60% como porcentaje de división, entonces el conjunto de prueba
  se constituirá con el 40% de las instancias y el conjunto de entrenamiento
@@ -445,7 +459,7 @@ Porcentaje de división (percentage split): Con el que puede retener para
 \end_layout
 
 \begin_layout Subsection
-Resultados de la evaluación
+Métricas de desempeño
 \end_layout
 
 \begin_layout Standard
@@ -481,15 +495,10 @@ n debe ser diferente del conjunto de entrenamiento para obtener un buen
 
 \begin_layout Subsubsection
 Aciertos: Número de instancias correctamente clasificadas.
- En WEKA el método correct() obtiene el número de instancias correctamente
- clasificadas (es decir, para las que se realizó una predicción correcta),
- en realidad es la suma de los pesos de estas instancias.
 \end_layout
 
 \begin_layout Subsubsection
 Porcentaje de Aciertos: Porcentaje de instancias correctamente clasificadas.
- En WEKA el método pctCorrect() obtiene el porcentaje de instancias correctament
-e clasificadas (es decir, para las que se realizó una predicción correcta).
 \end_layout
 
 \begin_layout Subsubsection
@@ -517,49 +526,25 @@ Estadística Kappa (Kappa Statistic): Ejemplos en los que los errores cuestan
  El valor máximo de Kappa es 100%, y el valor esperado para un predictor
  aleatorio con los mismos totales de columna es 0.
  En WEKA el método kappa() devuelve el valor de la estadística kappa si
- la clase es nominal.
+ la clase es nominal 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "DM2011"
+
+\end_inset
+
+.
 \end_layout
 
-\begin_layout Subsubsection
-Curvas ROC (ROC Curves): Están estrechamente relacionados con una técnica
- gráfica para evaluar los esquemas de minería de datos conocidos como curvas
- ROC, que se utilizan en la misma situación, donde el alumno está tratando
- de seleccionar muestras de instancias de prueba que tienen una alta proporción
- de positivos.
- El acrónimo significa la característica de funcionamiento del receptor
- (Receiver Operating Characteristic), un término usado en la detección de
- señal para caracterizar la compensación entre la tasa de acierto y la tasa
- de falsa alarma sobre un canal ruidoso.
- Representan la tasa de positivos verdaderos en el eje vertical con respecto
- a la tasa de verdaderos negativos en el eje horizontal.
- El primero es el número de positivos incluidos en la muestra, expresado
- como un porcentaje del número total de positivos (TP Rate = 100 × TP/(TP
- + FN)); el último es el número de negativos incluidos en la muestra, expresado
- como porcentaje del número total de negativos (FP Rate = 100 × FP/(FP +
- TN)).
- El eje vertical es el mismo que el gráfico de elevación excepto que se
- expresa como un porcentaje.
- El eje horizontal es ligeramente diferente: es el número de negativos en
- lugar del tamaño de la muestra.
- Each point corresponds to drawing a line at a certain position on the ranked
- list, counting the yes’s and no’s above it, and plotting them vertically
- and horizontally, respectively.
- Esto es sólo una forma de usar la validación cruzada para generar curvas
- ROC.
- Un enfoque más simple es recopilar las probabilidades predichas para todos
- los conjuntos de prueba diferentes (de los cuales hay 10 en un 10-fold
- validación cruzada), junto con las etiquetas de clase verdadera de las
- instancias correspondientes, y generar una única lista rankeada basada
- en estos datos.
- Si el esquema de aprendizaje no permite ordenar las instancias, primero
- puede hacer que sea sensible al costo como se describió anteriormente.
- Para cada fold de una 10-fold validación cruzada, ponderar las instancias
- para una selección de diferentes ratios de coste, entrenar el esquema en
- cada conjunto ponderado, contar los verdaderos positivos y falsos positivos
- en el conjunto de pruebas y trazar el punto resultante en los ejes ROC.
- En WEKA el método areaUnderROC(int classIndex) devuelve el área bajo ROC
- para las predicciones que se han recogido en el método evaluateClassifier(Class
-ifier, Instances).
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\kappa=\frac{Pr\left(a\right)-Pr\left(e\right)}{1-Pr\left(e\right)}
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -582,7 +567,14 @@ s, con otro que localiza 400 documentos, 80 de los cuales son relevantes.
  clasificados / positivos totales.
  En WEKA el método precision(int classIndex) calcula la precisión con respecto
  a una clase en particular, esto se define como: positivos correctamente
- clasificados / total predicho como positivo.
+ clasificados / total predicho como positivo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "DM2011"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsubsection
@@ -593,24 +585,14 @@ Medida-F o Puntuación-F (F-Measure o F-Score): En el análisis estadístico
  y sensibilidad, donde alcanza su mejor valor en 1 y el peor en 0.
  En WEKA el método fMeasure(int classIndex) calcula la Puntuación-F con
  respecto a una clase en particular, esto se define como: 2 * recall * precision
- / recall + precision.
-\end_layout
+ / recall + precision 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "DM2011"
 
-\begin_layout Subsubsection
-Curvas Sensibilidad-Precisión (Recall-Precision Curves): Los expertos en
- recuperación de información usan curvas recall-precision que trazan una
- contra la otra, para diferentes números de documentos recuperados de la
- misma manera que las curvas ROC y los gráficos de elevación, excepto que
- debido a que los ejes son diferentes, las curvas son de forma hiperbólica
- y el punto de operación deseado está hacia la parte superior derecha.
- Table 5.7 summarizes the three different ways introduced for evaluating
- the same basic tradeoff; TP, FP, TN, and FN are the numbers of true positives,
- false positives, true negatives, and false negatives, respectively.
- Diferentes técnicas dan diferentes compensaciones, y se pueden trazar como
- líneas diferentes en cualquiera de estas gráficas.
- En WEKA el método areaUnderPRC(int classIndex) devuelve el área bajo la
- curva sensibilidad-precisión para las predicciones que se han recogido
- en el método evaluateClassifier (Classifier, Instances).
+\end_inset
+
+.
 \end_layout
 
 \end_body
