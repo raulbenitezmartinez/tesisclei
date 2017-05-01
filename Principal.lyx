@@ -6,7 +6,10 @@
 \origin unavailable
 \textclass IEEEtran
 \begin_preamble
-\usepackage[lined,boxed,commentsnumbered]{algorithm2e}
+%\usepackage[lined,boxed,commentsnumbered]{algorithm2e}
+
+\usepackage{algorithm}% http://ctan.org/pkg/algorithms
+\usepackage{algpseudocode}% http://ctan.org/pkg/algorithmicx
 
 \addto\captionsspanish{
 \def\tablename{Tabla}

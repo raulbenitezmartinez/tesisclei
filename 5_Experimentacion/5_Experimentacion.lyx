@@ -9,6 +9,8 @@
 % Bibliografia en español
 \usepackage[fixlanguage]{babelbib}
 \selectbiblanguage{spanish}
+\usepackage{algorithm}% http://ctan.org/pkg/algorithms
+\usepackage{algpseudocode}% http://ctan.org/pkg/algorithmicx
 
 % Bibliografia
 \usepackage[authoryear,square,sort]{natbib}
@@ -88,6 +90,10 @@
 \begin_body
 
 \begin_layout Section
+Experimentación
+\end_layout
+
+\begin_layout Subsection
 Modelado del Aprendizaje Automático
 \end_layout
 
@@ -788,8 +794,6 @@ Luego, cada archivo de instancias se entrena con todos los algoritmos de
  y otra tabla con los resultados de evaluación del aprendizaje automático
  con el método Stratified K-fold Cross Validation para los periodos mensuales,
  quincenales y semanales.
- Hacia el final del capítulo se muestran ejemplos de estas tablas y se analizan
- el significado de los resultados que contienen.
 \end_layout
 
 \begin_layout Subsection
@@ -820,87 +824,10 @@ Basados en árboles: DecisionStump, J48, LMT, RandomForest, RandomTree, REPTree.
 \end_layout
 
 \begin_layout Standard
-En la Figura 12 se muestra un fragmento del algoritmo que realiza el entrenamien
-to y la evaluación con la API de WEKA.
- Los 
-\begin_inset Quotes eld
-\end_inset
-
-modelos
-\begin_inset Quotes erd
-\end_inset
-
- constituyen los algoritmos de clasificación, así que cada modelo se puede
- evaluar por Percentage Split o por Stratified K-fold Cross Validation.
+Con la API de WEKA se realiza el entrenamiento y la evaluación.
+ Se utilizan los algoritmos de clasificación mencionados, así que por cada
+ modelo se evalua por Percentage Split o por Stratified K-fold Cross Validation.
  Para esta tesis evaluamos por ambos métodos.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float algorithm
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Esquema de entrenamiento y evaluación en WEKA.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-.
-\begin_inset Graphics
-	filename Recursos/construir y evaluar clasificadores WEKA.png
-	scale 40
-	rotateOrigin center
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Esquema de entrenamiento y evaluación en WEKA.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsection
@@ -908,48 +835,11 @@ Métricas de los resultados de la evaluación
 \end_layout
 
 \begin_layout Standard
-En la Figura 13 se muestra qué métricas de evaluación son obtenidas de la
- API WEKA.
- Entonces por cada modelo procesado, luego de construir su clasificador
- y evaluarlo se obtienen las métricas Cantidad de Aciertos o el Porcentaje
- de Acierto, la estadística Kappa; y por cada clase (Nada, Medio, Mucho)
- se obtienen las métricas Area Under ROC (ROCA), Recall (RCALL), Precision
- (PREC), F-Measure (FMEA) y Area Under Precision-Recall Curve (PRCA).
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Recursos/metricas de evaluacion WEKA.png
-	scale 40
-	rotateOrigin center
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Esquema de obtención de las métricas de evaluación en WEKA.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
+Por cada modelo procesado, luego de construir su clasificador y evaluarlo
+ se obtienen las métricas Cantidad de Aciertos o el Porcentaje de Acierto,
+ la estadística Kappa; y por cada clase (Nada, Medio, Mucho) se obtienen
+ las métricas Area Under ROC (ROCA), Recall (RCALL), Precision (PREC), F-Measure
+ (FMEA) y Area Under Precision-Recall Curve (PRCA).
 \end_layout
 
 \begin_layout Subsection
@@ -957,93 +847,25 @@ Resultados numéricos
 \end_layout
 
 \begin_layout Standard
-Se muestran tablas de ejemplo que contienen los resultados de las métricas
- de evaluación.
- Como se mencionó en la sub sección 1.2, hay dos tablas que se generan al
- concluir el proceso de aprendizaje automático.
+Hay dos tablas que se generan al concluir el proceso de aprendizaje automático.
 \end_layout
 
 \begin_layout Standard
-En la Figura 14 se muestra una pequeña parte de la tabla con los resultados
- de evaluación del aprendizaje automático con el método Percentage Split
- para los periodos mensuales, quincenales y semanales.
+Una con los resultados de evaluación del aprendizaje automático con el método
+ Percentage Split para los periodos mensuales, quincenales y semanales que
+ contienen los datos sobre: PRODUCTO, PERIODO, TIPO DE CLASIFICADOR, TIPO
+ DE EVALUACIÓN, % DE ACIERTOS, KAPPA.
+ También la PRECISIÓN, RECALL y F-MEASURE por cada clase (Nada, Poco, Medio,
+ Mucho).
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Recursos/split_sintetico.png
-	scale 25
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Resultados de la evaluación del aprendizaje automático con el método Percentage
- Split.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-En la Figura 15 se muestra una pequeña parte de la tabla con los resultados
- de evaluación del aprendizaje automático con el método Stratified K-fold
- Cross Validation para los periodos mensuales, quincenales y semanales.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Recursos/cross_sintetico.png
-	scale 25
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Resultados de la evaluación del aprendizaje automático con el método Stratified
- K-fold Cross Validation.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
+Otra con los resultados de evaluación del aprendizaje automático con el
+ método Stratified K-fold Cross Validation para los periodos mensuales,
+ quincenales y semanales que contienen los datos sobre: PRODUCTO, PERIODO,
+ TIPO DE CLASIFICADOR, TIPO DE EVALUACIÓN, % DE ACIERTOS, KAPPA.
+ También la PRECISIÓN, RECALL y F-MEASURE por cada clase (Nada, Poco, Medio,
+ Mucho).
 \end_layout
 
 \begin_layout Section
@@ -1059,7 +881,7 @@ El análisis global de los resultados se basa en la métrica Kappa.
 \end_layout
 
 \begin_layout Standard
-En la Figura 16 se muestra un gráfico de barras con promedios del porcentaje
+En la Figura 2 se muestra un gráfico de barras con promedios del porcentaje
  de aciertos utilizando Stratified k-fold Cross Validation como método de
  evaluación.
 \end_layout
@@ -1069,7 +891,7 @@ En la Figura 16 se muestra un gráfico de barras con promedios del porcentaje
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1101,7 +923,7 @@ Promedios del porcentaje de aciertos utilizando Stratified k-fold Cross
 \end_layout
 
 \begin_layout Standard
-En la Figura 17 se muestra un gráfico de barras con promedios del porcentaje
+En la Figura 3 se muestra un gráfico de barras con promedios del porcentaje
  de aciertos utilizando Percentage Split Validation como método de evaluación.
 \end_layout
 
@@ -1110,7 +932,7 @@ En la Figura 17 se muestra un gráfico de barras con promedios del porcentaje
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1138,6 +960,17 @@ Promedios del porcentaje de aciertos utilizando Percentage Split Validation.
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Se puede observar que se obtienen altos porcentajes de aciertos tanto para
+ los periodos mensuales, quincenales como semanales.
+ Como se trata de una prueba exhaustiva, por cada producto se intenta con
+ todos los algoritmos de clasificación posible, además que se evalúan con
+ dos métodos, entonces podemos deducir que se trata se resultados fiables.
+ Obtener buenos resultados depende en gran medida de que los valores de
+ KPI hayan sido obtenidos correctamente y también que el etiquetado haya
+ sido realizado por un experto en compras o ventas.
 \end_layout
 
 \end_body

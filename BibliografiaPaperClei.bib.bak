@@ -126,4 +126,9 @@
   edition = {Cuarta},
 }
 
+@Book{,
+  title  = {Gestión de la Producción y Operaciones},
+  author = {Naim Caba Villalobos and Oswaldo Chamorro Altahona and Tomás José Fontalvo Herrera},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}

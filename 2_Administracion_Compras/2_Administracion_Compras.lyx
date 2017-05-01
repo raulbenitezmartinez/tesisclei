@@ -106,7 +106,14 @@ te la cantidad o volumen de productos a comprar para reposición de stock
 El stock o existencia de una empresa es el conjunto de materiales y artículos
  que se almacenan, tanto aquellos que son necesarios para el proceso productivo
  como los destinados a la venta.
- La función que desempeña el stock o existencia en una empresa son:
+ La función que desempeña el stock o existencia en una empresa son 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "AdminCyA"
+
+\end_inset
+
+:
 \end_layout
 
 \begin_layout Itemize
@@ -158,14 +165,14 @@ Del por qué la importancia de estimar de forma correcta esta cantidad o
 Una administración efectiva de las compras y del suministro contribuye de
  manera significativa al éxito organizacional.
  La función del suministro evoluciona a medida que la tecnología y el ambiente
- competitivo mundial requieren enfoques innovadores.
+ competitivo mundial requieren enfoques innovadores 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "AdminCyA"
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Subsection
@@ -205,7 +212,14 @@ os de demanda entre las que se destacan los Modelos de Pronóstico Cualitativo
 \end_layout
 
 \begin_layout Subsubsection
-Modelos de pronóstico cualitativo
+Modelos de pronóstico cualitativo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "GPO2011"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -243,7 +257,19 @@ Analogía de productos similares: Esta técnica de predicción de la demanda
 \end_layout
 
 \begin_layout Subsubsection
-Modelos de pronóstico cuantitativo
+Modelos de pronóstico cuantitativo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "GPO2011"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Los modelos cuantitativos a su vez se pueden clasificar en modelos de series
+ de tiempo y en modelos causales.
 \end_layout
 
 \begin_layout Subsubsection
@@ -257,9 +283,23 @@ En el modelo de series de tiempo el pronóstico se basa solamente en datos
 \end_layout
 
 \begin_layout Itemize
+Promedio simplista: Se asume que la demanda del siguiente período será igual
+ a la demanda del período inmediatamente anterior.
+ 
+\end_layout
+
+\begin_layout Itemize
 Promedio móvil simple: Se aplica promedio sobre los datos históricos de
  ventas de una secuencia fija de períodos.
  Es útil cuando la demanda no presenta estacionalidad o tendencia.
+\begin_inset Formula 
+\begin{equation}
+PMS=\frac{\sum Demanda\_en\_n\_períodos\_previos}{n}
+\end{equation}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -267,6 +307,14 @@ Promedio móvil ponderado: Ajusta el método de promedio simple asignando
  mayor peso a los datos más recientes.
  Sirve para reflejar el nivel de importancia de unos datos sobre otros como
  resultado de las fluctuaciones.
+\begin_inset Formula 
+\begin{equation}
+PMP=\frac{\sum\left(Peso\_período\_n\right)\left(Demanda\_período\_n\right)}{\sum Pesos}
+\end{equation}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -274,6 +322,30 @@ Suavización exponencial simple: Para calcular se requiere del pronóstico
  anterior, la demanda real del periodo de pronóstico y una constante de
  suavizamiento.
  Es útil cuando se cuenta con pocos datos históricos.
+\begin_inset Formula 
+\begin{equation}
+F_{t}=F_{t-1}+\alpha\left(A_{t-1}-F_{t-1}\right)
+\end{equation}
+
+\end_inset
+
+Donde 
+\begin_inset Formula $F_{t}=$
+\end_inset
+
+ pronóstico nuevo, 
+\begin_inset Formula $F_{t-1}=$
+\end_inset
+
+ el pronóstico anterior, 
+\begin_inset Formula $0\leq\alpha\leq1=$
+\end_inset
+
+ constante de suavización, 
+\begin_inset Formula $A_{t-1}=$
+\end_inset
+
+ demanda real del período anterior.
 \end_layout
 
 \begin_layout Itemize
@@ -281,10 +353,6 @@ Suavización exponencial doble: Esta técnica es una modificación del suavizami
 o exponencial simple.
  Agrega una constante de suavización delta (DELTA), cuya función es reducir
  el error que ocurre entre la demanda real y el pronóstico.
-\end_layout
-
-\begin_layout Itemize
-Estacional multiplicativo
 \end_layout
 
 \begin_layout Subsubsection
@@ -302,6 +370,30 @@ Utiliza una técnica matemática conocida como análisis de regresión, que
 Regresión Lineal: Esta técnica permite obtener un estimado analizando el
  impacto de los factores causales con relación a la demanda del producto
  o servicio.
+\begin_inset Formula 
+\begin{equation}
+y=a+bx
+\end{equation}
+
+\end_inset
+
+Donde 
+\begin_inset Formula $y=$
+\end_inset
+
+ valor de la variable dependiente en este caso ventas, 
+\begin_inset Formula $a=$
+\end_inset
+
+ intersección en el eje y, 
+\begin_inset Formula $b=$
+\end_inset
+
+ pendiente de la línea de regresión, 
+\begin_inset Formula $x=$
+\end_inset
+
+ la variable independiente.
 \end_layout
 
 \end_body
