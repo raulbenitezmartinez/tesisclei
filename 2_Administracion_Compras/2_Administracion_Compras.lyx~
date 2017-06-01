@@ -309,7 +309,7 @@ Promedio móvil ponderado: Ajusta el método de promedio simple asignando
  resultado de las fluctuaciones.
 \begin_inset Formula 
 \begin{equation}
-PMP=\frac{\sum\left(Peso\_para\_el\_período\_n\right)\left(Demanda\_para\_el\_período\_n\right)}{\sum Pesos}
+PMP=\frac{\sum\left(Peso\_período\_n\right)\left(Demanda\_período\_n\right)}{\sum Pesos}
 \end{equation}
 
 \end_inset
@@ -333,19 +333,19 @@ Donde
 \begin_inset Formula $F_{t}=$
 \end_inset
 
-pronóstico nuevo, 
+ pronóstico nuevo, 
 \begin_inset Formula $F_{t-1}=$
 \end_inset
 
-el pronóstico anterior, 
+ el pronóstico anterior, 
 \begin_inset Formula $0\leq\alpha\leq1=$
 \end_inset
 
-constante de suavización, 
+ constante de suavización, 
 \begin_inset Formula $A_{t-1}=$
 \end_inset
 
-demanda real del período anterior.
+ demanda real del período anterior.
 \end_layout
 
 \begin_layout Itemize
@@ -381,19 +381,19 @@ Donde
 \begin_inset Formula $y=$
 \end_inset
 
-valor de la variable dependiente en este caso ventas, 
+ valor de la variable dependiente en este caso ventas, 
 \begin_inset Formula $a=$
 \end_inset
 
-intersección en el eje y, 
+ intersección en el eje y, 
 \begin_inset Formula $b=$
 \end_inset
 
-pendiente de la línea de regresión, 
+ pendiente de la línea de regresión, 
 \begin_inset Formula $x=$
 \end_inset
 
-la variable independiente.
+ la variable independiente.
 \end_layout
 
 \end_body

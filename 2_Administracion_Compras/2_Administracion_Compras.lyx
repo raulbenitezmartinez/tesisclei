@@ -272,7 +272,7 @@ Los modelos cuantitativos a su vez se pueden clasificar en modelos de series
  de tiempo y en modelos causales.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
 Modelos de series de tiempo
 \end_layout
 
@@ -355,7 +355,7 @@ o exponencial simple.
  el error que ocurre entre la demanda real y el pronóstico.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
 Modelo causal
 \end_layout
 
