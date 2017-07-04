@@ -126,9 +126,18 @@
   edition = {Cuarta},
 }
 
-@Book{,
+@Book{GPO2011,
   title  = {Gestión de la Producción y Operaciones},
+  year   = {2011},
   author = {Naim Caba Villalobos and Oswaldo Chamorro Altahona and Tomás José Fontalvo Herrera},
+}
+
+@Book{MCN2011,
+  title     = {Métodos cuantitativos para los negocios},
+  publisher = {© D.R. 2011 por Cengage Learning Editores, S.A. de C.V., una compañía de Cengage Learning, Inc},
+  year      = {2011},
+  author    = {David R. Anderson and Dennis J. Sweeney and Thomas A. Williams and Jeffrey D. Camm and Kipp Martin},
+  edition   = {11},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

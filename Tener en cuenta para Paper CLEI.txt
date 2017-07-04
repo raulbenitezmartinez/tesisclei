@@ -1,0 +1,35 @@
+Consultas para Pinto:
+
+* Es valido hacer una comparativa de porcentaje de acierto entre los metodos tradicionales (valores continuos) y 
+el metodo BI+ML (clasificacion)?
+
+* Puedo usar solo percentage split?
+
+* Solo periodos mensuales y productos tienen datos integros en su mayoria y productos no estacionales y productos no nuevos.
+Tampoco se toma en cuentas los costes, porque no hay datos sobre ello.
+
+
+Depende de la estrategia de la gerencia:
+
+* El tamaño del deposito.
+* El tipo de producto.
+
+Lo que va a influir en lo que significa nada, poco, mucho
+
+Es un modelo parametrizado:
+
+* las etiquetas (nada, poco, medio, mucho)
+* periodos de compra
+
+
+Segun el revisor B:
+
+* Tipo de producto minorista vendido (nombrar la familia de productos)
+* Proceso de BI (Base de datos, cantidad de registros por tabla, relacional, transaccional, Oracle/Datawarehouse, tabla de hechos, dimensiones/KPI)
+* Nombrar que es un supermercado, años de los datos.
+* Analizar el impacto de simplificar el problema original (definir la compra de producto) al problema de etiquetado (nada, poco, medio, ...)
+* Analiza el impacto de los períodos mensual, quincenal, semanal, ¿cómo se adaptan al problema? ¿cuál es mejor en cada caso? ¿porqué?
+* Conoce la dificultad del problema de clasificación; habitualmente esto se conoce a partir de la creación de clasificador "baseline" sencillo.
+* Detallar resultados sobre cada método de clasificación; y definir la utilización de uno, o la combinación de varios, como mejor solución del problema.
+* Detallar cómo el usuario puede utilizar el clasificador para resolver su problema original de definición de stock.
+

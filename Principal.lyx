@@ -209,7 +209,7 @@ filename "1_Introduccion/1_Introduccion.lyx"
 
 \begin_inset CommandInset include
 LatexCommand input
-filename "2_Administracion_Compras/2_Administracion_Compras.lyx"
+filename "2_Pronostico_Demanda/2_Pronostico_Demanda.lyx"
 
 \end_inset
 
