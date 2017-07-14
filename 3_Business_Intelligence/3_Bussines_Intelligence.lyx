@@ -76,14 +76,14 @@ Business Intelligence
 \end_layout
 
 \begin_layout Subsection
-Concepto
+Definición
 \end_layout
 
 \begin_layout Standard
-Business Intelligence abarca un conjunto de conceptos, técnicas y herramientas
- que se utilizan para la transformación de simples datos en información
- útil y significativa para el análisis de negocios, ayudando a las organizacione
-s a mejorar la competitividad facilitando la toma de decisiones
+Business Intelligence implica un conjunto de conceptos, técnicas y herramientas
+ que se utilizan para transformar datos en información útil y significativa
+ para el análisis de negocios, ayudando a las organizaciones a mejorar la
+ competitividad facilitando la toma de decisiones
 \begin_inset CommandInset citation
 LatexCommand cite
 key "BICCI07"
@@ -140,6 +140,10 @@ Los términos “back end” y “front end” comúnmente usados en Sistemas de
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Subsubsection
+Objetivos
 \end_layout
 
 \begin_layout Standard
@@ -297,8 +301,8 @@ key "BICCI07"
  
 \end_layout
 
-\begin_layout Subsubsection
-Modelado del problema mediante la utilización de KPI
+\begin_layout Subsection
+Planteamiento del problema
 \end_layout
 
 \begin_layout Standard
@@ -340,7 +344,7 @@ Stock o existencia es la cantidad de un determinado producto almacenado
 \end_layout
 
 \begin_layout Subsubsection
-Base de datos
+Fuente de Información
 \end_layout
 
 \begin_layout Standard
@@ -387,6 +391,10 @@ Tabla de Ventas Detalle
  fueron comercializados, cada detalle esta relacionado a un registro cabecera.
  Contiene datos de la fecha, el producto, precio de costo, precio de venta,
  cantidad y otros datos.
+\end_layout
+
+\begin_layout Subsubsection
+Proceso de Extracción, transformación y Carga.
 \end_layout
 
 \begin_layout Subsubsection
