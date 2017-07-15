@@ -92,6 +92,19 @@ Machine Learning
 \end_layout
 
 \begin_layout Standard
+En esta sección se realiza un breve repaso sobre conceptos básicos que envuelven
+ a Machine Learning.
+ El objetivo es visualizar qué aspectos de Machine Learning fueron tomados
+ como componentes de solución al problema de estudio.
+ Al final de la sección se expone un pequeño resumen.
+ 
+\end_layout
+
+\begin_layout Subsection
+Definición
+\end_layout
+
+\begin_layout Standard
 En 1959 Arthur Samuel en una publicación escribió: 
 \shape italic
 
@@ -113,15 +126,10 @@ key "Arthur1959"
 \end_inset
 
 .
- Lo que nos lleva a pensar que uno pioneros de machine learning ya dejaba
- visualizar que los programas, a partir del aprendizaje sobre los datos
- históricos (la experiencia), podrían efectuar tareas de toma de decisiones
- sin ser programadas explícitamente dichas decisiones.
- 
-\end_layout
-
-\begin_layout Subsection
-Definición
+ Este pionero de machine learning ya presagiaba que los programas, a partir
+ del aprendizaje sobre datos históricos (la experiencia), podrían efectuar
+ tareas de toma de decisiones sin ser programadas explícitamente dichas
+ decisiones.
 \end_layout
 
 \begin_layout Standard
@@ -189,7 +197,7 @@ Data comes as...
 
 \begin_layout Itemize
 A set of examples 
-\begin_inset Formula $\left\{ \left(x_{i},y_{i}\right)\mid0\leq i<n\_samples\right\} $
+\begin_inset Formula $\left\{ \left(x_{i},y_{i}\right)\mid0\leq i<n\;samples\right\} $
 \end_inset
 
 , with
@@ -198,7 +206,7 @@ A set of examples
 \begin_deeper
 \begin_layout Itemize
 Feature vector 
-\begin_inset Formula $x\in\mathbb{R}^{n\_features}$
+\begin_inset Formula $x\in\mathbb{R}^{n\;features}$
 \end_inset
 
 , and
@@ -244,7 +252,7 @@ on new (unseen)
 
 \end_deeper
 \begin_layout Subsection
-Categoría de algoritmos
+Categorías de los algoritmos
 \end_layout
 
 \begin_layout Standard
@@ -256,6 +264,8 @@ Los algoritmos de aprendizaje automático se pueden categorizar según la
 \begin_layout Subsubsection
 Aprendizaje supervisado (supervised learning): El algoritmo recibe datos
  de entrenamiento que contienen la respuesta correcta para cada ejemplo.
+ El problema de estudio utiliza algoritmos de aprendizaje supervisado, donde
+ el experto en compras da la respuesta correcta a cada ejemplo.
 \end_layout
 
 \begin_layout Subsubsection
@@ -281,6 +291,8 @@ Regresión: Un problema de aprendizaje supervisado donde la respuesta a aprender
 \begin_layout Subsubsection
 Clasificación: Un problema de aprendizaje supervisado donde la respuesta
  a aprender es un valor de un conjunto finito de posibles valores discretos.
+ El problema de estudio se encara como un problema de clasificación, donde
+ hay cuatro posibles valores discretos.
 \end_layout
 
 \begin_layout Subsubsection
@@ -296,34 +308,7 @@ Análisis de red: Un problema de aprendizaje no supervisado donde la estructura
 \end_layout
 
 \begin_layout Subsection
-Componentes esenciales 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "DM2011"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-La entrada de un esquema de aprendizaje automático es un conjunto de instancias
- o ejemplos (examples).
- Estas instancias son las cosas que deben ser clasificadas, asociadas o
- agrupadas.
- Las instancias son caracterizadas mediante los valores de un conjunto predeterm
-inado de atributos (features).
- Los ejemplos o instancias utilizadas en el proceso de entrenamiento del
- algoritmo de aprendizaje automático constituye el conjunto de entrenamiento
- (training set).
- Para predecir el rendimiento de un clasificador sobre nuevos datos, necesitamos
- evaluar su tasa de error en un conjunto de datos que no desempeñó ningún
- papel en la formación del clasificador, este conjunto de datos independiente
- se denomina conjunto de prueba (test set).
-\end_layout
-
-\begin_layout Subsection
-El problema de la clasificación
+Problemas de clasificación
 \end_layout
 
 \begin_layout Standard
@@ -333,8 +318,19 @@ En los problemas de clasificación el modelo creado debe predecir la clase,
 
 \begin_layout Subsubsection
 Clasificación binaria (binary classification): En su forma más simple se
- reduce a la pregunta: dado un patrón x extraído de un dominio X, estimar
- qué valor asumirá una variable aleatoria binaria asociada y ∈ {± 1} 
+ reduce a la siguiente cuestión: dado un patrón 
+\begin_inset Formula $x$
+\end_inset
+
+ extraído de un dominio 
+\begin_inset Formula $X$
+\end_inset
+
+, estimar qué valor asumirá una variable aleatoria binaria asociada 
+\begin_inset Formula $y\in\left\{ \pm1\right\} $
+\end_inset
+
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "IntroML2008"
@@ -347,8 +343,11 @@ key "IntroML2008"
 \begin_layout Subsubsection
 Clasificación multiclase (multiclass classification): Es la extensión lógica
  de la clasificación binaria.
- La principal diferencia es que ahora y ∈ {1, ...
- , N} puede asumir un rango de valores diferentes 
+ La principal diferencia es que ahora 
+\begin_inset Formula $y\in\left\{ 1,2,3..,N\right\} $
+\end_inset
+
+ puede asumir un rango de valores diferentes 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "IntroML2008"
@@ -356,6 +355,44 @@ key "IntroML2008"
 \end_inset
 
 .
+ El problema de estudio utiliza clasificación multiclase, donde 
+\begin_inset Formula $y\in\left\{ Nada,Poco,Medio,Mucho\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Instancias, conjuntos de entrenamiento y testeo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "DM2011"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La entrada de un esquema de aprendizaje automático es un conjunto de instancias
+ o ejemplos (examples).
+ Estas instancias son las cosas que deben ser clasificadas, asociadas o
+ agrupadas.
+ Las instancias son caracterizadas mediante los valores de un conjunto predeterm
+inado de atributos (features).
+ Para el problema de estudio el proceso de Business Intelligence es quien
+ provee las instancias.
+ 
+\end_layout
+
+\begin_layout Standard
+Los ejemplos o instancias utilizadas en el proceso de entrenamiento del
+ algoritmo de aprendizaje automático constituye el conjunto de entrenamiento
+ (training set).
+ Para predecir el rendimiento de un clasificador sobre nuevos datos, necesitamos
+ evaluar su tasa de error en un conjunto de datos que no desempeñó ningún
+ papel en la formación del clasificador, este conjunto de datos independiente
+ se denomina conjunto de prueba (test set).
 \end_layout
 
 \begin_layout Subsection
@@ -378,17 +415,444 @@ key "Weka3"
 \end_inset
 
 .
- Los algoritmos de clasificación de Weka que se utilizarán son los siguientes
- 
+ En el problema de estudio se utiliza el conjunto de algoritmos de clasificación
+ de Weka 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "DM2016"
 
 \end_inset
 
-: BayesNet, NaiveBayes, NaiveBayesUpdateable, Logistic, MultilayerPerceptron,
- SimpleLogistic, SMO, OneR, DecisionTable, JRip, PART, ZeroR, DecisionStump,
- J48, LMT, RandomForest, RandomTree, REPTree.
+.
+ En la tabla 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:algoritmosWekaVsReales"
+
+\end_inset
+
+ se listan los algoritmos de clasificación en Weka asociados a los nombres
+ de algoritmos o estrategias que implementan.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:algoritmosWekaVsReales"
+
+\end_inset
+
+Clasificadores Weka 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "WekaCla"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset Tabular
+<lyxtabular version="3" rows="18" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Clasificadores Weka
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Estrategia o Algoritmo de clasificación que implementa
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+BayesNet
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Bayes Network learning algorithms.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+NaiveBayes
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Naive Bayes classifier.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+NaiveBayesUpdateable
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Updateable version of NaiveBayes.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Logistic
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Using multinomial logistic regression model.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MultilayerPerceptron
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Uses backpropagation to classify instances.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SimpleLogistic
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Building linear logistic regression models.
+ LogitBoost with simple regression functions.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SMO
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Sequential Minimal Optimization algorithm for training a support vector
+ classifier.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+OneR
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Using a 1R classifier.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DecisionTable
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Using a simple decision table majority classifier.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+JRip
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Implements a propositional rule learner, Repeated Incremental Pruning to
+ Produce Error Reduction (RIPPER).
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PART
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PART decision list.
+ Uses separate-and-conquer.
+ Builds a partial C4.5 decision tree.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ZeroR
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Using a 0-R classifier.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+DecisionStump
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Using a decision stump.
+ Usually used in conjunction with a boosting algorithm.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+J48
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Pruned or unpruned C4.5 decision tree.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LMT
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Logistic model trees.
+ Classification trees with logistic regression.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+RandomForest
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Forest of random trees.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+REPTree
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fast decision tree learner.
+ Builds a decision/regression tree.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -398,12 +862,12 @@ Evaluación de lo aprendido
 \begin_layout Standard
 La evaluación es la clave para lograr avances reales en el aprendizaje automátic
 o.
- Entre las técnicas se destaca la Validación Cruzada (Cross-Validation)
- que consiste dividir los datos en un número de pliegues o particiones.
+ Entre las técnicas de evaluación se destaca la Validación Cruzada (Cross-Valida
+tion) que consiste dividir los datos en un número de pliegues o particiones.
  Si por ejemplo elegimos cuatro, entonces cada partición se utiliza para
- las pruebas y las demás para el entrenamiento.
- Al repetir este proceso 4 veces se consigue que cada partición se haya
- utilizado una vez como conjunto de pruebas.
+ las pruebas y las demás para el entrenamiento, al repetir este proceso
+ 4 veces se consigue que cada partición se haya utilizado una vez como conjunto
+ de pruebas.
  La técnica estándar para predecir la tasa de error es la Validación Cruzada
  Estratificada (Stratified k-fold Cross-Validation).
  La estratificación se refiere al proceso de reorganizar los datos de tal
@@ -431,6 +895,10 @@ Otra técnica es el Porcentaje de División (Percentage Split) con el que
 \end_layout
 
 \begin_layout Subsection
+Métricas de precisión
+\end_layout
+
+\begin_layout Standard
 Métricas de desempeño
 \end_layout
 
@@ -624,6 +1092,10 @@ F-Measure=\frac{2*Recall*Precision}{\left(Recall+Precision\right)}
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+Resumen de la sección
 \end_layout
 
 \end_body

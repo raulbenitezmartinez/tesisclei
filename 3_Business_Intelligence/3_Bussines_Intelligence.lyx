@@ -75,6 +75,10 @@
 Business Intelligence
 \end_layout
 
+\begin_layout Standard
+======
+\end_layout
+
 \begin_layout Subsection
 Definición
 \end_layout
@@ -206,7 +210,7 @@ Implementar un proyecto de Business Intelligence en una organización es
  un proceso que sigue una serie de pasos, cada paso puede verse como un
  componente.
  En la siguiente gráfica observamos los distintos componentes que forman
- parte del Business Intelligence.
+ parte de Business Intelligence.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "BICCI07"
@@ -346,8 +350,8 @@ key "KIM92"
 \end_inset
 
 .
- En cada paso se describe el modelado de la solución de uno de los principales
- problemas con los que se enfrentan las empresas retail
+ ====== En cada paso se describe el modelado de la solución de uno de los
+ principales problemas con los que se enfrentan las empresas retail
 \begin_inset Foot
 status collapsed
 
@@ -624,8 +628,8 @@ Definición de los KPI
 \end_layout
 
 \begin_layout Standard
-En el marco de esta tesis, en esta sección se definirán los KPI que se utilizará
-n en el modelado para 
+====== En el marco de esta tesis, en esta sección se definirán los KPI que
+ se utilizarán en el modelado para 
 \lang spanish
 el pronóstico de la demanda y la reposición de stock
 \lang english
@@ -803,9 +807,9 @@ Asignación de etiquetas
 \end_layout
 
 \begin_layout Standard
-A cada tupla de valores KPI obtenidos para cada producto se le debe asignar
- una etiqueta, el cual es uno de los valores importantes para el modelado
- mediante el aprendizaje automático.
+====== A cada tupla de valores KPI obtenidos para cada producto se le debe
+ asignar una etiqueta, el cual es uno de los valores importantes para el
+ modelado mediante el aprendizaje automático.
  Esta asignación de las etiquetas esta basada en la opinión de un experto
  (que habitualmente podría ser el gerente de compras).
  La estrategia utilizada para el etiquedato es de la siguiente manera:

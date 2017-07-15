@@ -132,8 +132,8 @@ Las empresas centran sus esfuerzos en aumentar sus ingresos, desminuir sus
  Este trabajo intenta contribuir a lograr decisiones eficientes de compras
  basadas en pronósticos de demanda precisos.
  Se considera que es una decisión importantísima estimar o predecir eficientemen
-te la cantidad o volumen de productos a comprar para reposición de stock
- y que sirvan para el periodo de ventas que está por llegar.
+te la cantidad o volumen de productos para reponer el stock y que sirvan
+ para el periodo de ventas que está por llegar.
 \end_layout
 
 \begin_layout Standard
@@ -780,7 +780,7 @@ El resultado de esta fórmula pone de relieve los errores grandes de pronóstico
 \end_layout
 
 \begin_layout Subsection
-Relación con el trabajo
+Relación con el problema de estudio (ESTE ME FALTA HACER)
 \end_layout
 
 \begin_layout Standard
