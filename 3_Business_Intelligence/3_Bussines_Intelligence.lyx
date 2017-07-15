@@ -80,28 +80,47 @@ Definición
 \end_layout
 
 \begin_layout Standard
-Business Intelligence implica un conjunto de conceptos, técnicas y herramientas
- que se utilizan para transformar datos en información útil y significativa
- para el análisis de negocios, ayudando a las organizaciones a mejorar la
- competitividad facilitando la toma de decisiones
+Business Intelligence engloba un conjunto de conceptos, técnicas basadas
+ en computadoras y herramientas para analizar y transformar los datos empresaria
+les en información significativa y útil que permite a las organizaciones
+ una visión y toma de decisiones estratégicas, tácticas y operativas más
+ efectivas.
+ Las tecnologías de Business Intelligence ofrecen vistas históricas, actuales
+ y predictivas de las operaciones, son procesos que se extienden en el tiempo,
+ capaces de manejar grandes volúmenes de datos que ayudan a identificar,
+ crear y desarrollar nuevas estrategias de negocios para mejorar la competitvida
+d.
+ La era actual de las tecnologías de la información ha llevado a la necesidad
+ de tener mejores, mas rápidas y más eficientes métodos de extraer lo datos
+ de una organización, transformarlo en información y distribuirlo a las
+ cadenas de mando.
+ Business Intelligence responde a esa necesidad 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "BICCI07"
 
 \end_inset
 
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "CJ20"
+
+\end_inset
+
 .
+ 
 \end_layout
 
 \begin_layout Standard
-La definición
+Una definición más formal que propone The Datawarehouse Institute es
 \begin_inset CommandInset citation
 LatexCommand cite
 key "EH05"
 
 \end_inset
 
- que propone The Datawarehouse Institute es:
+:
 \begin_inset Newline newline
 \end_inset
 
@@ -178,13 +197,23 @@ Disminuir sustancialmente la incertidumbre que existe ante la toma de decisiones
  respecto a un plan estratégico.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsubsection
 Componentes de Business Intelligence
 \end_layout
 
 \begin_layout Standard
-En el siguiente gráfico vemos los componentes que forman parte del Business
- Intelligence.
+Implementar un proyecto de Business Intelligence en una organización es
+ un proceso que sigue una serie de pasos, cada paso puede verse como un
+ componente.
+ En la siguiente gráfica observamos los distintos componentes que forman
+ parte del Business Intelligence.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "BICCI07"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -219,19 +248,14 @@ Componentes de Business Intelligence
 \end_layout
 
 \begin_layout Standard
-Los componentes son
-\begin_inset CommandInset citation
-LatexCommand cite
-key "BICCI07"
-
-\end_inset
-
-:
+A continuación, una breve descripción de los componentes de Business Intelligenc
+e:
 \end_layout
 
 \begin_layout Itemize
 Fuentes de información, de los cuales se obtienen los datos que se almacenan
  en el datawarehouse.
+ Básicamente son los sistemas operacionales o transaccionales de la organizacion.
 \end_layout
 
 \begin_layout Itemize
@@ -251,7 +275,7 @@ El motor OLAP, que nos provee capacidad de cálculo, consultas, pronósticos,
 \end_layout
 
 \begin_layout Itemize
-La herramientas de visualización, que nos permiten el análisis y la navegación
+Las herramientas de visualización, que nos permiten el análisis y la navegación
  a través de los mismos.
 \end_layout
 
@@ -267,7 +291,27 @@ Los KPI
  o Indicadores Clave de Rendimiento se tratan de indicadores que son decisivos
  para analizar de forma rápida la situación del negocio y que también facilitan
  la toma de decisiones.
- Todos los KPI son indicadores, pero no todos los indicadores son KPI
+ Una característica de los KPI es que todos los KPI son indicadores, pero
+ no todos los indicadores son KPI, otra característica es que cada organización
+ debe definir sus propios KPI que desean tener siempre presente para manejar
+ su rumbo, estas varían de acuerdo según la actividad realizada, el tipo
+ de producto o la estrategia de negocios, por dicho motivo los KPI no pueden
+ copiarse de una organización a otra ya que cada organización es diferente
+ y requiere de una reflexión estratégica de los cuales saldrán los correspondien
+tes KPI.
+ Un cuadro de gestión o de mando no debe excederse en la cantidad de KPI,
+ porque puede darse el problema de 
+\begin_inset Quotes eld
+\end_inset
+
+la parálisis por el análisis
+\begin_inset Quotes erd
+\end_inset
+
+ que ocurre cuando se pasa de no tener ninguna información a contar con
+ decenas de indicadores y una de las características del entorno competitivo
+ actual es que se deben tomar decisiones de forma rápida y antes de que
+ lo hagan los demás competidores
 \begin_inset CommandInset citation
 LatexCommand cite
 key "CMR13"
@@ -278,27 +322,14 @@ key "CMR13"
 \end_layout
 
 \begin_layout Standard
-Un cuadro de gestión o de mando no debe excederse en la cantidad de KPI,
- porque puede darse el problema de 
-\begin_inset Quotes eld
-\end_inset
-
-la parálisis por el análisis
-\begin_inset Quotes erd
-\end_inset
-
- que ocurre cuando se pasa de no tener ninguna información a contar con
- decenas de indicadores y una de las caracteristicas del entorno competitivo
- actual es que se deben tomar decisiones de forma rápida y antes de que
- lo hagan los demás competidores
-\begin_inset CommandInset citation
-LatexCommand cite
-key "BICCI07"
-
-\end_inset
-
-.
- 
+En la siguiente sección haremos uso de los conceptos, herramientas y tecnologías
+ que nos provee Business Intelligence para modelar el problema de estudio
+ sobre pronóstico de la demanda.
+ Iniciaremos con una breve descripción de la fuente de información, el proceso
+ ETL (Extracción, Transformación y Carga), la especificación del datawarehouse,
+ la definición de los indicadores clave de rendimiento y finalmente el etiquetad
+o a cada tupla de indicadores que se transformarán en datos de entrada para
+ el proceso aprendizaje automático.
 \end_layout
 
 \begin_layout Subsection
@@ -306,8 +337,17 @@ Planteamiento del problema
 \end_layout
 
 \begin_layout Standard
-Esta sección se enfoca y analiza uno de los principales problemas con los
- que se enfrentan las empresas retail
+Esta sección se centra en los tres primeros componentes de Business Intelligence
+ siguiendo el proceso de modelado dimensional
+\begin_inset CommandInset citation
+LatexCommand cite
+key "KIM92"
+
+\end_inset
+
+.
+ En cada paso se describe el modelado de la solución de uno de los principales
+ problemas con los que se enfrentan las empresas retail
 \begin_inset Foot
 status collapsed
 
@@ -320,27 +360,18 @@ Una empresa retail es cualquier comercio que vende sus productos al consumidor
 
 \end_inset
 
-, la cual trata acerca de la reposición de stock
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-Stock o existencia es la cantidad de un determinado producto almacenado
- o disponible para la venta.
- 
-\end_layout
-
-\end_inset
-
-, es decir, determinar la cantidad de productos que se deben comprar para
- satisfacer la demanda de los clientes.
- Utilizando conceptos y herramientas de Bussines Intelligence, se define
- y se diseña el datawarehouse donde son almacenados los datos históricos
- que servirán para el análisis, posteriormente se definen los indicadores
- claves de rendimiento como métricas que sirven como datos de entrada de
- las herramientas de aprendizaje automático para crear un modelo de predicción
- de la cantidad a comprar para la reposición del stock.
- 
+, la cual trata acerca de pronosticar la demanda del siguiente periodo,
+ es decir, determinar la cantidad de productos que se deben diponer para
+ satisfacer la demanda de los clientes en el siguiente periodo.
+ Utilizando los conceptos y herramientas de Bussines Intelligence, se parte
+ con el análisis de una fuente de información real obtenida de una empresa
+ retail; se diseña el datawarehouse que será poblado con información de
+ las transacciones operacionales diarias del negocio que luego servirán
+ para el análisis; posteriormente se definen los indicadores claves de rendimien
+to como métricas, se calculan los valores de los indicadores con los datos
+ almacenados en el dataware para cada periodo de tiempo establecido y se
+ asigna una etiqueta a cada tupla de valores KPI que finalmente servirán
+ como parámetros de entrada de las herramientas de aprendizaje automático
 \end_layout
 
 \begin_layout Subsubsection
@@ -348,11 +379,17 @@ Fuente de Información
 \end_layout
 
 \begin_layout Standard
-Para el presente trabajo, contamos con una base de datos real con los registros
- de productos, proveedores, movimientos de compras, ventas y registro de
- stock realizados por una empresa retail.
- Los datos corresponden a movimientos realizados entre el año 2013 al 2016,
- el cual será el punto de partida para diseñar el datawarehouse.
+Para el presente trabajo, se cuenta con una base de datos relacional Oracle
+ 10g con las operaciones transaccionales de una empresa retail dedicada
+ a la venta de productos alimenticios y articulos de limpieza, algunas de
+ las lineas de productos con que cuenta la empresa son: aceites corporales,
+ acondicionadores, aromatizantes, cuidado corporal, desodorantes, limpiadores,
+ salud e higiene, salud y belleza, aguas, gaseosas, cervezas, vinos, chocolates,
+ galletitas, enlatados, lacteos, yerbas y varias lineas de productos más.
+ La base de datos almacena datos de la operaciones comprendidas entre los
+ periodos de noviembre del 2013 a octubre de 2016.
+ A continuación una reseña de las principales tablas tenidas en cuenta para
+ el diseño del dataware.
 \end_layout
 
 \begin_layout Itemize
@@ -360,7 +397,9 @@ Para el presente trabajo, contamos con una base de datos real con los registros
 \series bold
 Tabla de Productos
 \series default
-: Lista articulos registrados disponibles para la venta.
+: almacena información como descripción, costo, precio de venta, categoría
+ de los articulos disponibles para la venta, cuenta con 13.200 artículos
+ registrados.
 \end_layout
 
 \begin_layout Itemize
@@ -368,7 +407,8 @@ Tabla de Productos
 \series bold
 Tabla Proveedores
 \series default
-: Lista de proveedores.
+: almacena información como descripción, dirección, ruc de los proveedores
+ de la empresa, cuenta con 1.623 proveedores registrados.
 \end_layout
 
 \begin_layout Itemize
@@ -376,10 +416,10 @@ Tabla Proveedores
 \series bold
 Tabla de Ventas Cabecera
 \series default
-: La tabla de ventas cabecera es una de las tablas principales donde se
- registran los movimientos de ventas de la empresa retail.
- Contiene datos de la fecha, número de factura, cliente, montos totales
- entre otros datos.
+: es una de las tablas principales donde se registran los movimientos de
+ ventas de la empresa.
+ Contiene información como número de factura, fecha, cliente, montos totales,
+ cuenta con 301.316 registros de ventas
 \end_layout
 
 \begin_layout Itemize
@@ -387,14 +427,35 @@ Tabla de Ventas Cabecera
 \series bold
 Tabla de Ventas Detalle
 \series default
-: La tabla de ventas detalle contiene los registros de los productos que
- fueron comercializados, cada detalle esta relacionado a un registro cabecera.
+: contiene los registros de los productos que fueron comercializados, cada
+ detalle está relacionado a un registro de venta cabecera.
  Contiene datos de la fecha, el producto, precio de costo, precio de venta,
- cantidad y otros datos.
+ cantidad y otros datos, cuenta con 981.402 registros.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Tabla de Movimientos de Stock:
+\series default
+ contiene los registros de movimientos de stock de ventas y compras detallado.
+ Contiene datos de fecha, producto, cantidad, tipo de movimiento, costo,
+ cuenta con 1.062.440 registros.
 \end_layout
 
 \begin_layout Subsubsection
-Proceso de Extracción, transformación y Carga.
+Proceso ETL.
+\end_layout
+
+\begin_layout Standard
+Durante el proceso ETL se realizó la limpieza y transformación de los datos
+ de origen, en la tabla de Productos se detectaron artículos con datos de
+ proveedor nulo al cual se asignó un proveedor por defecto de la tabla dimension
+al de proveedores, artículos que tenían costo cero, en tal caso dichos valores
+ eran asignados con un costo promedio tomados de la tabla de Ventas Detalle
+ en caso de ocurrencia, de igual manera en la tabla de Ventas Detalle se
+ detectaron registros donde los valores de costo eran iguales a cero, los
+ cuales eran modifcados por el costo promedio del producto.
 \end_layout
 
 \begin_layout Subsubsection
@@ -402,8 +463,15 @@ Datawarehouse
 \end_layout
 
 \begin_layout Standard
-El datawarehouse para el modelado se diseña a partir de la definición de
- las tablas de hechos y dimensiones utilizando el esquema en estrella.
+El datawarehouse se diseña a partir de la definición de las tablas de hechos
+ y dimensiones utilizando el modelo de esquema en estrella 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "KIM92"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -424,7 +492,7 @@ Tabla de hechos Cabecera:
  almacena los datos históricos de las ventas, cada registro guarda datos
  de: fecha, cliente, caja, número de factura y montos totales.
  Las métricas de la tabla de hechos son monto total, monto exento, monto
- gravado, monto gravado 5% y monto gravado 10%.
+ gravado IVA.
  
 \end_layout
 
@@ -509,16 +577,57 @@ Dimensión Cajas:
  datos al realizar consultas sobre la tabla de hechos.
 \end_layout
 
+\begin_layout Standard
+En la siguiente figura observamos un ejemplo del modelo en esquema estrella
+ de la tabla de hechos Detalles.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/DER_BI_DW_FACT_DETALLES.png
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tabla de hechos Detalles
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsubsection
 Definición de los KPI
 \end_layout
 
 \begin_layout Standard
 En el marco de esta tesis, en esta sección se definirán los KPI que se utilizará
-n en el modelado para la 
+n en el modelado para 
 \lang spanish
-estimación de cantidades eficientes en las órdenes de compra de productos
- para la reposición de stock
+el pronóstico de la demanda y la reposición de stock
 \lang english
  del siguiente periodo de tiempo
 \begin_inset CommandInset citation
@@ -527,13 +636,10 @@ key "CMR13"
 
 \end_inset
 
- (Ej.: cantidad a comprar la satisfacer la demanda de la siguiente semana,
+ (Ej.: cantidad a comprar para satisfacer la demanda de la siguiente semana,
  quincena, o mes).
-\end_layout
-
-\begin_layout Standard
-Cada KPI mide un valor obtenido de los datos históricos almacenados en el
- datawarehouse.
+ Cada KPI mide un valor obtenido de los datos históricos almacenados en
+ el datawarehouse.
  El cálculo de cada valor se realiza para cada producto y en un periodo
  de tiempo (semanal, quincenal o mensual), es decir, cada producto tendrá
  un valor distinto para cada uno de los KPI citados a continuación.
@@ -681,6 +787,10 @@ Definidos los KPI a ser utilizados, obtenemos los valores de cada KPI para
  anterior y almacenamos la información de los resultados en la base de datos.
  Además de los valores de los KPI, en cada registro adicionalmente se guarda
  la información de la cantidad, fecha, año, mes, quincena y semana.
+ Para el cálculo de los valores de los KPI se establecieron restricciones,
+ que si un producto no fuese vendido por una cantidad consecutiva de periodos
+ esta era descartada, ya que los valores de los calculos para cada KPI daban
+ cero el cual no tiene relevancia para el modelado.
 \end_layout
 
 \begin_layout Standard
@@ -1844,8 +1954,46 @@ Una vez finalizado el etiquetado de la totalidad de las tuplas de KPI por
  quincenal, mensual) que tiene como nombre el Identificador del producto
  y que contiene los valores de los resultados para los KPI.
  Estos archivos son los datos que sirven como entrada para crear el modelo
- de estimación de compra eficiente para la reposicion de stock mediante
- algoritmos de aprendizaje automático
+ de pronóstico para la reposición de stock mediante algoritmos de aprendizaje
+ automático.
+\end_layout
+
+\begin_layout Standard
+En la figura a continuación un ejemplo del etiquetado para los valores de
+ los KPI correspondientes al periodo semanal.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/5_semanal.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Etiquetado de KPI del periodo semanal
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
