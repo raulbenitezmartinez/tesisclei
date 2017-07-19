@@ -405,9 +405,9 @@ e resulta ingenuo elegir un solo valor de toda la serie.
  en el más fiable.
  Recomendable para series de tiempo inestables.
 \begin_inset Formula 
-\[
+\begin{equation}
 Pronóstico=último\;valor
-\]
+\end{equation}
 
 \end_inset
 
@@ -421,9 +421,9 @@ El método de pronóstico por promedios: En este caso se utilizan todos los
  Recomendable para series de tiempo estables, razón por la cual todos los
  valores tienen el mismo peso y son considerados relevantes.
 \begin_inset Formula 
-\[
+\begin{equation}
 Pronóstico=promedio\;de\;todos\;los\;datos\;hasta\;la\;fecha
-\]
+\end{equation}
 
 \end_inset
 
@@ -445,9 +445,9 @@ El método de pronóstico de promedio móvil: Consiste en considerar solamente
 
  valores que tienen el mismo peso y que son considerados relevantes.
 \begin_inset Formula 
-\[
+\begin{equation}
 Pronóstico=promedio\;de\;los\;últimos\;n\;valores
-\]
+\end{equation}
 
 \end_inset
 
@@ -467,9 +467,9 @@ El método de pronóstico por suavizamiento exponencial: Con este método se
  combinación del último valor de la serie y del valor pronosticado para
  este mencionado último valor.
 \begin_inset Formula 
-\[
+\begin{equation}
 Pronóstico=\alpha\left(último\;valor\right)+\left(1\text{-}\alpha\right)\left(último\;pronóstico\right)
-\]
+\end{equation}
 
 \end_inset
 
@@ -509,25 +509,25 @@ constante de suavizamiento
 \begin_layout Itemize
 El método de suavizamiento exponencial con tendencia:
 \begin_inset Formula 
-\[
+\begin{equation}
 Pronóstico=\alpha\left(último\;valor\right)+\left(1\text{-}\alpha\right)\left(último\;pronóstico\right)+Tendencia\;estimada
-\]
+\end{equation}
 
 \end_inset
 
 
 \begin_inset Formula 
-\[
+\begin{equation}
 Tendencia\;estimada=\beta\left(última\;tendencia\right)\left(1\text{-}\beta\right)\left(estimación\;anterior\right)
-\]
+\end{equation}
 
 \end_inset
 
 
 \begin_inset Formula 
-\[
+\begin{equation}
 última\;tendencia=\alpha\left(último\;valor-penúltimo\;valor\right)+\left(1\text{-}\alpha\right)\left(último\;pronóstico-penúltimo\;pronóstico\right)
-\]
+\end{equation}
 
 \end_inset
 
@@ -601,9 +601,9 @@ regresión lineal
 
 \lang spanish
 \begin_inset Formula 
-\[
+\begin{equation}
 y=a+bx
-\]
+\end{equation}
 
 \end_inset
 
@@ -696,9 +696,9 @@ mínimos cuadrados
 
 \lang spanish
 \begin_inset Formula 
-\[
+\begin{equation}
 y=a+b_{1}x_{1}+b_{2}x_{2+...+}b_{n}x_{n}
-\]
+\end{equation}
 
 \end_inset
 
@@ -744,9 +744,9 @@ Desviación Absoluta Media (MAD)
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
+\begin{equation}
 MAD=\frac{suma\;de\;los\;errores\;de\;pronóstico}{número\;de\;pronósticos}
-\]
+\end{equation}
 
 \end_inset
 
@@ -763,9 +763,9 @@ Error Cuadrático Promedio (MSE)
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
+\begin{equation}
 MSE=\frac{suma\;de\;los\;cuadrados\;de\;los\;errores\;de\;pronóstico}{número\;de\;pronósticos}
-\]
+\end{equation}
 
 \end_inset
 

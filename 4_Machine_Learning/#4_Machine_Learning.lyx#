@@ -856,22 +856,32 @@ Fast decision tree learner.
 \end_layout
 
 \begin_layout Subsection
-Evaluación de lo aprendido
+Evaluación del aprendizaje
 \end_layout
 
 \begin_layout Standard
 La evaluación es la clave para lograr avances reales en el aprendizaje automátic
 o.
- Entre las técnicas de evaluación se destaca la Validación Cruzada (Cross-Valida
-tion) que consiste dividir los datos en un número de pliegues o particiones.
- Si por ejemplo elegimos cuatro, entonces cada partición se utiliza para
- las pruebas y las demás para el entrenamiento, al repetir este proceso
- 4 veces se consigue que cada partición se haya utilizado una vez como conjunto
- de pruebas.
- La técnica estándar para predecir la tasa de error es la Validación Cruzada
- Estratificada (Stratified k-fold Cross-Validation).
- La estratificación se refiere al proceso de reorganizar los datos de tal
- manera a asegurar que cada pliegue sea una buena representación del conjunto.
+ Entre las técnicas de evaluación se destacan la Validación Cruzada (Cross-Valid
+ation) y la Validación Cruzada k-pliegues Estratificado (Stratified k-fold
+ Cross-Validation).
+ 
+\end_layout
+
+\begin_layout Standard
+La técnica de Cross-Validation consiste en dividir los datos en un número
+ de pliegues o particiones, si por ejemplo elegimos cuatro, entonces cada
+ partición se utiliza para las pruebas y las demás para el entrenamiento,
+ al repetir este proceso 4 veces se consigue que cada partición se haya
+ utilizado una vez como conjunto de pruebas.
+ 
+\end_layout
+
+\begin_layout Standard
+La técnica estándar para predecir la tasa de error es Stratified k-fold
+ Cross-Validation, donde la estratificación se refiere al proceso de reorganizar
+ los datos de tal manera a asegurar que cada pliegue sea una buena representació
+n del conjunto.
  Comúnmente se acepta que 10 es el número de pliegues con el que se obtiene
  la mejor estimación de error, idea basada en diversas pruebas sobre conjuntos
  de datos diferentes y para distintas técnicas de aprendizaje 
@@ -895,11 +905,14 @@ Otra técnica es el Porcentaje de División (Percentage Split) con el que
 \end_layout
 
 \begin_layout Subsection
-Métricas de precisión
-\end_layout
+Métricas de desempeño 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "DM2011"
 
-\begin_layout Standard
-Métricas de desempeño
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -973,14 +986,6 @@ Kappa se utiliza para medir el acuerdo entre la predicción y la observación
 
 \shape default
 .
- 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "DM2011"
-
-\end_inset
-
-.
  Si los evaluadores están totalmente de acuerdo, entonces Kappa alcanza
  su valor máximo y es igual a 1.
  Si no hay total acuerdo entre los evaluadores, entonces Kappa tiene un
@@ -1019,18 +1024,7 @@ nte cada categoría.
 \begin_layout Subsubsection
 Sensibilidad (Recall): Calcula la sensibilidad con respecto a una clase
  en particular, esto se define como: positivos correctamente clasificados
- / positivos totales
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset citation
-LatexCommand cite
-key "DM2011"
-
-\end_inset
-
-.
+ / positivos totales.
 \end_layout
 
 \begin_layout Standard
@@ -1047,14 +1041,7 @@ Recall=\frac{TP}{TP+FN}
 \begin_layout Subsubsection
 Precisión (Precision): Calcula la precisión con respecto a una clase en
  particular, esto se define como: positivos correctamente clasificados /
- total predicho como positivo 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "DM2011"
-
-\end_inset
-
-.
+ total predicho como positivo.
 \end_layout
 
 \begin_layout Standard
@@ -1073,14 +1060,7 @@ Puntuación-F (F-Measure): La Puntuación-F es una medida de la exactitud
  de una prueba.
  La Puntuación-F puede interpretarse como un promedio ponderado de la precisión
  y sensibilidad, donde alcanza su mejor valor en 1 y el peor en 0.
- Se define como: 2 * Recall * Precision / (Recall + Precision) 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "DM2011"
-
-\end_inset
-
-.
+ Se define como: 2 * Recall * Precision / (Recall + Precision).
 \end_layout
 
 \begin_layout Standard
