@@ -650,7 +650,9 @@ key "CMR13"
 \end_inset
 
  (Ej.: cantidad a comprar para satisfacer la demanda de la siguiente semana,
- quincena, o mes).
+ quincena, o mes), estos KPI fueron adaptados a la solución planteada debido
+ a que en los textos los KPI difinidos engloban a todas las áreas de la
+ organización como compras, ventas, marketing, recursos humanos.
  Cada KPI mide un valor obtenido de los datos históricos almacenados en
  el datawarehouse.
  El cálculo de cada valor se realiza para cada producto y en un periodo

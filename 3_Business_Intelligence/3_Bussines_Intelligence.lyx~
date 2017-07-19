@@ -821,10 +821,10 @@ A cada tupla de valores KPI obtenidos para cada producto se le debe asignar
  el modelado mediante el aprendizaje automático.
  Para una mayor fiabilidad esta asignación de etiquetas debe ser realizada
  y revisada por el experto del área de compras (que podría ser el gerente
- de administración compras u otra persona a cargo de la reposición de stock),
- sin embargo para el presente trabajo el etiquetado fue realizado en forma
- empírica, sin la intervención de un experto por la dificultad de contar
- con una persona especialidaza en el área.
+ de administración de compras u otra persona a cargo de la reposición de
+ stock), sin embargo para el presente trabajo el etiquetado fue realizado
+ en forma empírica, sin la intervención de un experto por la dificultad
+ de contar con una persona especializada en el área.
  La estrategia utilizada para el etiquedato es de la siguiente manera:
 \end_layout
 
