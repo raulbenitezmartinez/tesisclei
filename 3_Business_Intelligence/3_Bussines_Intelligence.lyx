@@ -2024,5 +2024,12 @@ s en el dataware y el etiquetado a cada tupla de valores KPI, estos datos
  de estudio planteado de pronóstico de la demanda.
 \end_layout
 
+\begin_layout Standard
+En cuanto a las limitaciones de este nuevo modelo se pueden mencionar que
+ no toma en cuenta los costes relacionados al inventario como lo son costes
+ de mantenimiento, de personal, seguros, etc, el modelo se aplica a empresas
+ retail dedicadas a las venta de productos terminados.
+\end_layout
+
 \end_body
 \end_document

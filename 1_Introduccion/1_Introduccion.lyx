@@ -85,19 +85,16 @@ En las empresas retail o de ventas minoristas uno de los principales problemas
  cual conlleva a pérdidas de oportunidades de ventas por no disponer del
  producto que puede generar insatisfacción de los clientes y a su vez repercute
  en las utilidades de la empresa.
- Uno de los mayores desafíos de las empresas es la de estimar o predecir
- la cantidad de ventas para el próximo periodo de tiempo.
+ Uno de los mayores desafíos en empresas de este sector es pronosticar las
+ ventas para el próximo periodo comercial.
 \end_layout
 
 \begin_layout Standard
 
 \lang spanish
-Actualmente en el proceso de gestión de compras en empresas como las retail,
- se utilizan algunas de las técnicas de pronósticos para determinar las
- cantidades de las órdenes de compra, las cuales pueden estar basadas en
- pronósticos cuantitativos o cualitativos.
- Los modelos de cantidad fija y los modelos de periodo fijo son ampliamente
- utilizados.
+Actualmente en el proceso de gestión de compras se utilizan ciertas técnicas
+ de pronósticos para determinar las cantidades de las órdenes de compra,
+ dichas técnicas pueden ser cuantitativas o cualitativas.
  Independientemente de la técnica elegida, el problema real de los pronósticos
  es su falta de confiabilidad, ya que por lo general no son precisos, entonces,
  la interrogante que siempre surge es si serán superiores o inferiores a
@@ -107,9 +104,10 @@ Actualmente en el proceso de gestión de compras en empresas como las retail,
 \begin_layout Standard
 
 \lang spanish
-Con el presente trabajo se elabora un nuevo modelo de estimación de cantidades
- eficientes en las órdenes de compra de productos para la reposición de
- stock del siguiente periodo de venta.
+Con el presente trabajo se plantea una nueva técnica para estimar los volúmenes
+ de ventas del siguiente periodo comercial, luego esta estimación servirá
+ de apoyo en la toma de decisión de la cantidad establecida en las órdenes
+ de compras para la reposición de stock.
  En este nuevo modelo se integran técnicas de Business Intelligence y Machine
  Learning.
 \end_layout
@@ -129,32 +127,24 @@ En la etapa de Business Intelligence el objetivo principal es calcular los
 \begin_layout Standard
 
 \lang spanish
-En la etapa de Machine Learning se utiliza como entrada las series de KPI
- obtenidos en la etapa de Business Intelligence y que constituyen las instancias
- que alimentan los distintos algoritmos de clasificación de Machine Learning
- supervisado.
+En la etapa de Machine Learning se utilizan como entrada las series de KPI
+ obtenidas en la etapa anterior de Business Intelligence y constituyen las
+ instancias que alimentan los distintos algoritmos de clasificación del
+ aprendizaje supervisado implementado.
  Luego tienen lugar los procesos propios de esta etapa que son el entrenamiento
  y testeo para finalmente evaluar los distintos desempeños a fin de determinar
- los algoritmos más adecuados que serán utilizados para estimar las cantidades
- de las ordenes de compra por cada producto.
-\end_layout
-
-\begin_layout Standard
-En cuanto a las limitaciones de este nuevo modelo se puede mencionar que
- no toma en cuenta los costes relacionados al inventario: como costes de
- mantenimiento, de personal, seguros, etc.
- El modelo planteado se aplica a empresas retail dedicadas a las venta de
- productos terminados.
+ los algoritmos más adecuados que serán utilizados para pronosticar las
+ ventas futuras.
 \end_layout
 
 \begin_layout Standard
 
 \lang spanish
-En la segunda sección se abordan los conceptos de Administración de Compras.
- En la tercera sección se definen los conceptos de Business Intelligence
- y su modelado del problema.
- La cuarta sección aborda los conceptos de Machine Learning.
- En la quinta sección se realiza el modelado con Machine Learning y se analizan
+En la segunda sección se abordan los conceptos de Pronóstico de la Demanda.
+ En la tercera sección se definen conceptos de Business Intelligence y la
+ primera fase de modelado del problema.
+ En la cuarta sección se abordan conceptos de Machine Learning, en la quinta
+ sección se implementa la segunda fase del modelado del problema y se analizan
  los resultados experimentales.
  En la última sección se realiza la conclusión general.
 \end_layout

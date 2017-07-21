@@ -188,17 +188,17 @@ Antes de realizar una compra surgen las siguientes preguntas:
 Para responder a estas preguntas actualmente se tienen las técnicas de pronóstic
 os de demanda entre las que se destacan los 
 \emph on
-Modelos de Pronóstico Cualitativo
+Métodos de Pronósticos Cualitativos
 \emph default
  y los 
 \emph on
-Modelos de Pronóstico Cuantitativo
+Métodos de Pronósticos Cuantitativo
 \emph default
-.
+s.
 \end_layout
 
 \begin_layout Subsection
-Modelos de pronóstico cualitativo 
+Métodos de pronósticos cualitativos 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "GPO2011"
@@ -260,7 +260,7 @@ Analogía de productos similares: Se basa en el comportamiento de las ventas
 \end_layout
 
 \begin_layout Subsection
-Métodos de pronóstico cuantitativo
+Métodos de pronósticos cuantitativos
 \end_layout
 
 \begin_layout Standard
@@ -300,7 +300,7 @@ key "MCN2011"
 El pronóstico de la demanda de productos es sólo una aplicación importante
  de estos métodos.
  En otros casos, los pronósticos se podrían utilizar para evaluar los requerimie
-ntos de cantidades tan diversas como las partes de repuesto, el rendimiento
+ntos de cantidades tan diversas como las partes de repuestos, el rendimiento
  de la producción y las necesidades de personal.
  Las técnicas de pronóstico se usan también frecuentemente para anticipar
  las tendencias económicas a nivel regional, nacional o incluso internacional
@@ -315,7 +315,7 @@ key "MCA2008"
 \end_layout
 
 \begin_layout Standard
-En general, los métodos cuantitativos se clasifican en métodos de series
+En general, los métodos cuantitativos se clasifican en técnicas de series
  de tiempo y en pronósticos causales.
 \end_layout
 
@@ -347,7 +347,7 @@ key "MCA2008"
 \end_layout
 
 \begin_layout Standard
-El objetivo del modelo es obtener una buena predicción del valor futuro
+El objetivo del método es obtener una buena predicción del valor futuro
  de la variable a pronosticar, enmarcado por supuesto en la serie de tiempo.
  Para lograr el objetivo, el modelo debe descubrir el patrón dentro de la
  serie y luego ser capaz de extrapolarlo hacia el futuro 
@@ -364,9 +364,9 @@ key "MCN2011"
 
 \begin_layout Standard
 Si bien el volumen de ventas es un buen indicador de la historia de la demanda,
- no toma en cuenta muchos aspectos del proceso entero de ventas.
- como pueden ser la ruptura de stock, plazos de reposición de stock, precio
- del producto, la incidencia del marketing u otros.
+ no toma en cuenta muchos aspectos del proceso entero de ventas, como pueden
+ ser la ruptura de stock, plazos de reposición de stock, precio del producto,
+ la incidencia del marketing u otros.
  De igual modo se pueden descubrir tendencias, estacionalidad, ciclos, etc
  en la historia de la demanda para luego extrapolarlo a un tiempo futuro.
  También hay que destacar que el intervalo del muestreo tiene mucha influencia
@@ -381,7 +381,7 @@ key "MTPD20017"
 \end_layout
 
 \begin_layout Standard
-En general, los métodos de series de tiempo se clasifican en el método de
+En general, los métodos de series de tiempo se clasifican en: método de
  pronóstico del último valor, método de pronóstico por promedios, método
  de pronóstico de promedio móvil, método de pronóstico por suavizamiento
  exponencial, método de suavizamiento exponencial con tendencia y el método
@@ -398,7 +398,7 @@ key "MCA2008"
 \begin_layout Itemize
 El método de pronóstico del último valor: Este método utiliza solo el último
  valor de la serie de tiempo como pronóstico del valor futuro.
- Tambien es conocido como método ingenuo, porque sin mucho análisis aparentement
+ También es conocido como método ingenuo, porque sin mucho análisis aparentement
 e resulta ingenuo elegir un solo valor de toda la serie.
  Pero en ocasiones sí es una buena aproximación, como por ejemplo cuando
  hay demasiada fluctuación en la serie y entonces el último valor se convierte
@@ -495,7 +495,7 @@ constante de suavizamiento
 \end_inset
 
 , y para series de tiempo inestables valores mayores.
- Es general en aplicaciones de hoy en día utilizan valores entre 
+ En general en aplicaciones de hoy en día se utilizan valores entre 
 \begin_inset Formula $0.1$
 \end_inset
 
@@ -578,9 +578,9 @@ Ciertamente las series de tiempo se basan en un solo indicador clave, como
 El pronóstico causal obtiene una proyección de la cantidad de interés (la
  variable dependiente) relacionándola directamente con una o más cantidades
  (las variables independientes) que impulsan la cantidad de interés.
- Por ejemplo, las ofertas sobre uno o varios productos pueden ser la causa
- de una mayor cantidad de ventas en dichos artículos, como tal tenemos una
- relación causa (ofertas)-efecto (mayores ventas).
+ Por ejemplo, las promociones sobre uno o varios productos pueden ser la
+ causa de una mayor cantidad de ventas en dichos artículos, como tal tenemos
+ una relación causa (promociones)-efecto (mayores ventas).
 \end_layout
 
 \begin_layout Standard
@@ -688,7 +688,7 @@ mínimos cuadrados
 
  tal que la suma del cuadrado de los errores de estimación sea la menor
  posible.
- Para problemas donde se consideran varios indicadores clave com variables
+ Para problemas donde se consideran varios indicadores clave como variables
  independiente, la ecuación presenta la siguiente forma:
 \end_layout
 
@@ -780,37 +780,54 @@ El resultado de esta fórmula pone de relieve los errores grandes de pronóstico
 \end_layout
 
 \begin_layout Subsection
-Relación con el problema de estudio (ESTE ME FALTA HACER)
+Relación con el problema de estudio
 \end_layout
 
 \begin_layout Standard
-En el proceso de compras el caso ideal por supuesto sería poder adivinar
- la cantidad que se va a vender en el siguiente periodo de venta (puede
- ser para el siguiente período semanal, quincenal, mensual, trimestral o
- semestral, etc.), y esto por cada producto que disponibilizamos para la
- venta.
- En este caso al término de cada periodo de venta se dispondría de stock
- cero, con lo cual se llega a una máxima eficiencia en compras.
- Adivinar es imposible, pero lo que si se puede hacer es estimar eficientemente
- la cantidad o volumen a vender.
+Esta sección pretendió dar a conocer las técnicas de pronósticos de demanda
+ ampliamente conocidas y estudiadas en los diferentes textos consultados
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "AdminCyA"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "GPO2011"
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand citet
+key "MCA2008"
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "MCN2011"
+
+\end_inset
+
+.
+ Si bien el presente trabajo también busca encontrar una estimación de pronóstic
+o como lo hacen las técnicas de esta sección, debe quedar claro que la solución
+ propuesta es una alternativa distinta, es decir, no se trata de un método
+ cuantitativo o cualitativo propiamente dicho, sin embargo toma ciertos
+ aspectos de ambos y se implementa con conceptos, tecnologías y herramientas
+ de solución totalmente diferentes.
 \end_layout
 
 \begin_layout Standard
-Del por qué la importancia de estimar de forma correcta esta cantidad o
- volumen, los expertos en negocios explican que los productos parados en
- stock mientras no se vendan es dinero en estantería, además que generan
- sobrecostos de mantenimiento como seguros, personal encargado, fecha de
- vencimiento de los productos, etc.
- Otro hecho no deseado es la ruptura de stock, es decir el no disponer de
- un producto en stock cuando haya clientes interesados en comprarlo, lo
- cual también es considerado pérdida para la empresa.
- Lo que se desea es mantener un nivel de stock óptimo, es decir, por una
- parte tener suficiente cantidad para satisfacer la demanda sin caer en
- roturas de stock y, por otra, evitar que haya un exceso inútil del mismo.
- Si bien el presente trabajo no está enfocado en medir los costos, lo que
- sí se busca es comprar de forma eficiente utilizando las herramientas de
- business intelligence y machine learning que ayudan a estimar lo que se
- va a vender en el siguiente periodo.
+En las secciones tres y cuatro se combinan los conceptos, herramientas y
+ tecnologías que modelan la solución de esta nueva técnica de pronóstico.
+ En la sección quinta se realizan las experimentaciones en base al caso
+ de estudio y se evaluan los resultados obtenidos.
 \end_layout
 
 \end_body

@@ -93,7 +93,7 @@
 \begin_layout Title
 
 \lang english
-Técnica de previsión de la demanda basada en Business Intelligence y Machine
+Técnica de pronóstico de la demanda basada en Business Intelligence y Machine
  Learning
 \end_layout
 
@@ -181,22 +181,26 @@ target "vazquez.aditardo@gmail.com"
 \begin_layout Abstract
 
 \lang english
-La gestión de compras en empresas retail supone uno de los procesos más
- importantes que tiene un impacto económico en toda la organización.
- Dentro de la gestión de compras, una decisión que regularmente debe tomarse
- es acerca del volumen a adquirir de un producto determinado para así reponer
- el stock, o si realmente hay que seguir adquiriendo dicho producto.
- En este trabajo se propone un modelo que ayuda a tomar las decisiones del
- volumen de compra de productos disponibilizados para la venta, a través
- de técnicas de Business Intelligence y Machine Learning integradas.
- Los experimentos indican que se puede automatizar la compra de productos
- para reposición de stock a través del modelo propuesto en este trabajo.
+Pronosticar ciertos eventos constituye una actividad por la cual el ser
+ humano siempre sintió fascinación y necesidad de realizarlo.
+ En la actualidad, uno de esos eventos se relacionan con las empresas y
+ consiste en pronosticar la demanda de ventas para un período futuro, a
+ su vez representa uno de los más importantes retos con que se enfrenta
+ una organización.
+ Este pronóstico de demanda disminuirá la incertidumbre del Gerente de Compras
+ en el momento de tomar decisiones acerca del volumen de productos a adquirir
+ para la reposición de stock.
+ Este trabajo propone una nueva técnica de pronósticos basada en la integración
+ de herramientas de Business Intelligence y Machine Learning.
+ Los experimentos indican que el modelo propuesto alcanza resultados prometedore
+s y esta nueva técnica puede transformarse en una sólida herramienta de
+ apoyo para la toma de decisiones.
 \end_layout
 
 \begin_layout Keywords
 
 \lang american
-retail, compras, business intelligence, machine learning.
+Pronóstico, Retail, Compras, Business Intelligence, KPI, Machine Learning.
 \end_layout
 
 \begin_layout Standard
