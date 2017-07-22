@@ -990,8 +990,8 @@ Kappa se utiliza para medir el acuerdo entre la predicción y la observación
 
 \shape default
 .
- Si los evaluadores están totalmente de acuerdo, entonces Kappa alcanza
- su valor máximo y es igual a 1.
+ Si los evaluadores están totalmente de acuerdo Kappa alcanza su valor máximo
+ igual a 1.
  Si no hay total acuerdo entre los evaluadores, entonces Kappa tiene un
  valor 
 \begin_inset Formula $<1$

@@ -25,9 +25,9 @@ Es un modelo parametrizado:
 SEGUN EL REVISOR B
 
 Referentes a Business Intelligence:
-* Tipo de producto minorista vendido (nombrar la familia de productos)
-* Proceso de BI (Base de datos, cantidad de registros por tabla, relacional, transaccional, Oracle/Datawarehouse, tabla de hechos, dimensiones/KPI)
-* Nombrar que es un supermercado, años de los datos.
+* Tipo de producto minorista vendido (nombrar la familia de productos) OK
+* Proceso de BI (Base de datos, cantidad de registros por tabla, relacional, transaccional, Oracle/Datawarehouse, tabla de hechos, dimensiones/KPI) OK
+* Nombrar que es un supermercado, años de los datos. OK
 * Analizar el impacto de simplificar el problema original (definir la compra de producto) al problema de etiquetado (nada, poco, medio, ...)
 
 Referentes a Machine Learning y a la Experimentacion:

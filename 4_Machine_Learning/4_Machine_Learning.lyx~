@@ -931,9 +931,13 @@ Para predecir el rendimiento de un clasificador en nuevos datos, necesitamos
  evaluar su tasa de error en un conjunto de datos que no desempeñó ningún
  papel en la formación del clasificador.
  Este conjunto de datos independiente se denomina conjunto de pruebas.
- En tales situaciones, la gente suele hablar de tres conjuntos de datos:
- los datos de entrenamiento, los datos de validación y los datos de prueba.
- Los datos de entrenamiento son utilizados por uno o más esquemas de aprendizaje
+ En tales situaciones se suele hablar de tres conjuntos de datos: los datos
+ de entrenamiento, los datos de validación y los datos de prueba.
+ 
+\end_layout
+
+\begin_layout Standard
+Los datos de entrenamiento son utilizados por uno o más esquemas de aprendizaje
  para conocer clasificadores.
  Los datos de validación se utilizan para optimizar los parámetros de los
  clasificadores, o para seleccionar uno determinado.
@@ -986,8 +990,8 @@ Kappa se utiliza para medir el acuerdo entre la predicción y la observación
 
 \shape default
 .
- Si los evaluadores están totalmente de acuerdo, entonces Kappa alcanza
- su valor máximo y es igual a 1.
+ Si los evaluadores están totalmente de acuerdo Kappa alcanza su valor máximo
+ igual a 1.
  Si no hay total acuerdo entre los evaluadores, entonces Kappa tiene un
  valor 
 \begin_inset Formula $<1$

@@ -191,9 +191,8 @@ Entrenamiento y evaluación
 
 \begin_layout Standard
 Como se mencionó en el esquema general de procesamiento, el entrenamiento
- y testeo se realiza con todos los algoritmos de clasificación posibles,
- para ello se utiliza la herramienta WEKA y los algoritmos de clasificación
- que implementa según la tabla 
+ y testeo se realiza con todos los algoritmos de clasificación posibles.
+ proveídos por la herramienta WEKA 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:algoritmosWekaVsReales"
@@ -201,8 +200,7 @@ reference "tab:algoritmosWekaVsReales"
 \end_inset
 
 .
- Otra forma de categorizar los clasificadores incluidos en WEKA es como
- sigue:
+ Otro modo de agrupar estos clasificadores se listan a continuación:
 \end_layout
 
 \begin_layout Itemize
