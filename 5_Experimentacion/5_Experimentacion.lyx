@@ -226,6 +226,46 @@ La evaluación se hace por el método Stratified k-fold Cross Validation para
  un valor de k igual a 10.
 \end_layout
 
+\begin_layout Standard
+Pseudocódigo seguido del entrenamiento y evaluación
+\end_layout
+
+\begin_layout LyX-Code
+Inicio
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+Iterar por cada producto
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+Leer archivo CSV
+\end_layout
+
+\begin_layout LyX-Code
+Entrenamiento
+\end_layout
+
+\begin_layout LyX-Code
+Evaluacion
+\end_layout
+
+\begin_layout LyX-Code
+Metricas
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+Fin Iteracion
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+Fin
+\end_layout
+
 \begin_layout Subsection
 Métricas de los resultados de la evaluación
 \end_layout
