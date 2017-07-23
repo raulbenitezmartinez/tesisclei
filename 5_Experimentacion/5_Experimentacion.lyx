@@ -11,6 +11,9 @@
 \selectbiblanguage{spanish}
 \usepackage{algorithm}% http://ctan.org/pkg/algorithms
 \usepackage{algpseudocode}% http://ctan.org/pkg/algorithmicx
+%\usepackage{algorithmic}
+
+
 
 % Bibliografia
 \usepackage[authoryear,square,sort]{natbib}
@@ -226,44 +229,123 @@ La evaluación se hace por el método Stratified k-fold Cross Validation para
  un valor de k igual a 10.
 \end_layout
 
-\begin_layout Standard
-Pseudocódigo seguido del entrenamiento y evaluación
+\begin_layout LyX-Code
+
 \end_layout
 
 \begin_layout LyX-Code
-Inicio
+\begin_inset Float algorithm
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout LyX-Code
+
+\series bold
+\size tiny
+for cada período de análisis {mensual,quincenal,semanal}:
 \end_layout
 
 \begin_deeper
 \begin_layout LyX-Code
-Iterar por cada producto
+
+\series bold
+\size tiny
+for cada producto con sus instancias:
 \end_layout
 
 \begin_deeper
 \begin_layout LyX-Code
-Leer archivo CSV
+
+\series bold
+\size tiny
+establecer conjunto de entrenamiento;
 \end_layout
 
 \begin_layout LyX-Code
-Entrenamiento
+
+\series bold
+\size tiny
+establecer conjunto de testeo;
 \end_layout
 
 \begin_layout LyX-Code
-Evaluacion
+
+\series bold
+\size tiny
+for cada algoritmo de clasificación:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\series bold
+\size tiny
+construir clasificador (conjunto de entrenamiento);
 \end_layout
 
 \begin_layout LyX-Code
-Metricas
+
+\series bold
+\size tiny
+evaluar clasificador (conjunto de testeo);
+\end_layout
+
+\begin_layout LyX-Code
+
+\series bold
+\size tiny
+obtener métricas de evaluación;
 \end_layout
 
 \end_deeper
 \begin_layout LyX-Code
-Fin Iteracion
+
+\series bold
+\size tiny
+endfor;
+\end_layout
+
+\begin_layout LyX-Code
+
+\series bold
+\size tiny
+seleccionar mejor clasificador (métricas de evaluación);
 \end_layout
 
 \end_deeper
 \begin_layout LyX-Code
-Fin
+
+\series bold
+\size tiny
+endfor;
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\series bold
+\size tiny
+endfor;
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Pseudocódigo para el proceso de clasificación.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
