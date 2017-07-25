@@ -96,8 +96,6 @@ En esta sección se realiza un breve repaso sobre conceptos básicos que envuelv
  a Machine Learning.
  El objetivo es visualizar qué aspectos de Machine Learning fueron tomados
  como componentes de solución al problema de estudio.
- Al final de la sección se expone un pequeño resumen.
- 
 \end_layout
 
 \begin_layout Subsection
@@ -262,16 +260,23 @@ Los algoritmos de aprendizaje automático se pueden categorizar según la
 \end_layout
 
 \begin_layout Subsubsection
-Aprendizaje supervisado (supervised learning): El algoritmo recibe datos
- de entrenamiento que contienen la respuesta correcta para cada ejemplo.
+Aprendizaje supervisado (supervised learning)
+\end_layout
+
+\begin_layout Standard
+El algoritmo recibe datos de entrenamiento que contienen la respuesta correcta
+ para cada ejemplo.
  El problema de estudio utiliza algoritmos de aprendizaje supervisado, donde
  el experto en compras da la respuesta correcta a cada ejemplo.
 \end_layout
 
 \begin_layout Subsubsection
-Aprendizaje no supervisado (unsupervised learning): El algoritmo busca estructur
-as en los datos de entrenamiento, como encontrar qué ejemplos son similares
- entre sí, y agruparlos en clusters.
+Aprendizaje no supervisado (unsupervised learning)
+\end_layout
+
+\begin_layout Standard
+El algoritmo busca estructuras en los datos de entrenamiento, como encontrar
+ qué ejemplos son similares entre sí, y agruparlos en clusters.
 \end_layout
 
 \begin_layout Subsection
@@ -284,27 +289,41 @@ Teniendo en cuenta las clases de problemas que los algoritmos de aprendizaje
 \end_layout
 
 \begin_layout Subsubsection
-Regresión: Un problema de aprendizaje supervisado donde la respuesta a aprender
- es un valor continuo.
+Regresión
+\end_layout
+
+\begin_layout Standard
+Un problema de aprendizaje supervisado donde la respuesta a aprender es
+ un valor continuo.
 \end_layout
 
 \begin_layout Subsubsection
-Clasificación: Un problema de aprendizaje supervisado donde la respuesta
- a aprender es un valor de un conjunto finito de posibles valores discretos.
+Clasificación
+\end_layout
+
+\begin_layout Standard
+Un problema de aprendizaje supervisado donde la respuesta a aprender es
+ un valor de un conjunto finito de posibles valores discretos.
  El problema de estudio se encara como un problema de clasificación, donde
  hay cuatro posibles valores discretos.
 \end_layout
 
 \begin_layout Subsubsection
-Segmentación: Un problema de aprendizaje no supervisado donde la estructura
- a aprender es un conjunto de clusters donde cada cluster tiene similares
- ejemplos.
+Segmentación
+\end_layout
+
+\begin_layout Standard
+Un problema de aprendizaje no supervisado donde la estructura a aprender
+ es un conjunto de clusters donde cada cluster tiene similares ejemplos.
 \end_layout
 
 \begin_layout Subsubsection
-Análisis de red: Un problema de aprendizaje no supervisado donde la estructura
- a aprender es información acerca de la importancia y el rol de los nodos
- en una red.
+Análisis de red
+\end_layout
+
+\begin_layout Standard
+Un problema de aprendizaje no supervisado donde la estructura a aprender
+ es información acerca de la importancia y el rol de los nodos en una red.
 \end_layout
 
 \begin_layout Subsection
@@ -317,8 +336,12 @@ En los problemas de clasificación el modelo creado debe predecir la clase,
 \end_layout
 
 \begin_layout Subsubsection
-Clasificación binaria (binary classification): En su forma más simple se
- reduce a la siguiente cuestión: dado un patrón 
+Clasificación binaria (binary classification)
+\end_layout
+
+\begin_layout Standard
+En su forma más simple se reduce a la siguiente cuestión: dado un patrón
+ 
 \begin_inset Formula $x$
 \end_inset
 
@@ -341,8 +364,11 @@ key "IntroML2008"
 \end_layout
 
 \begin_layout Subsubsection
-Clasificación multiclase (multiclass classification): Es la extensión lógica
- de la clasificación binaria.
+Clasificación multiclase (multiclass classification)
+\end_layout
+
+\begin_layout Standard
+Es la extensión lógica de la clasificación binaria.
  La principal diferencia es que ahora 
 \begin_inset Formula $y\in\left\{ 1,2,3..,N\right\} $
 \end_inset
@@ -443,6 +469,8 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\noindent
+\align left
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -472,14 +500,16 @@ key "WekaCla"
 \size scriptsize
 \begin_inset Tabular
 <lyxtabular version="3" rows="18" columns="2">
-<features tabularvalignment="middle">
-<column alignment="left" valignment="top">
-<column alignment="left" valignment="top">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="left" valignment="top" width="3cm">
+<column alignment="left" valignment="top" width="4cm">
 <row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 Clasificadores Weka
 \end_layout
 
@@ -489,26 +519,32 @@ Clasificadores Weka
 \begin_inset Text
 
 \begin_layout Plain Layout
-Estrategia o Algoritmo de clasificación que implementa
+
+\size scriptsize
+Algoritmo que implementa
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 BayesNet
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 Bayes Network learning algorithms.
 \end_layout
 
@@ -516,19 +552,23 @@ Bayes Network learning algorithms.
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 NaiveBayes
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 Naive Bayes classifier.
 \end_layout
 
@@ -536,19 +576,23 @@ Naive Bayes classifier.
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 NaiveBayesUpdateable
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 Updateable version of NaiveBayes.
 \end_layout
 
@@ -556,19 +600,23 @@ Updateable version of NaiveBayes.
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 Logistic
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 Using multinomial logistic regression model.
 \end_layout
 
@@ -576,19 +624,23 @@ Using multinomial logistic regression model.
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 MultilayerPerceptron
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 Uses backpropagation to classify instances.
 \end_layout
 
@@ -596,40 +648,47 @@ Uses backpropagation to classify instances.
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 SimpleLogistic
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell multicolumn="1" alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Building linear logistic regression models.
- LogitBoost with simple regression functions.
+
+\size scriptsize
+LogitBoost with simple regression.
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 SMO
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 Sequential Minimal Optimization algorithm for training a support vector
  classifier.
 \end_layout
@@ -638,19 +697,23 @@ Sequential Minimal Optimization algorithm for training a support vector
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 OneR
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 Using a 1R classifier.
 \end_layout
 
@@ -658,19 +721,23 @@ Using a 1R classifier.
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 DecisionTable
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 Using a simple decision table majority classifier.
 \end_layout
 
@@ -678,19 +745,23 @@ Using a simple decision table majority classifier.
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 JRip
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 Implements a propositional rule learner, Repeated Incremental Pruning to
  Produce Error Reduction (RIPPER).
 \end_layout
@@ -699,19 +770,23 @@ Implements a propositional rule learner, Repeated Incremental Pruning to
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 PART
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 PART decision list.
  Uses separate-and-conquer.
  Builds a partial C4.5 decision tree.
@@ -721,19 +796,23 @@ PART decision list.
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 ZeroR
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 Using a 0-R classifier.
 \end_layout
 
@@ -741,19 +820,23 @@ Using a 0-R classifier.
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 DecisionStump
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 Using a decision stump.
  Usually used in conjunction with a boosting algorithm.
 \end_layout
@@ -762,19 +845,23 @@ Using a decision stump.
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 J48
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 Pruned or unpruned C4.5 decision tree.
 \end_layout
 
@@ -782,19 +869,23 @@ Pruned or unpruned C4.5 decision tree.
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 LMT
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 Logistic model trees.
  Classification trees with logistic regression.
 \end_layout
@@ -803,19 +894,23 @@ Logistic model trees.
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 RandomForest
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 Forest of random trees.
 \end_layout
 
@@ -823,10 +918,12 @@ Forest of random trees.
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 REPTree
 \end_layout
 
@@ -836,6 +933,8 @@ REPTree
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size scriptsize
 Fast decision tree learner.
  Builds a decision/regression tree.
 \end_layout
@@ -951,16 +1050,28 @@ n debe ser diferente del conjunto de entrenamiento para obtener un buen
 \end_layout
 
 \begin_layout Subsubsection
-Aciertos: Número de instancias correctamente clasificadas.
+Aciertos
+\end_layout
+
+\begin_layout Standard
+Número de instancias correctamente clasificadas.
 \end_layout
 
 \begin_layout Subsubsection
-Porcentaje de Aciertos: Porcentaje de instancias correctamente clasificadas.
+Porcentaje de Aciertos
+\end_layout
+
+\begin_layout Standard
+Porcentaje de instancias correctamente clasificadas.
 \end_layout
 
 \begin_layout Subsubsection
-Estadística Kappa (Kappa Statistic): En problemas de clasificación para
- aplicaciones reales normalmente los errores cuestan diferentes cantidades.
+Estadística Kappa (Kappa Statistic)
+\end_layout
+
+\begin_layout Standard
+En problemas de clasificación para aplicaciones reales normalmente los errores
+ cuestan diferentes cantidades.
  Por ejemplo en bancos y financieras el costo de prestar a una persona que
  no paga sus deudas es mayor que el costo de rechazar un préstamo a una
  persona que es pagadora.
@@ -976,8 +1087,6 @@ Estadística Kappa (Kappa Statistic): En problemas de clasificación para
  Son buenos resultados los grandes números en la diagonal principal e idealmente
  cero fuera de la diagonal principal.
  
-\shape italic
-
 \begin_inset Quotes eld
 \end_inset
 
@@ -987,8 +1096,6 @@ Kappa se utiliza para medir el acuerdo entre la predicción y la observación
 \begin_inset Quotes erd
 \end_inset
 
-
-\shape default
 .
  Si los evaluadores están totalmente de acuerdo Kappa alcanza su valor máximo
  igual a 1.
@@ -1026,9 +1133,12 @@ nte cada categoría.
 \end_layout
 
 \begin_layout Subsubsection
-Sensibilidad (Recall): Calcula la sensibilidad con respecto a una clase
- en particular, esto se define como: positivos correctamente clasificados
- / positivos totales.
+Sensibilidad (Recall)
+\end_layout
+
+\begin_layout Standard
+Calcula la sensibilidad con respecto a una clase en particular, esto se
+ define como: positivos correctamente clasificados / positivos totales.
 \end_layout
 
 \begin_layout Standard
@@ -1043,9 +1153,12 @@ Recall=\frac{TP}{TP+FN}
 \end_layout
 
 \begin_layout Subsubsection
-Precisión (Precision): Calcula la precisión con respecto a una clase en
- particular, esto se define como: positivos correctamente clasificados /
- total predicho como positivo.
+Precisión (Precision)
+\end_layout
+
+\begin_layout Standard
+Calcula la precisión con respecto a una clase en particular, esto se define
+ como: positivos correctamente clasificados / total predicho como positivo.
 \end_layout
 
 \begin_layout Standard
@@ -1060,8 +1173,11 @@ Precision=\frac{TP}{TP+FP}
 \end_layout
 
 \begin_layout Subsubsection
-Puntuación-F (F-Measure): La Puntuación-F es una medida de la exactitud
- de una prueba.
+Puntuación-F (F-Measure)
+\end_layout
+
+\begin_layout Standard
+La Puntuación-F es una medida de la exactitud de una prueba.
  La Puntuación-F puede interpretarse como un promedio ponderado de la precisión
  y sensibilidad, donde alcanza su mejor valor en 1 y el peor en 0.
  Se define como: 2 * Recall * Precision / (Recall + Precision).
@@ -1076,10 +1192,6 @@ F-Measure=\frac{2*Recall*Precision}{\left(Recall+Precision\right)}
 \end_inset
 
 
-\end_layout
-
-\begin_layout Subsection
-Resumen de la sección
 \end_layout
 
 \end_body

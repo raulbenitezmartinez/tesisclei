@@ -107,6 +107,46 @@ Se describirá cómo es la implementación del proceso de aprendizaje automátic
  evaluación consideradas para medir el rendimiento de los clasificadores.
 \end_layout
 
+\begin_layout Standard
+Para resumir la técnica propuesta, en la siguiente figura se ilustra el
+ mapa mental general.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Recursos/modelo_solucion.png
+	scale 35
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Mapa mental general 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Datos proveídos por Business Intelligence
 \end_layout
@@ -225,15 +265,13 @@ Basados en árboles: DecisionStump, J48, LMT, RandomForest, RandomTree, REPTree.
 \end_layout
 
 \begin_layout Standard
-La evaluación se hace por el método Stratified k-fold Cross Validation para
- un valor de k igual a 10.
+En el siguiente pseudocódigo se presenta la estrategia de aprendizaje y
+ selección de los clasificadores.
 \end_layout
 
 \begin_layout LyX-Code
 
-\end_layout
-
-\begin_layout LyX-Code
+\size tiny
 \begin_inset Float algorithm
 placement H
 wide false
@@ -311,7 +349,21 @@ endfor;
 
 \series bold
 \size tiny
-seleccionar el mejor clasificador (métricas de evaluación);
+criterios de línea de base (ZeroR, criterios del experto u otro);
+\end_layout
+
+\begin_layout LyX-Code
+
+\series bold
+\size tiny
+seleccionar mejor clasificador (max(Kappa));
+\end_layout
+
+\begin_layout LyX-Code
+
+\series bold
+\size tiny
+guardar clasificador;
 \end_layout
 
 \end_deeper
@@ -331,6 +383,8 @@ endfor;
 \end_layout
 
 \begin_layout Plain Layout
+
+\size tiny
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -348,60 +402,40 @@ Pseudocódigo para el proceso de clasificación.
 
 \end_layout
 
-\begin_layout Subsection
-Métricas de los resultados de la evaluación
+\begin_layout Standard
+La evaluación se hace por el método Stratified k-fold Cross Validation para
+ un valor de k igual a 10 y las métricas de desempeño consideradas son el
+ 
+\shape italic
+Porcentaje de Aciertos
+\shape default
+ y la 
+\shape italic
+Estadística Kappa
+\shape default
+.
+ El criterio de línea de base utilizado fue el clasificador ZeroR, el cual
+ es uno de los criterios de línea de base más representativos para problemas
+ de clasificación.
+ Se considera que también puede resultar conveniente que el experto en compras
+ establezca su propio criterio de línea de base, como puede ser un umbral
+ mínimo de porcentaje de aciertos aceptado.
 \end_layout
 
 \begin_layout Standard
-Por cada modelo procesado, luego de construir su clasificador y evaluarlo
- se obtienen las métricas Cantidad de Aciertos o el Porcentaje de Acierto,
- la estadística Kappa; y por cada clase (Nada, Medio, Mucho) se obtienen
- las métricas Area Under ROC (ROCA), Recall (RCALL), Precision (PREC), F-Measure
- (FMEA) y Area Under Precision-Recall Curve (PRCA).
-\end_layout
-
-\begin_layout Subsection
-Resultados numéricos
-\end_layout
-
-\begin_layout Standard
-Hay dos tablas que se generan al concluir el proceso de aprendizaje automático.
-\end_layout
-
-\begin_layout Standard
-Una con los resultados de evaluación del aprendizaje automático con el método
- Percentage Split para los periodos mensuales, quincenales y semanales que
- contienen los datos sobre: PRODUCTO, PERIODO, TIPO DE CLASIFICADOR, TIPO
- DE EVALUACIÓN, % DE ACIERTOS, KAPPA.
- También la PRECISIÓN, RECALL y F-MEASURE por cada clase (Nada, Poco, Medio,
- Mucho).
-\end_layout
-
-\begin_layout Standard
-Otra con los resultados de evaluación del aprendizaje automático con el
- método Stratified K-fold Cross Validation para los periodos mensuales,
- quincenales y semanales que contienen los datos sobre: PRODUCTO, PERIODO,
- TIPO DE CLASIFICADOR, TIPO DE EVALUACIÓN, % DE ACIERTOS, KAPPA.
- También la PRECISIÓN, RECALL y F-MEASURE por cada clase (Nada, Poco, Medio,
- Mucho).
-\end_layout
-
-\begin_layout Section
-Discusión
-\end_layout
-
-\begin_layout Standard
-El análisis global de los resultados se basa en la métrica Kappa.
- Por cada producto analizado se elige como clasificador aquel que haya alcanzado
- el mayor valor de Kappa.
- Entonces luego se calculan los promedios de porcentaje de aciertos para
- periodos mensuales, quincenales y semanales.
-\end_layout
-
-\begin_layout Standard
-En la Figura 2 se muestra un gráfico de barras con promedios del porcentaje
- de aciertos utilizando Stratified k-fold Cross Validation como método de
- evaluación.
+Por cada producto y período de análisis se elige como clasificador aquel
+ que haya alcanzado el mayor valor de 
+\shape italic
+Kappa
+\shape default
+.
+ En la siguiente figura se muestra como quedó la distribución de clasificadores
+ para períodos mensuales.
+ Por ejemplo, el clasificador 
+\shape italic
+Logistic
+\shape default
+ resultó una mejor solución para 149 productos.
 \end_layout
 
 \begin_layout Standard
@@ -409,7 +443,44 @@ En la Figura 2 se muestra un gráfico de barras con promedios del porcentaje
 placement H
 wide false
 sideways false
-status collapsed
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Recursos/cross_kappa_mensual.png
+	scale 35
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Conteo de clasificadores para período mensual.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se puede observar en la siguiente gráfica de barras que la técnica propuesta
+ alcanza altos porcentajes de aciertos en promedio, tanto para periodos
+ mensuales, quincenales como semanales.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -422,16 +493,11 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Promedios del porcentaje de aciertos utilizando Stratified k-fold Cross
- Validation.
+Promedio de porcentaje de aciertos para los tres períodos de análisis.
 \end_layout
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -441,35 +507,106 @@ Promedios del porcentaje de aciertos utilizando Stratified k-fold Cross
 \end_layout
 
 \begin_layout Standard
-Se puede observar que se obtienen altos porcentajes de aciertos tanto para
- los periodos mensuales, quincenales como semanales.
- Como se trata de una prueba exhaustiva, por cada producto se intenta con
- todos los algoritmos de clasificación posible, además que se evalúan con
- dos métodos, entonces podemos deducir que se trata se resultados fiables.
+Como se trata de una prueba exhaustiva, por cada producto se intenta con
+ todos los algoritmos de clasificación posible y se evalúa con el método
+ Stratified 10-fold Cross Validation.
+ Estas métricas de desempeño preliminares dan indicio de que la técnica
+ propuesta en este trabajo puede alcanzar altos grados de confiabilidad.
  Obtener buenos resultados depende en gran medida de que los valores de
- KPI hayan sido obtenidos correctamente y también que el etiquetado haya
- sido realizado por un experto en compras o ventas.
+ 
+\shape italic
+KPI
+\shape default
+ hayan sido obtenidos correctamente y también que el etiquetado haya sido
+ realizado por un experto en compras.
+\end_layout
+
+\begin_layout Subsection
+Cómo hacer las predicciones
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
+En el siguiente pseudocódigo se muestra el mecanismo para obtener el pronóstico
+ de la demanda en un ambiente de producción.
+\end_layout
+
+\begin_layout LyX-Code
+
+\size tiny
+\begin_inset Float algorithm
 placement H
 wide false
 sideways false
-status collapsed
+status open
+
+\begin_layout LyX-Code
+
+\series bold
+\size tiny
+for cada próximo período a pronosticar {mensual,quincenal,semanal}:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\series bold
+\size tiny
+for cada producto:
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\series bold
+\size tiny
+obtener KPIs del período actual finalizado;
+\end_layout
+
+\begin_layout LyX-Code
+
+\series bold
+\size tiny
+ejecutar su mejor clasificador (KPIs);
+\end_layout
+
+\begin_layout LyX-Code
+
+\series bold
+\size tiny
+obtener etiqueta {nada,poco,medio,mucho}
+\end_layout
+
+\begin_layout LyX-Code
+
+\series bold
+\size tiny
+extrapolar a valores continuos(criterio experto);
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\series bold
+\size tiny
+endfor;
+\end_layout
+
+\end_deeper
+\begin_layout LyX-Code
+
+\series bold
+\size tiny
+endfor;
+\end_layout
 
 \begin_layout Plain Layout
-\begin_inset Graphics
-	filename Recursos/conteo_cross_mensual.png
-	scale 50
 
-\end_inset
-
-
+\size tiny
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Conteo por tipo de clasificadores
+Pseudocódigo para el proceso de pronóstico de la demanda.
+ 
 \end_layout
 
 \end_inset
@@ -477,13 +614,67 @@ Conteo por tipo de clasificadores
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Como se mencionó anteriormente, el modelo propuesto arroja como resultado
+ un valor discreto 
+\begin_inset Formula $y\in\left\{ Nada,Poco,Medio,Mucho\right\} $
+\end_inset
+
+.
+ Luego en función de la etiqueta resultante, del tipo de producto y del
+ período seleccionado, el experto extrapola a un valor continuo que representa
+ la cantidad en la orden de compra.
+ El significado de las etiquetas varía 
+\end_layout
+
+\begin_layout Section
+Discusión
+\end_layout
+
+\begin_layout Subsection
+Impacto del período de análisis
+\end_layout
+
+\begin_layout Standard
+Una de las decisiones que se debe tomar es acerca del tiempo asignado al
+ período de análisis.
+ En este trabajo se analizaron tres períodos distintos: mensuales, quincenales
+ y semanales con propósitos experimentales y por ser los más comunes en
+ el ámbito comercial.
+ En la práctica, la elección del período es una decisión estratégica a nivel
+ gerencial que depende en gran medida del sector y tamaño de la empresa,
+ tipos de productos, etc.
+\end_layout
+
+\begin_layout Standard
+En el presente trabajo, por tratarse de períodos de tiempo muy cercanos
+ (1, 2 y 4 semanas) no se observan diferencias significativas en el porcentaje
+ de aciertos.
+ Otro factor a tener en cuenta es que para períodos de tiempo muy extensos
+ (6, 12 meses) existe mayor incertidumbre en el pronóstico.
+\end_layout
+
+\begin_layout Subsection
+Impacto del etiquetado
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+La técnica propuesta se trata de un sistema parametrizado, donde las variables
+ principales son el período comercial y las etiquetas seleccionadas para
+ la clasificación.
+ Por cuestiones de practicidad y generalidad se eligió para este trabajo
+ un enfoque de problema de clasificación.
+ El etiquetado proporciona mayor flexibilidad al sistema y un entorno más
+ controlable, en comparación a un sistema de asignación de valores continuos.
+ La flexibilidad del sistema permitió emular la opinión del experto en compras
+ y encontrar una cantidad eficiente de etiquetas.
 \end_layout
 
 \end_body

@@ -2015,6 +2015,10 @@ Etiquetado de KPI del periodo semanal
 
 \end_layout
 
+\begin_layout Subsection
+Resumen de la sección
+\end_layout
+
 \begin_layout Standard
 Hemos visto como los componentes de Business Intelligence ayudaron a obtener
  el conjunto de valores para los KPI a partir de los datos históricos almacenado
@@ -2022,13 +2026,6 @@ s en el dataware y el etiquetado a cada tupla de valores KPI, estos datos
  serán utilizados como un conjunto de entrenamiento por los algoritmos de
  aprendizaje automático del cual se obtendrá un modelo de solución al problema
  de estudio planteado de pronóstico de la demanda.
-\end_layout
-
-\begin_layout Standard
-En cuanto a las limitaciones de este nuevo modelo se pueden mencionar que
- no toma en cuenta los costes relacionados al inventario como lo son costes
- de mantenimiento, de personal, seguros, etc, el modelo se aplica a empresas
- retail dedicadas a las venta de productos terminados.
 \end_layout
 
 \end_body

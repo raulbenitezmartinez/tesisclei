@@ -18,9 +18,10 @@ Lo que va a influir en lo que significa nada, poco, mucho
 
 Es un modelo parametrizado:
 
-* las etiquetas (nada, poco, medio, mucho)
 * periodos de compra
+* las etiquetas (nada, poco, medio, mucho)
 
+3039-7416-1-SM.pdf
 
 SEGUN EL REVISOR B
 
@@ -28,11 +29,12 @@ Referentes a Business Intelligence:
 * Tipo de producto minorista vendido (nombrar la familia de productos) OK
 * Proceso de BI (Base de datos, cantidad de registros por tabla, relacional, transaccional, Oracle/Datawarehouse, tabla de hechos, dimensiones/KPI) OK
 * Nombrar que es un supermercado, años de los datos. OK
+
+Referentes a Experimentacion:
+* Conoce la dificultad del problema de clasificación; habitualmente esto se conoce a partir de la creación de clasificador "baseline" sencillo. OK
+* Detallar cómo el usuario puede utilizar el clasificador para resolver su problema original de definición de stock. OK
+* Detallar resultados sobre cada método de clasificación; y definir la utilización de uno, o la combinación de varios, como mejor solución del problema. OK
+* Analiza el impacto de los períodos mensual, quincenal, semanal, ¿cómo se adaptan al problema? ¿cuál es mejor en cada caso? ¿porqué? OK
 * Analizar el impacto de simplificar el problema original (definir la compra de producto) al problema de etiquetado (nada, poco, medio, ...)
 
-Referentes a Machine Learning y a la Experimentacion:
-* Analiza el impacto de los períodos mensual, quincenal, semanal, ¿cómo se adaptan al problema? ¿cuál es mejor en cada caso? ¿porqué?
-* Conoce la dificultad del problema de clasificación; habitualmente esto se conoce a partir de la creación de clasificador "baseline" sencillo.
-* Detallar resultados sobre cada método de clasificación; y definir la utilización de uno, o la combinación de varios, como mejor solución del problema.
-* Detallar cómo el usuario puede utilizar el clasificador para resolver su problema original de definición de stock.
 

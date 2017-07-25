@@ -92,44 +92,29 @@ Conclusiones
 \end_layout
 
 \begin_layout Standard
-Este trabajo se enfocó principalmente en elaborar una nueva técnica de estimació
-n de compras de productos para la reposición de stock en las empresas retail.
- Como ya se había mencionado en el capítulo 2 la gestión de compras es uno
- de los ejes centrales de la actividad empresarial y las decisiones de compras
- son uno de los principales problemas con los que se enfrentan las empresas
- al momento de la reposición del stock.
- Partiendo de la premisa de la problemática y analizando las técnicas utilizadas
- en la actualidad basadas en pronósticos y con el creciente incremento en
- la incorporación de tecnologías de Business Intelligence dentro de las
- empresas para hacer uso de los datos almacenados, se vió la oportunidad
- de aprovechar esa información histórica.
- Con esta nueva técnica se utiliza los Indicadores Claves de Rendimiento
- y apoyados en la experiencia y el conocimiento de un experto en compras
- (gerente o encargado de compras) se realiza el modelado utilizando algoritmos
- clasificadores de Machine Learning.
+Este trabajo se enfocó en proponer una nueva técnica de estimación de la
+ demanda de productos, para reposición de stock en empresas retail.
+ Como se mencionó en la Sección 2, la gestión de compras es uno los ejes
+ centrales en la actividad empresarial y la decisión del volumen de compras
+ para cada producto es un desafío que enfrentan las empresas al momento
+ de reponer el stock.
+ Partiendo de esta premisa y analizando las técnicas de pronóstico de la
+ demanda empleadas en la actualidad, y el creciente incremento del uso de
+ tecnologías de Business Intelligence en las organizaciones, se encontró
+ la oportunidad de desarrollar una nueva técnica de pronóstico.
+ En esta nueva técnica se utilizan los Indicadores Claves de Rendimiento
+ y apoyados en la experiencia de un experto en compras (gerente o encargado
+ de compras) se realiza el modelado utilizando algoritmos de clasificación
+ de Machine Learning.
 \end_layout
 
 \begin_layout Standard
 De acuerdo a los resultados experimentales se obtuvieron altas tasas de
- acierto, haciendo pruebas exhaustivas con todos los algoritmos de clasificación
- posibles y evaluando a la vez con dos métodos.
- Apoyados en estos resultados se puede creer en la fiabilidad de este nuevo
- modelo.
-\end_layout
-
-\begin_layout Standard
-Con esta técnica de estimación planteada se pretende que el modelo se convierta
- en una herramienta de apoyo en la toma de decisiones al gerente encargado
- de realizar las compras en la reposición de stock.
- 
-\lang english
-en términos de tendencias altas de tasas de aciertos en los algoritmos.
- 
-\lang spanish
-herramienta de apoyo en la toma de decisiones al gerente.
- el sistema de 
-\lang english
-Business Intelligence + Machine Learning
+ aciertos, haciendo pruebas exhaustivas con varios algoritmos de clasificación
+ y evaluando con un método ampliamente aceptado.
+ La técnica propuesta pretende que este nuevo modelo se convierta en una
+ herramienta de apoyo en la toma de decisiones del gerente de compras en
+ el proceso de reposición de stock.
 \end_layout
 
 \end_body

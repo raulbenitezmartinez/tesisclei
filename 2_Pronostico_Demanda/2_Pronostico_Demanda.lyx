@@ -173,15 +173,15 @@ Antes de realizar una compra surgen las siguientes preguntas:
 \end_layout
 
 \begin_layout Itemize
-¿Cuándo debemos realizar un pedido?
+Cuándo debemos realizar un pedido?
 \end_layout
 
 \begin_layout Itemize
-¿Qué cantidad debemos solicitar en cada pedido?
+Qué cantidad debemos solicitar en cada pedido?
 \end_layout
 
 \begin_layout Itemize
-¿Cuántas unidades de cada artículo debemos mantener en stock?
+Cuántas unidades de cada artículo debemos mantener en stock?
 \end_layout
 
 \begin_layout Standard
@@ -404,6 +404,9 @@ e resulta ingenuo elegir un solo valor de toda la serie.
  hay demasiada fluctuación en la serie y entonces el último valor se convierte
  en el más fiable.
  Recomendable para series de tiempo inestables.
+\shape italic
+\size scriptsize
+
 \begin_inset Formula 
 \begin{equation}
 Pronóstico=último\;valor
@@ -420,6 +423,9 @@ El método de pronóstico por promedios: En este caso se utilizan todos los
  de la serie.
  Recomendable para series de tiempo estables, razón por la cual todos los
  valores tienen el mismo peso y son considerados relevantes.
+\shape italic
+\size scriptsize
+
 \begin_inset Formula 
 \begin{equation}
 Pronóstico=promedio\;de\;todos\;los\;datos\;hasta\;la\;fecha
@@ -444,6 +450,9 @@ El método de pronóstico de promedio móvil: Consiste en considerar solamente
 \end_inset
 
  valores que tienen el mismo peso y que son considerados relevantes.
+\shape italic
+\size scriptsize
+
 \begin_inset Formula 
 \begin{equation}
 Pronóstico=promedio\;de\;los\;últimos\;n\;valores
@@ -451,6 +460,9 @@ Pronóstico=promedio\;de\;los\;últimos\;n\;valores
 
 \end_inset
 
+
+\shape default
+\size default
 donde 
 \begin_inset Formula $n=número\;de\;periodos\;más\;recientes$
 \end_inset
@@ -466,6 +478,9 @@ El método de pronóstico por suavizamiento exponencial: Con este método se
  Este resultado se puede obtener de forma simple y sintética mediante una
  combinación del último valor de la serie y del valor pronosticado para
  este mencionado último valor.
+\shape italic
+\size scriptsize
+
 \begin_inset Formula 
 \begin{equation}
 Pronóstico=\alpha\left(último\;valor\right)+\left(1\text{-}\alpha\right)\left(último\;pronóstico\right)
@@ -473,6 +488,9 @@ Pronóstico=\alpha\left(último\;valor\right)+\left(1\text{-}\alpha\right)\left(
 
 \end_inset
 
+
+\shape default
+\size default
 donde 
 \begin_inset Formula $\alpha$
 \end_inset
@@ -507,7 +525,13 @@ constante de suavizamiento
 \end_layout
 
 \begin_layout Itemize
+\paragraph_spacing single
+\noindent
+\align left
 El método de suavizamiento exponencial con tendencia:
+\shape italic
+\size tiny
+
 \begin_inset Formula 
 \begin{equation}
 Pronóstico=\alpha\left(último\;valor\right)+\left(1\text{-}\alpha\right)\left(último\;pronóstico\right)+Tendencia\;estimada
@@ -531,6 +555,9 @@ Tendencia\;estimada=\beta\left(última\;tendencia\right)\left(1\text{-}\beta\rig
 
 \end_inset
 
+
+\shape default
+\size default
 donde 
 \begin_inset Formula $\beta$
 \end_inset
@@ -545,10 +572,6 @@ donde
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Itemize
-El método ARIMA: (ESTE ME FALTA COMPLETAR)
 \end_layout
 
 \begin_layout Subsubsection
@@ -599,6 +622,8 @@ regresión lineal
 
 \begin_layout Standard
 
+\shape italic
+\size scriptsize
 \lang spanish
 \begin_inset Formula 
 \begin{equation}
@@ -614,6 +639,9 @@ y=a+bx
 
 \lang spanish
 Donde:
+\shape italic
+\size scriptsize
+
 \begin_inset Formula 
 \[
 y=variable\;dependiente
@@ -626,6 +654,8 @@ y=variable\;dependiente
 
 \begin_layout Standard
 
+\shape italic
+\size scriptsize
 \lang spanish
 \begin_inset Formula 
 \[
@@ -639,6 +669,8 @@ x=variable\;independiente
 
 \begin_layout Standard
 
+\shape italic
+\size scriptsize
 \lang spanish
 \begin_inset Formula 
 \[
@@ -652,6 +684,8 @@ a=intersección\;de\;la\;línea\;con\;el\;eje\;y
 
 \begin_layout Standard
 
+\shape italic
+\size scriptsize
 \lang spanish
 \begin_inset Formula 
 \[
@@ -694,6 +728,8 @@ mínimos cuadrados
 
 \begin_layout Standard
 
+\shape italic
+\size scriptsize
 \lang spanish
 \begin_inset Formula 
 \begin{equation}
@@ -743,6 +779,9 @@ Desviación Absoluta Media (MAD)
 \end_layout
 
 \begin_layout Standard
+
+\shape italic
+\size scriptsize
 \begin_inset Formula 
 \begin{equation}
 MAD=\frac{suma\;de\;los\;errores\;de\;pronóstico}{número\;de\;pronósticos}
@@ -762,6 +801,9 @@ Error Cuadrático Promedio (MSE)
 \end_layout
 
 \begin_layout Standard
+
+\shape italic
+\size scriptsize
 \begin_inset Formula 
 \begin{equation}
 MSE=\frac{suma\;de\;los\;cuadrados\;de\;los\;errores\;de\;pronóstico}{número\;de\;pronósticos}
