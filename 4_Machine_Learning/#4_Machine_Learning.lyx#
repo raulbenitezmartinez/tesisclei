@@ -1029,7 +1029,7 @@ Para los problemas de clasificación, es natural medir el rendimiento de
 Para predecir el rendimiento de un clasificador en nuevos datos, necesitamos
  evaluar su tasa de error en un conjunto de datos que no desempeñó ningún
  papel en la formación del clasificador.
- Este conjunto de datos independiente se denomina conjunto de prueba.
+ Este conjunto de datos independiente se denomina conjunto de pruebas.
  En tales situaciones se suele hablar de tres conjuntos de datos: los datos
  de entrenamiento, los datos de validación y los datos de prueba.
  
@@ -1097,7 +1097,7 @@ Kappa se utiliza para medir el acuerdo entre la predicción y la observación
 \end_inset
 
 .
- Si los evaluadores están totalmente de acuerdo Kappa alcanza un valor máximo
+ Si los evaluadores están totalmente de acuerdo Kappa alcanza su valor máximo
  igual a 1.
  Si no hay total acuerdo entre los evaluadores, entonces Kappa tiene un
  valor 
