@@ -86,7 +86,7 @@ En las empresas retail o de ventas minoristas uno de los principales problemas
  producto que puede generar insatisfacción de los clientes y a su vez repercute
  en las utilidades de la empresa.
  Uno de los mayores desafíos en empresas de este sector es pronosticar las
- ventas para el próximo periodo comercial.
+ ventas para el próximo período comercial.
 \end_layout
 
 \begin_layout Standard
@@ -141,10 +141,10 @@ En la etapa de Machine Learning se utilizan como entrada las series de KPI
 
 \lang spanish
 En la segunda sección se abordan los conceptos de Pronóstico de la Demanda.
- En la tercera sección se definen conceptos de Business Intelligence y su
- fase de modelado del problema.
- En la cuarta sección se abordan conceptos de Machine Learning.
- En la quinta sección se realiza el modelado con Machine Learning y se analizan
+ En la tercera sección se definen conceptos de Business Intelligence y la
+ primera fase de modelado del problema.
+ En la cuarta sección se abordan conceptos de Machine Learning, en la quinta
+ sección se implementa la segunda fase del modelado del problema y se analizan
  los resultados experimentales.
  En la última sección se realiza la conclusión general.
 \end_layout
