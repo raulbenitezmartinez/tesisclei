@@ -99,7 +99,7 @@ Experimentación
 \begin_layout Standard
 Se describirá cómo es la implementación del proceso de aprendizaje automático
  para este caso de estudio.
- Se mostrará primeramente cómo está constituída la salida del proceso de
+ Se mostrará primeramente cómo está constituida la salida del proceso de
  business intelligence, que en esencia proveen las instancias necesarias
  para la entrada del proceso de aprendizaje automático.
  También se verá qué clasificadores fueron utilizados, cómo se realizó el
@@ -448,7 +448,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Recursos/cross_kappa_mensual.png
-	scale 35
+	scale 40
 
 \end_inset
 
