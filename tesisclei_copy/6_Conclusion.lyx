@@ -110,25 +110,11 @@ Este trabajo se enfocó en proponer una nueva técnica de estimación de la
 
 \begin_layout Standard
 De acuerdo a los resultados experimentales se obtuvieron altas tasas de
- aciertos, haciendo pruebas exhaustivas con todos los algoritmos de clasificació
-n posibles y evaluando con un método ampliamente utilizado.
- Apoyados en estos resultados, se puede creer en la fiabilidad del nuevo
- modelo propuesto.
-\end_layout
-
-\begin_layout Standard
-Con esta técnica de estimación planteada se pretende que el modelo se convierta
- en una herramienta de apoyo en la toma de decisiones al gerente encargado
- de realizar las compras en la reposición de stock.
- 
-\lang english
-en términos de tendencias altas de tasas de aciertos en los algoritmos.
- 
-\lang spanish
-herramienta de apoyo en la toma de decisiones al gerente.
- el sistema de 
-\lang english
-Business Intelligence + Machine Learning
+ aciertos, haciendo pruebas exhaustivas con varios algoritmos de clasificación
+ y evaluando con un método ampliamente aceptado.
+ La técnica propuesta pretende que este nuevo modelo se convierta en una
+ herramienta de apoyo en la toma de decisiones del gerente de compras en
+ el proceso de reposición de stock.
 \end_layout
 
 \end_body

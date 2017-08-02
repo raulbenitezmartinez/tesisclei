@@ -497,7 +497,7 @@ key "WekaCla"
 
 \begin_layout Plain Layout
 
-\size tiny
+\size small
 \begin_inset Tabular
 <lyxtabular version="3" rows="18" columns="2">
 <features booktabs="true" tabularvalignment="middle">
@@ -509,7 +509,7 @@ key "WekaCla"
 
 \begin_layout Plain Layout
 
-\size tiny
+\size small
 Clasificadores Weka
 \end_layout
 
@@ -520,7 +520,7 @@ Clasificadores Weka
 
 \begin_layout Plain Layout
 
-\size tiny
+\size small
 Algoritmo que implementa
 \end_layout
 
@@ -533,7 +533,7 @@ Algoritmo que implementa
 
 \begin_layout Plain Layout
 
-\size tiny
+\size small
 BayesNet
 \end_layout
 
@@ -544,7 +544,7 @@ BayesNet
 
 \begin_layout Plain Layout
 
-\size tiny
+\size small
 Bayes Network learning algorithms.
 \end_layout
 
@@ -557,7 +557,7 @@ Bayes Network learning algorithms.
 
 \begin_layout Plain Layout
 
-\size tiny
+\size small
 NaiveBayes
 \end_layout
 
@@ -568,7 +568,7 @@ NaiveBayes
 
 \begin_layout Plain Layout
 
-\size tiny
+\size small
 Naive Bayes classifier.
 \end_layout
 
@@ -581,7 +581,7 @@ Naive Bayes classifier.
 
 \begin_layout Plain Layout
 
-\size tiny
+\size small
 NaiveBayesUpdateable
 \end_layout
 
@@ -592,7 +592,7 @@ NaiveBayesUpdateable
 
 \begin_layout Plain Layout
 
-\size tiny
+\size small
 Updateable version of NaiveBayes.
 \end_layout
 
@@ -605,7 +605,7 @@ Updateable version of NaiveBayes.
 
 \begin_layout Plain Layout
 
-\size tiny
+\size small
 Logistic
 \end_layout
 
@@ -616,7 +616,7 @@ Logistic
 
 \begin_layout Plain Layout
 
-\size tiny
+\size small
 Using multinomial logistic regression model.
 \end_layout
 
@@ -629,7 +629,7 @@ Using multinomial logistic regression model.
 
 \begin_layout Plain Layout
 
-\size tiny
+\size small
 MultilayerPerceptron
 \end_layout
 
@@ -640,7 +640,7 @@ MultilayerPerceptron
 
 \begin_layout Plain Layout
 
-\size tiny
+\size small
 Uses backpropagation to classify instances.
 \end_layout
 
@@ -653,7 +653,7 @@ Uses backpropagation to classify instances.
 
 \begin_layout Plain Layout
 
-\size tiny
+\size small
 SimpleLogistic
 \end_layout
 
@@ -664,7 +664,7 @@ SimpleLogistic
 
 \begin_layout Plain Layout
 
-\size tiny
+\size small
 LogitBoost with simple regression.
 \end_layout
 
@@ -677,7 +677,7 @@ LogitBoost with simple regression.
 
 \begin_layout Plain Layout
 
-\size tiny
+\size small
 SMO
 \end_layout
 
@@ -688,7 +688,7 @@ SMO
 
 \begin_layout Plain Layout
 
-\size tiny
+\size small
 Sequential Minimal Optimization algorithm for training a support vector
  classifier.
 \end_layout
@@ -702,7 +702,7 @@ Sequential Minimal Optimization algorithm for training a support vector
 
 \begin_layout Plain Layout
 
-\size tiny
+\size small
 OneR
 \end_layout
 
@@ -713,7 +713,7 @@ OneR
 
 \begin_layout Plain Layout
 
-\size tiny
+\size small
 Using a 1R classifier.
 \end_layout
 
@@ -726,7 +726,7 @@ Using a 1R classifier.
 
 \begin_layout Plain Layout
 
-\size tiny
+\size small
 DecisionTable
 \end_layout
 
@@ -737,7 +737,7 @@ DecisionTable
 
 \begin_layout Plain Layout
 
-\size tiny
+\size small
 Using a simple decision table majority classifier.
 \end_layout
 
@@ -750,7 +750,7 @@ Using a simple decision table majority classifier.
 
 \begin_layout Plain Layout
 
-\size tiny
+\size small
 JRip
 \end_layout
 
@@ -761,7 +761,7 @@ JRip
 
 \begin_layout Plain Layout
 
-\size tiny
+\size small
 Implements a propositional rule learner, Repeated Incremental Pruning to
  Produce Error Reduction (RIPPER).
 \end_layout
@@ -775,7 +775,7 @@ Implements a propositional rule learner, Repeated Incremental Pruning to
 
 \begin_layout Plain Layout
 
-\size tiny
+\size small
 PART
 \end_layout
 
@@ -786,7 +786,7 @@ PART
 
 \begin_layout Plain Layout
 
-\size tiny
+\size small
 PART decision list.
  Uses separate-and-conquer.
  Builds a partial C4.5 decision tree.
@@ -801,7 +801,7 @@ PART decision list.
 
 \begin_layout Plain Layout
 
-\size tiny
+\size small
 ZeroR
 \end_layout
 
@@ -812,7 +812,7 @@ ZeroR
 
 \begin_layout Plain Layout
 
-\size tiny
+\size small
 Using a 0-R classifier.
 \end_layout
 
@@ -825,7 +825,7 @@ Using a 0-R classifier.
 
 \begin_layout Plain Layout
 
-\size tiny
+\size small
 DecisionStump
 \end_layout
 
@@ -836,7 +836,7 @@ DecisionStump
 
 \begin_layout Plain Layout
 
-\size tiny
+\size small
 Using a decision stump.
  Usually used in conjunction with a boosting algorithm.
 \end_layout
@@ -850,7 +850,7 @@ Using a decision stump.
 
 \begin_layout Plain Layout
 
-\size tiny
+\size small
 J48
 \end_layout
 
@@ -861,7 +861,7 @@ J48
 
 \begin_layout Plain Layout
 
-\size tiny
+\size small
 Pruned or unpruned C4.5 decision tree.
 \end_layout
 
@@ -874,7 +874,7 @@ Pruned or unpruned C4.5 decision tree.
 
 \begin_layout Plain Layout
 
-\size tiny
+\size small
 LMT
 \end_layout
 
@@ -885,7 +885,7 @@ LMT
 
 \begin_layout Plain Layout
 
-\size tiny
+\size small
 Logistic model trees.
  Classification trees with logistic regression.
 \end_layout
@@ -899,7 +899,7 @@ Logistic model trees.
 
 \begin_layout Plain Layout
 
-\size tiny
+\size small
 RandomForest
 \end_layout
 
@@ -910,7 +910,7 @@ RandomForest
 
 \begin_layout Plain Layout
 
-\size tiny
+\size small
 Forest of random trees.
 \end_layout
 
@@ -923,7 +923,7 @@ Forest of random trees.
 
 \begin_layout Plain Layout
 
-\size tiny
+\size small
 REPTree
 \end_layout
 
@@ -934,7 +934,7 @@ REPTree
 
 \begin_layout Plain Layout
 
-\size tiny
+\size small
 Fast decision tree learner.
  Builds a decision/regression tree.
 \end_layout

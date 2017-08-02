@@ -367,7 +367,7 @@ Si bien el volumen de ventas es un buen indicador de la historia de la demanda,
  no toma en cuenta muchos aspectos del proceso entero de ventas, como pueden
  ser la ruptura de stock, plazos de reposición de stock, precio del producto,
  la incidencia del marketing u otros.
- De igual modo se pueden descubrir tendencias, estacionalidad, ciclos, etc
+ De igual modo se pueden descubrir tendencias, estacionalidad, ciclos, etc.,
  en la historia de la demanda para luego extrapolarlo a un tiempo futuro.
  También hay que destacar que el intervalo del muestreo tiene mucha influencia
  en el pronóstico y por ende en los resultados obtenidos 
@@ -396,8 +396,8 @@ key "MCA2008"
 \end_layout
 
 \begin_layout Itemize
-El método de pronóstico del último valor: Este método utiliza solo el último
- valor de la serie de tiempo como pronóstico del valor futuro.
+El método de pronóstico del último valor: Este método utiliza solamente
+ el último valor de la serie de tiempo como pronóstico del valor futuro.
  También es conocido como método ingenuo, porque sin mucho análisis aparentement
 e resulta ingenuo elegir un solo valor de toda la serie.
  Pero en ocasiones sí es una buena aproximación, como por ejemplo cuando
@@ -405,7 +405,7 @@ e resulta ingenuo elegir un solo valor de toda la serie.
  en el más fiable.
  Recomendable para series de tiempo inestables.
 \shape italic
-\size scriptsize
+\size small
 
 \begin_inset Formula 
 \begin{equation}
@@ -424,7 +424,7 @@ El método de pronóstico por promedios: En este caso se utilizan todos los
  Recomendable para series de tiempo estables, razón por la cual todos los
  valores tienen el mismo peso y son considerados relevantes.
 \shape italic
-\size scriptsize
+\size small
 
 \begin_inset Formula 
 \begin{equation}
@@ -451,7 +451,7 @@ El método de pronóstico de promedio móvil: Consiste en considerar solamente
 
  valores que tienen el mismo peso y que son considerados relevantes.
 \shape italic
-\size scriptsize
+\size small
 
 \begin_inset Formula 
 \begin{equation}
@@ -479,7 +479,7 @@ El método de pronóstico por suavizamiento exponencial: Con este método se
  combinación del último valor de la serie y del valor pronosticado para
  este mencionado último valor.
 \shape italic
-\size scriptsize
+\size small
 
 \begin_inset Formula 
 \begin{equation}
@@ -536,6 +536,7 @@ El método de suavizamiento exponencial con tendencia:
 \align left
 
 \shape italic
+\size small
 \begin_inset Formula 
 \begin{equation}
 P=\alpha\left(UV\right)+\left(1\text{-}\alpha\right)\left(UP\right)+T
@@ -567,6 +568,7 @@ UT=\alpha\left(UV-PV\right)+\left(1\text{-}\alpha\right)\left(UP-PP\right)
 \align left
 donde 
 \shape italic
+\size small
 \lang spanish
 
 \begin_inset Formula $P=pronóstico$
@@ -671,7 +673,6 @@ regresión lineal
 \begin_layout Standard
 
 \shape italic
-\size scriptsize
 \lang spanish
 \begin_inset Formula 
 \begin{equation}
@@ -686,60 +687,24 @@ y=a+bx
 \begin_layout Standard
 
 \lang spanish
-Donde:
+donde:
 \shape italic
-\size scriptsize
+ 
+\size small
 
-\begin_inset Formula 
-\[
-y=variable\;dependiente
-\]
-
+\begin_inset Formula $y=variable\;dependiente$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-
-\shape italic
-\size scriptsize
-\lang spanish
-\begin_inset Formula 
-\[
-x=variable\;independiente
-\]
-
+, 
+\begin_inset Formula $x=variable\;independiente$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-
-\shape italic
-\size scriptsize
-\lang spanish
-\begin_inset Formula 
-\[
-a=intersección\;de\;la\;línea\;con\;el\;eje\;y
-\]
-
+, 
+\begin_inset Formula $a=intersección\;de\;la\;línea\;con\;el\;eje\;y$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-
-\shape italic
-\size scriptsize
-\lang spanish
-\begin_inset Formula 
-\[
-b=pendiente\;de\;la\;línea
-\]
-
+, 
+\begin_inset Formula $b=pendiente\;de\;la\;línea$
 \end_inset
 
 
@@ -768,16 +733,15 @@ mínimos cuadrados
 \begin_inset Formula $b$
 \end_inset
 
- tal que la suma del cuadrado de los errores de estimación sea la menor
+ tal que la suma del cuadrado de los errores de estimación sea el menor
  posible.
  Para problemas donde se consideran varios indicadores clave como variables
- independiente, la ecuación presenta la siguiente forma:
+ independientes, la ecuación presenta la siguiente forma:
 \end_layout
 
 \begin_layout Standard
 
 \shape italic
-\size scriptsize
 \lang spanish
 \begin_inset Formula 
 \begin{equation}
@@ -829,7 +793,7 @@ Desviación Absoluta Media (MAD)
 \begin_layout Standard
 
 \shape italic
-\size scriptsize
+\size small
 \begin_inset Formula 
 \begin{equation}
 MAD=\frac{suma\;de\;los\;errores\;de\;pronóstico}{número\;de\;pronósticos}
@@ -851,7 +815,7 @@ Error Cuadrático Promedio (MSE)
 \begin_layout Standard
 
 \shape italic
-\size scriptsize
+\size small
 \begin_inset Formula 
 \begin{equation}
 MSE=\frac{suma\;de\;los\;cuadrados\;de\;los\;errores\;de\;pronóstico}{número\;de\;pronósticos}
