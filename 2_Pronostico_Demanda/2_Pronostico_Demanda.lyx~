@@ -516,9 +516,14 @@ constante de suavizamiento
 \noindent
 \align left
 El método de suavizamiento exponencial con tendencia:
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align left
+
 \shape italic
 \size small
-
 \begin_inset Formula 
 \begin{equation}
 P=\alpha\left(UV\right)+\left(1\text{-}\alpha\right)\left(UP\right)+T

@@ -186,8 +186,69 @@ key "Jean2016"
 .
  La dificultad radica en que debemos construir modelos que nos acerquen
  a una buena predicción sobre datos aún no conocidos o imprevistos.
+ Peter Prettenhofer y Gille Louppe presentan la siguiente definición:
 \end_layout
 
+\begin_layout Standard
+Data comes as...
+\end_layout
+
+\begin_layout Itemize
+A set of examples 
+\begin_inset Formula $\left\{ \left(x_{i},y_{i}\right)\mid0\leq i<n\;samples\right\} $
+\end_inset
+
+, with
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Feature vector 
+\begin_inset Formula $x\in\mathbb{R}^{n\;features}$
+\end_inset
+
+, and
+\end_layout
+
+\begin_layout Itemize
+Response 
+\begin_inset Formula $y\in\mathbb{R}$
+\end_inset
+
+(regression) or 
+\begin_inset Formula $y\in\left\{ -1,1\right\} $
+\end_inset
+
+ (classification)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Goal is to...
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Find a function 
+\begin_inset Formula $ŷ=f\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Such that error 
+\begin_inset Formula $L\left(y,ŷ\right)$
+\end_inset
+
+on new (unseen) 
+\begin_inset Formula $x$
+\end_inset
+
+ is minimal
+\end_layout
+
+\end_deeper
 \begin_layout Subsection
 Categorías de los algoritmos
 \end_layout

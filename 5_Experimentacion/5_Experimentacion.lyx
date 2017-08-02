@@ -349,7 +349,7 @@ endfor;
 
 \series bold
 \size tiny
-criterios de línea de base (ZeroR, criterios del experto u otro);
+criterios de línea de base (ZeroR o criterio experto);
 \end_layout
 
 \begin_layout LyX-Code
