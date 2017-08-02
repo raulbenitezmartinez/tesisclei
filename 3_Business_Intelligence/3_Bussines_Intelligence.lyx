@@ -96,11 +96,6 @@ Business Intelligence engloba un conjunto de conceptos, técnicas basadas
 les en información significativa y útil que permite a las organizaciones
  una visión y toma de decisiones estratégicas, tácticas y operativas más
  efectivas.
- Las tecnologías de Business Intelligence ofrecen vistas históricas, actuales
- y predictivas de las operaciones, son procesos que se extienden en el tiempo,
- capaces de manejar grandes volúmenes de datos que ayudan a identificar,
- crear y desarrollar nuevas estrategias de negocios para mejorar la competitivid
-ad.
  La era actual de las tecnologías de la información ha llevado a la necesidad
  de tener mejores, más rápidas y más eficientes métodos de extraer los datos
  de una organización, transformarlo en información y distribuirlo a las
@@ -177,8 +172,7 @@ Objetivos
 \end_layout
 
 \begin_layout Standard
-Según lo expuesto en la definición del término Business Intelligence podemos
- decir que tiene los siguientes objetivos principales
+Business Intelligence tiene los siguientes objetivos principales
 \begin_inset CommandInset citation
 LatexCommand cite
 key "BICCI07"
@@ -199,11 +193,6 @@ Facilitar la disponibilidad de información a los usuarios de negocios, que
 \end_layout
 
 \begin_layout Itemize
-Permitir a las organizaciones dirigir de mejor forma, decidir, medir, gestionar
- y optimizar el alcance de la eficiencia y los resultados financieros.
-\end_layout
-
-\begin_layout Itemize
 Disminuir sustancialmente la incertidumbre que existe ante la toma de decisiones
  respecto a un plan estratégico.
 \end_layout
@@ -213,10 +202,7 @@ Componentes de Business Intelligence
 \end_layout
 
 \begin_layout Standard
-Implementar un proyecto de Business Intelligence en una organización es
- un proceso que sigue una serie de pasos, cada paso puede verse como un
- componente.
- En la siguiente gráfica observamos los distintos componentes que forman
+En la siguiente gráfica observamos los distintos componentes que forman
  parte de Business Intelligence.
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -237,7 +223,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename images/fuentes_informacion.png
-	scale 55
+	scale 40
 
 \end_inset
 
@@ -306,10 +292,7 @@ Los KPI
  no todos los indicadores son KPI, otra característica es que cada organización
  debe definir sus propios KPI que desean tener siempre presente para manejar
  su rumbo, estas varían de acuerdo según la actividad realizada, el tipo
- de producto o la estrategia de negocios, por dicho motivo los KPI no pueden
- copiarse de una organización a otra ya que cada organización es diferente
- y requiere de una reflexión estratégica de los cuales saldrán los correspondien
-tes KPI.
+ de producto o la estrategia de negocios.
  Un cuadro de gestión o de mando no debe excederse en la cantidad de KPI,
  porque puede darse el problema de 
 \begin_inset Quotes eld
@@ -336,11 +319,6 @@ key "CMR13"
 En la siguiente sección haremos uso de los conceptos, herramientas y tecnologías
  que nos provee Business Intelligence para obtener los datos que ayudarán
  a modelar una solución al problema de estudio sobre pronóstico de la demanda.
- Iniciaremos con una breve descripción de la fuente de información, el proceso
- ETL (Extracción, Transformación y Carga), la especificación del datawarehouse,
- la definición de los indicadores clave de rendimiento y finalmente el etiquetad
-o a cada tupla de indicadores que se transformarán en datos de entrada para
- el proceso de aprendizaje automático.
 \end_layout
 
 \begin_layout Subsection
@@ -371,19 +349,16 @@ Una empresa retail es cualquier comercio que vende sus productos al consumidor
 
 \end_inset
 
-, trata acerca de pronosticar la demanda, es decir, determinar la cantidad
- de productos que se deben disponer para satisfacer la demanda de los clientes
- para el siguiente periodo.
- Utilizando los conceptos y herramientas de Business Intelligence, se parte
- con el análisis de una fuente de información auténtica obtenida de una
- empresa retail; se diseña el datawarehouse que será poblado con información
- de las transacciones operacionales diarias del negocio; posteriormente
- se definen los indicadores claves de rendimiento como métricas, se calculan
- los valores de los indicadores con los datos históricos almacenados en
- el datawarehuose para cada periodo de tiempo establecido y se asigna una
- etiqueta a cada tupla de valores KPI que finalmente servirán como parámetros
- de entrada de las herramientas de aprendizaje automático para diseñar una
- solución que pronostique la demanda.
+, trata acerca de pronosticar la demanda, para satisfacer el consumo de
+ los clientes para el siguiente periodo.
+ Se parte con el análisis de una fuente de información real de una empresa
+ retail; se diseña el datawarehouse que será poblado con información de
+ las transacciones operacionales del negocio; posteriormente se definen
+ los indicadores claves de rendimiento como métricas, se calculan los valores
+ de los indicadores con los datos del datawarehuose para cada periodo y
+ se asigna una etiqueta a cada tupla de valores KPI que servirán como parámetros
+ de entrada de las herramientas de aprendizaje automático para la solución
+ de pronóstico de la demanda.
 \end_layout
 
 \begin_layout Subsubsection
@@ -391,17 +366,15 @@ Fuente de Información
 \end_layout
 
 \begin_layout Standard
-Para el presente trabajo, se cuenta con una base de datos relacional Oracle
- 10g con las operaciones transaccionales de una empresa retail dedicada
- a la venta de productos alimenticios y artículos de limpieza, algunas de
- las líneas de productos con que cuenta la empresa son: aceites corporales,
- acondicionadores, aromatizantes, cuidado corporal, desodorantes, limpiadores,
- salud e higiene, salud y belleza, aguas, gaseosas, cervezas, vinos, chocolates,
- galletitas, enlatados, lácteos, yerbas y varias líneas de productos más.
- La base de datos almacena datos de la operaciones comprendidas en el periodo
- de noviembre del 2013 a octubre de 2016.
- A continuación una reseña de las principales tablas tenidas en cuenta para
- el diseño del datawarehouse.
+Se cuenta con una base de datos relacional Oracle 10g con las operaciones
+ transaccionales de una empresa retail dedicada a la venta de productos
+ alimenticios y artículos de limpieza, algunas de las líneas de productos
+ son: acondicionadores, cuidado corporal, desodorantes, limpiadores, salud
+ e higiene, salud y belleza, bebidas, enlatados, lácteos y varias líneas
+ de productos más.
+ La base de datos registra las operaciones en el periodo de Nov-2013 a Oct-2016.
+ A continuación las principales tablas utilizadas para el diseño del datawarehou
+se.
 \end_layout
 
 \begin_layout Itemize
@@ -410,8 +383,7 @@ Para el presente trabajo, se cuenta con una base de datos relacional Oracle
 Tabla de Productos
 \series default
 : almacena información como descripción, costo, precio de venta, categoría
- de los artículos disponibles para la venta, cuenta con 13.200 artículos
- registrados.
+ de los artículos disponibles, cuenta con 13.200 artículos registrados.
 \end_layout
 
 \begin_layout Itemize
@@ -440,7 +412,7 @@ Tabla de Ventas Cabecera
 Tabla de Ventas Detalle
 \series default
 : contiene los registros de los productos que fueron comercializados, cada
- detalle está relacionado a un registro de venta cabecera.
+ detalle está asociado a un registro de venta cabecera.
  Contiene datos de la fecha, el producto, precio de costo, precio de venta,
  cantidad y otros datos, cuenta con 981.402 registros.
 \end_layout
@@ -491,9 +463,7 @@ Tablas de hechos
 \end_layout
 
 \begin_layout Standard
-De las tablas transaccionales definimos 3 tablas de hechos que nos servirá
- para definir los KPI que utilizaremos para el análisis.
- 
+De las tablas transaccionales definimos 3 tablas de hechos: 
 \end_layout
 
 \begin_layout Itemize
@@ -503,8 +473,7 @@ Tabla de hechos Cabecera:
 \series default
  almacena los datos históricos de las ventas, cada registro guarda datos
  de: fecha, cliente, caja, número de factura y montos totales.
- Las métricas de la tabla de hechos son monto total, monto exento, monto
- gravado IVA.
+ Las métricas son monto total, monto exento, monto gravado IVA.
  
 \end_layout
 
@@ -515,8 +484,8 @@ Tabla de hechos Detalles:
 \series default
  almacena los datos históricos del detalle, cada registro guarda información
  del número de comprobante, fecha, proveedor, cliente, cantidad y precio.
- Las métricas asociadas a la tabla de hechos son, cantidad, precio unitario,
- precio unitario neto, impuesto, costo y el importe total.
+ Las métricas son, cantidad, precio unitario, precio unitario neto, impuesto,
+ costo y el importe total.
 \end_layout
 
 \begin_layout Itemize
@@ -525,8 +494,7 @@ Tabla de hechos Detalles:
 Tabla de hechos Stock:
 \series default
  almacena los datos históricos de cada movimiento de compra y de venta.
- Las métricas utilizadas para la tabla de hechos son: cantidad, precio unitario
- y costo unitario.
+ Las métricas son: cantidad, precio unitario y costo unitario.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -534,7 +502,7 @@ Dimensiones
 \end_layout
 
 \begin_layout Standard
-Las tablas de dimensiones diseñadas para el modelado del datawarehouse son:
+Las tablas de dimensiones para el modelado del datawarehouse son:
 \end_layout
 
 \begin_layout Itemize
@@ -542,9 +510,9 @@ Las tablas de dimensiones diseñadas para el modelado del datawarehouse son:
 \series bold
 Dimensión Fecha:
 \series default
- La tabla de dimensión fecha está ligada a todas las tablas de hechos, sirve
- para limitar o agrupar los datos de las tablas de hechos al momento de
- realizar consultas sobre estas en el tiempo.
+ La dimensión fecha está ligada a todas las tablas de hechos, sirve para
+ limitar o agrupar los datos de las tablas de hechos al momento de realizar
+ consultas sobre estas en el tiempo.
  Con la dimensión fecha se pueden establecer niveles jerárquicos en días,
  semanas, meses, trimestres, semestres y años.
 \end_layout
@@ -554,9 +522,8 @@ Dimensión Fecha:
 \series bold
 Dimensión Productos:
 \series default
- La tabla de dimensión producto está relacionada a las tablas de hechos
- Detalles y Stock, contiene los atributos o campos por la cual se pueden
- filtrar o agrupar datos al realizar consultas sobre la tabla de hechos.
+ La dimensión producto está relacionada a las tablas de hechos Detalles
+ y Stock.
 \end_layout
 
 \begin_layout Itemize
@@ -564,9 +531,7 @@ Dimensión Productos:
 \series bold
 Dimensión Proveedores:
 \series default
- La tabla de dimensión proveedores está relacionada a la tabla de hechos
- Detalles, contiene los atributos o campos por la cual se puede filtrar
- o agrupar datos al realizar consultas sobre la tabla de hechos.
+ La dimensión proveedores está relacionada a la tabla de hechos Detalles.
 \end_layout
 
 \begin_layout Itemize
@@ -574,9 +539,8 @@ Dimensión Proveedores:
 \series bold
 Dimensión Clientes:
 \series default
- La tabla de dimensión Clientes está relacionada a las tablas de hechos
- Cabecera y Detalles, contiene los atributos o campos por la cual se pueden
- filtrar o agrupar datos al realizar consultas sobre la tabla de hechos.
+ La dimensión Clientes está relacionada a las tablas de hechos Cabecera
+ y Detalles.
 \end_layout
 
 \begin_layout Itemize
@@ -584,14 +548,12 @@ Dimensión Clientes:
 \series bold
 Dimensión Cajas:
 \series default
- La tabla de dimensión Cajas está relacionada a la tabla de hechos Cabecera,
- contiene los atributos o campos por la cual se pueden filtrar o agrupar
- datos al realizar consultas sobre la tabla de hechos.
+ La dimensión Cajas está relacionada a la tabla de hechos Cabecera.
 \end_layout
 
 \begin_layout Standard
-En la siguiente figura observamos un ejemplo del modelo en esquema estrella
- de la tabla de hechos Detalles.
+En la siguiente figura observamos un ejemplo del modelo estrella de la tabla
+ de hechos Detalles.
 \end_layout
 
 \begin_layout Standard
@@ -636,23 +598,22 @@ Definición de los KPI
 \end_layout
 
 \begin_layout Standard
-En el marco de esta tesis, en esta sección se definirán los KPI que se utilizará
-n como datos de entrada en las herramientas de aprendizaje automático para
- el modelado de una solución para 
+En esta sección se definirán los KPI para el modelado de una solución para
+ 
 \lang spanish
-pronosticar la demanda y como consecuencia la reposición de stock
+pronosticar la demanda y en consecuencia la reposición de stock
 \lang english
- del siguiente periodo de tiempo
+ para el siguiente periodo de ventas
 \begin_inset CommandInset citation
 LatexCommand cite
 key "CMR13"
 
 \end_inset
 
- (Ej.: cantidad a comprar para satisfacer la demanda de la siguiente semana,
- quincena, o mes), estos KPI fueron adaptados a la solución planteada debido
- a que en los textos los KPI definidos engloban a todas las áreas de la
- organización como compras, ventas, marketing, recursos humanos.
+ (Ej.: cantidad a comprar para satisfacer la demanda de la siguiente semana),
+ estos KPI fueron adaptados a la solución planteada debido a que en los
+ textos los KPI definidos engloban a todas las áreas de la organización
+ como compras, ventas, marketing, recursos humanos.
  Cada KPI mide un valor obtenido de los datos históricos almacenados en
  el datawarehouse.
  El cálculo de cada valor se realiza para cada producto y en un periodo
@@ -669,11 +630,12 @@ Es la cantidad media por cada transacción de compra que se realiza de un
  determinado producto.
  El indicador viene determinado por dos variables: La cantidad total vendida
  del producto y el total de tickets en las que fue vendido el producto.
- Aplicando la siguiente fórmula obtenemos el valor de la cantidad media
- de venta para cada producto.
+ Se obtiene de la siguiente fórmula.
 \end_layout
 
 \begin_layout Standard
+
+\size small
 \begin_inset Formula 
 \begin{equation}
 X\,=\frac{\sum\left(Cantidad\right)}{Total\,Tickets\,Periodo}\label{eq: Ticket Medio}
@@ -695,6 +657,8 @@ La cifra de ventas es un KPI que sirve para explicar el importe total de
 \end_layout
 
 \begin_layout Standard
+
+\size small
 \begin_inset Formula 
 \begin{equation}
 X\,=\sum\left(Precio*Cantidad\right)\label{eq: Cifra de Ventas}
@@ -716,6 +680,8 @@ Es la razón entre el precio de venta y precio de costo del producto, es
 \end_layout
 
 \begin_layout Standard
+
+\size small
 \begin_inset Formula 
 \begin{equation}
 X\,=\frac{\sum\left(\left(Precio-Costo\right)*Cantidad\right)}{\sum\left(Precio*Cantidad\right)}*100\label{eq:Margen Comercial}
@@ -738,6 +704,8 @@ Este indicador mide la cantidad de veces que el stock del producto se renueva
 \end_layout
 
 \begin_layout Standard
+
+\size small
 \begin_inset Formula 
 \begin{equation}
 X\,=\frac{\sum\left(Total\,Ventas\,Periodo\right)}{\left(\frac{Stock\,Inicial\,-Stock\,Final}{2}\right)}\label{eq:Rotación Stock}
@@ -760,6 +728,8 @@ El indicador mide la rentabilidad obtenida por la empresa basada en el margen
 \end_layout
 
 \begin_layout Standard
+
+\size small
 \begin_inset Formula 
 \begin{equation}
 X=\left(\sum\left(Precio-Costo\right)*Cantidad\right)*Rotacion\,Stock\label{eq:Coeficiente Rentabilidad}
@@ -775,12 +745,14 @@ Cobertura de Stock
 \end_layout
 
 \begin_layout Standard
-Este indicador muestra el periodo de tiempo (habitualmente se expresa en
- días o semanas) que el negocio puede continuar vendiendo con el stock de
- que dispone en el momento, sin incorporar nuevas cantidades de ese producto.
+Este indicador muestra el periodo de tiempo que el negocio puede continuar
+ vendiendo con el stock de que dispone en el momento, sin incorporar nuevas
+ cantidades de ese producto.
 \end_layout
 
 \begin_layout Standard
+
+\size small
 \begin_inset Formula 
 \begin{equation}
 X\,=\frac{Stock\,Actual}{Promedio\,Cantidad\,Venta\,Ultimos\,3\,Periodos}\label{eq:Cobertura Stock}
@@ -799,13 +771,13 @@ Cálculo de valores para los Indicadores Clave de Desempeño.
 Definidos los KPI a ser utilizados, obtenemos los valores de cada KPI para
  cada producto y periodo de los datos almacenados en el datawarehouse, para
  ello codificamos a sentencias SQL las fórmulas detalladas en la sección
- anterior y almacenamos la información de los resultados en la base de datos.
- Además de los valores de los KPI, en cada registro adicionalmente se guarda
- la información de la cantidad, fecha, año, mes, quincena y semana.
+ anterior.
+ Además de los valores de los KPI, en cada registro se guarda la información
+ de cantidad, fecha, año, mes, quincena y semana.
  Para el cálculo de los valores de los KPI se establecieron restricciones,
  que si un producto no fuese vendido por una cantidad consecutiva de periodos
- esta era descartada, ya que los valores de los cálculos para cada KPI daban
- cero el cual no tiene relevancia para el modelado.
+ esta era descartada, ya que los valores de los cálculos daban cero el cual
+ no tiene relevancia para el modelado.
 \end_layout
 
 \begin_layout Standard
@@ -822,12 +794,9 @@ A cada tupla de valores KPI obtenidos para cada producto se le debe asignar
  una etiqueta, el cual es uno de los puntos focales más importantes para
  el modelado mediante el aprendizaje automático.
  Para una mayor fiabilidad esta asignación de etiquetas debe ser realizada
- y revisada por el experto del área de compras (que podría ser el gerente
- de administración de compras u otra persona a cargo de la reposición de
- stock), sin embargo para el presente trabajo el etiquetado fue realizado
- en forma empírica, sin la intervención de un experto por la dificultad
- de contar con una persona especializada en el área.
- La estrategia utilizada para el etiquetado es de la siguiente manera:
+ y revisada por el experto del área de compras, sin embargo para este trabajo
+ el etiquetado se realizó en forma empírica, sin la intervención de un experto.
+ La estrategia utilizada para el etiquetado es como sigue:
 \end_layout
 
 \begin_layout Standard
@@ -846,6 +815,7 @@ status open
 
 \begin_layout Plain Layout
 
+\size small
 \lang spanish
 \begin_inset Caption Standard
 
@@ -871,6 +841,8 @@ RANGO KPI TICKET MEDIO
 
 \begin_layout Plain Layout
 \align center
+
+\size footnotesize
 \begin_inset Tabular
 <lyxtabular version="3" rows="4" columns="2">
 <features tabularvalignment="middle">
@@ -881,6 +853,8 @@ RANGO KPI TICKET MEDIO
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 (=) igual a 0
 \end_layout
 
@@ -890,6 +864,8 @@ RANGO KPI TICKET MEDIO
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 a
 \end_layout
 
@@ -901,6 +877,8 @@ a
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 > (mayor) a 0 y < (menor) a 1
 \end_layout
 
@@ -910,6 +888,8 @@ a
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 b
 \end_layout
 
@@ -921,6 +901,8 @@ b
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 >= (mayor o igual) a 1 y <= (menor o igual) a 3
 \end_layout
 
@@ -930,6 +912,8 @@ b
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 c
 \end_layout
 
@@ -941,6 +925,8 @@ c
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 > (mayor) a 3
 \end_layout
 
@@ -950,6 +936,8 @@ c
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 d
 \end_layout
 
@@ -979,6 +967,7 @@ status open
 
 \begin_layout Plain Layout
 
+\size small
 \lang spanish
 \begin_inset Caption Standard
 
@@ -1004,6 +993,8 @@ RANGO KPI CIFRA VENTAS (%)
 
 \begin_layout Plain Layout
 \align center
+
+\size footnotesize
 \begin_inset Tabular
 <lyxtabular version="3" rows="4" columns="2">
 <features tabularvalignment="middle">
@@ -1014,6 +1005,8 @@ RANGO KPI CIFRA VENTAS (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 >= (mayor o igual) a 0 y <= (menor o igual) a 20
 \end_layout
 
@@ -1023,6 +1016,8 @@ RANGO KPI CIFRA VENTAS (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 e
 \end_layout
 
@@ -1034,6 +1029,8 @@ e
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 > (mayor) a 20 y <= (menor o igual) a 50
 \end_layout
 
@@ -1043,6 +1040,8 @@ e
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 f
 \end_layout
 
@@ -1054,6 +1053,8 @@ f
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 > (mayor) a 50 y <= (menor o igual) a 80
 \end_layout
 
@@ -1063,6 +1064,8 @@ f
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 g
 \end_layout
 
@@ -1074,6 +1077,8 @@ g
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 > (mayor) a 80 y <= (menor o igual) a 100
 \end_layout
 
@@ -1083,6 +1088,8 @@ g
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 h
 \end_layout
 
@@ -1112,6 +1119,7 @@ status open
 
 \begin_layout Plain Layout
 
+\size small
 \lang spanish
 \begin_inset Caption Standard
 
@@ -1137,6 +1145,8 @@ RANGO KPI MARGEN COMERCIAL (%)
 
 \begin_layout Plain Layout
 \align center
+
+\size footnotesize
 \begin_inset Tabular
 <lyxtabular version="3" rows="4" columns="2">
 <features tabularvalignment="middle">
@@ -1147,6 +1157,8 @@ RANGO KPI MARGEN COMERCIAL (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 >= (mayor o igual) a 0 y <= (menor o igual) a 20
 \end_layout
 
@@ -1156,6 +1168,8 @@ RANGO KPI MARGEN COMERCIAL (%)
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 i
 \end_layout
 
@@ -1167,6 +1181,8 @@ i
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 > (mayor) a 20 y <= (menor o igual) a 50
 \end_layout
 
@@ -1176,6 +1192,8 @@ i
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 j
 \end_layout
 
@@ -1187,6 +1205,8 @@ j
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 > (mayor) a 50 y <= (menor o igual) a 80
 \end_layout
 
@@ -1196,6 +1216,8 @@ j
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 k
 \end_layout
 
@@ -1207,6 +1229,8 @@ k
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 > (mayor) a 80 y <= (menor o igual) a 100
 \end_layout
 
@@ -1216,6 +1240,8 @@ k
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 l
 \end_layout
 
@@ -1245,6 +1271,7 @@ status open
 
 \begin_layout Plain Layout
 
+\size small
 \lang spanish
 \begin_inset Caption Standard
 
@@ -1270,6 +1297,8 @@ RANGO KPI ROTACIÓN STOCK
 
 \begin_layout Plain Layout
 \align center
+
+\size footnotesize
 \begin_inset Tabular
 <lyxtabular version="3" rows="4" columns="2">
 <features tabularvalignment="middle">
@@ -1280,6 +1309,8 @@ RANGO KPI ROTACIÓN STOCK
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 (=) igual a 0
 \end_layout
 
@@ -1289,6 +1320,8 @@ RANGO KPI ROTACIÓN STOCK
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 m
 \end_layout
 
@@ -1300,6 +1333,8 @@ m
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 > (mayor) a 0 y < (menor) a 1
 \end_layout
 
@@ -1309,6 +1344,8 @@ m
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 n
 \end_layout
 
@@ -1320,6 +1357,8 @@ n
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 >= (mayor o igual) a 1 y <= (menor o igual) a 3
 \end_layout
 
@@ -1329,6 +1368,8 @@ n
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 o
 \end_layout
 
@@ -1340,6 +1381,8 @@ o
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 > (mayor) a 3
 \end_layout
 
@@ -1349,6 +1392,8 @@ o
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 p
 \end_layout
 
@@ -1378,6 +1423,7 @@ status open
 
 \begin_layout Plain Layout
 
+\size small
 \lang spanish
 \begin_inset Caption Standard
 
@@ -1403,6 +1449,8 @@ RANGO KPI COBERTURA STOCK
 
 \begin_layout Plain Layout
 \align center
+
+\size footnotesize
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="2">
 <features tabularvalignment="middle">
@@ -1413,6 +1461,8 @@ RANGO KPI COBERTURA STOCK
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 (=) igual a 0
 \end_layout
 
@@ -1422,6 +1472,8 @@ RANGO KPI COBERTURA STOCK
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 q
 \end_layout
 
@@ -1433,6 +1485,8 @@ q
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 > (mayor) a 0 y < (menor) a 1
 \end_layout
 
@@ -1442,6 +1496,8 @@ q
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 r
 \end_layout
 
@@ -1453,6 +1509,8 @@ r
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 >= (mayor o igual) a 1 y <= (menor o igual) a 3
 \end_layout
 
@@ -1462,6 +1520,8 @@ r
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 s
 \end_layout
 
@@ -1473,6 +1533,8 @@ s
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 > (mayor) a 3 y <= (menor o igual) a 10
 \end_layout
 
@@ -1482,6 +1544,8 @@ s
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 t
 \end_layout
 
@@ -1493,6 +1557,8 @@ t
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 > (mayor) a 10
 \end_layout
 
@@ -1502,6 +1568,8 @@ t
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 u
 \end_layout
 
@@ -1584,6 +1652,7 @@ status open
 
 \begin_layout Plain Layout
 
+\size small
 \lang spanish
 \begin_inset Caption Standard
 
@@ -1609,6 +1678,8 @@ TABLA DE ETIQUETADO POR EL EXPERTO
 
 \begin_layout Plain Layout
 \align center
+
+\size footnotesize
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="6">
 <features tabularvalignment="middle">
@@ -1623,6 +1694,8 @@ TABLA DE ETIQUETADO POR EL EXPERTO
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 aeimq
 \end_layout
 
@@ -1632,6 +1705,8 @@ aeimq
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Nada
 \end_layout
 
@@ -1641,6 +1716,8 @@ Nada
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 bejnq
 \end_layout
 
@@ -1650,6 +1727,8 @@ bejnq
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Poco
 \end_layout
 
@@ -1659,6 +1738,8 @@ Poco
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 bejoq
 \end_layout
 
@@ -1668,6 +1749,8 @@ bejoq
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Poco
 \end_layout
 
@@ -1679,6 +1762,8 @@ Poco
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 aeimr
 \end_layout
 
@@ -1688,6 +1773,8 @@ aeimr
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Nada
 \end_layout
 
@@ -1697,6 +1784,8 @@ Nada
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 bejnr
 \end_layout
 
@@ -1706,6 +1795,8 @@ bejnr
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Poco
 \end_layout
 
@@ -1715,6 +1806,8 @@ Poco
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 bejpq
 \end_layout
 
@@ -1724,6 +1817,8 @@ bejpq
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Medio
 \end_layout
 
@@ -1735,6 +1830,8 @@ Medio
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 aeims
 \end_layout
 
@@ -1744,6 +1841,8 @@ aeims
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Nada
 \end_layout
 
@@ -1753,6 +1852,8 @@ Nada
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 bejns
 \end_layout
 
@@ -1762,6 +1863,8 @@ bejns
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Nada
 \end_layout
 
@@ -1771,6 +1874,8 @@ Nada
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 beknq
 \end_layout
 
@@ -1780,6 +1885,8 @@ beknq
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Poco
 \end_layout
 
@@ -1791,6 +1898,8 @@ Poco
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 aeimt
 \end_layout
 
@@ -1800,6 +1909,8 @@ aeimt
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Nada
 \end_layout
 
@@ -1809,6 +1920,8 @@ Nada
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 bejnt
 \end_layout
 
@@ -1818,6 +1931,8 @@ bejnt
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Nada
 \end_layout
 
@@ -1827,6 +1942,8 @@ Nada
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 beknr
 \end_layout
 
@@ -1836,6 +1953,8 @@ beknr
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Poco
 \end_layout
 
@@ -1847,6 +1966,8 @@ Poco
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 aeimu
 \end_layout
 
@@ -1856,6 +1977,8 @@ aeimu
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Nada
 \end_layout
 
@@ -1865,6 +1988,8 @@ Nada
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 bejnu
 \end_layout
 
@@ -1874,6 +1999,8 @@ bejnu
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Nada
 \end_layout
 
@@ -1883,6 +2010,8 @@ Nada
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 bekns
 \end_layout
 
@@ -1892,6 +2021,8 @@ bekns
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 Nada
 \end_layout
 
@@ -1903,6 +2034,8 @@ Nada
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 ...
 \end_layout
 
@@ -1912,6 +2045,8 @@ Nada
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 ...
 \end_layout
 
@@ -1921,6 +2056,8 @@ Nada
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 ...
 \end_layout
 
@@ -1930,6 +2067,8 @@ Nada
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 ...
 \end_layout
 
@@ -1939,6 +2078,8 @@ Nada
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 ...
 \end_layout
 
@@ -1948,6 +2089,8 @@ Nada
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 ...
 \end_layout
 
@@ -1967,11 +2110,9 @@ Nada
 \end_layout
 
 \begin_layout Standard
-Una vez finalizado el etiquetado de la totalidad de las tuplas de KPI por
- cada producto y periodo, lo resultados son exportados a archivos con extensión
- csv, para cada producto se crea 3 archivos, uno por cada periodo (semanal,
- quincenal, mensual) que tiene como nombre el Identificador del producto
- y que contiene los valores de los resultados para los KPI.
+Finalizado el etiquetado de todas las tuplas de KPI por cada producto y
+ periodo, lo resultados son exportados a archivos de texto, para cada producto
+ se crea 3 archivos, uno por cada periodo (semanal, quincenal, mensual).
  Estos archivos son los datos que sirven como entrada para crear el modelo
  de pronóstico para la reposición de stock mediante algoritmos de aprendizaje
  automático.
@@ -1984,6 +2125,7 @@ En la figura a continuación un ejemplo del etiquetado para los valores de
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
