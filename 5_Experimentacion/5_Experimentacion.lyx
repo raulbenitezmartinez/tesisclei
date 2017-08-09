@@ -236,36 +236,8 @@ Entrenamiento y evaluación
 Como se mencionó en el esquema general de procesamiento, el entrenamiento
  y testeo se realiza con todos los algoritmos de clasificación posibles,
  para ello se utiliza la herramienta WEKA y los algoritmos de clasificación
- que implementa según la tabla 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "tab:algoritmosWekaVsReales"
-
-\end_inset
-
-.
- Otra forma de categorizar los clasificadores incluidos en WEKA es como
- sigue:
-\end_layout
-
-\begin_layout Itemize
-Bayesianos: BayesNet, NaiveBayes, NaiveBayesUpdateable.
-\end_layout
-
-\begin_layout Itemize
-Basados en funciones: Logistic, MultilayerPerceptron, SimpleLogistic, SMO.
-\end_layout
-
-\begin_layout Itemize
-Basados en reglas: OneR, DecisionTable, JRip, PART, ZeroR.
-\end_layout
-
-\begin_layout Itemize
-Basados en árboles: DecisionStump, J48, LMT, RandomForest, RandomTree, REPTree.
-\end_layout
-
-\begin_layout Standard
-En el siguiente pseudocódigo se presenta la estrategia de aprendizaje y
+ que implementa.
+ En el siguiente pseudocódigo se presenta la estrategia de aprendizaje y
  selección de los clasificadores.
 \end_layout
 

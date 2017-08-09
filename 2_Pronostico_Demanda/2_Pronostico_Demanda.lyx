@@ -140,21 +140,12 @@ te la cantidad o volumen de productos para reponer el stock y que sirvan
 El stock o existencia de una empresa es el conjunto de materiales y artículos
  que se almacenan, tanto aquellos que son necesarios para el proceso productivo
  como los destinados a la venta.
- La función que desempeña el stock o existencia en una empresa son:
-\end_layout
-
-\begin_layout Itemize
-Evitar la escasez, ante la incertidumbre de la demanda o ante un posible
- retraso en la reposición o suministro de los pedidos.
-\end_layout
-
-\begin_layout Itemize
-Aprovechar la disminución de los costes a medida que aumenta el volumen
+ La función que desempeña el stock o existencia en una empresa son: Evitar
+ la escasez, ante la incertidumbre de la demanda o ante un posible retraso
+ en la reposición o suministro de los pedidos.
+ Aprovechar la disminución de los costes a medida que aumenta el volumen
  de compras o de fabricación.
-\end_layout
-
-\begin_layout Itemize
-Lograr un equilibrio entre las compras y las ventas para alcanzar la máxima
+ Lograr un equilibrio entre las compras y las ventas para alcanzar la máxima
  competitividad.
 \end_layout
 
@@ -857,13 +848,6 @@ o como lo hacen las técnicas de esta sección, debe quedar claro que la soluci�
  cuantitativo o cualitativo propiamente dicho, sin embargo toma ciertos
  aspectos de ambos y se implementa con conceptos, tecnologías y herramientas
  de solución totalmente diferentes.
-\end_layout
-
-\begin_layout Standard
-En las secciones tres y cuatro se combinan los conceptos, herramientas y
- tecnologías que modelan la solución de esta nueva técnica de pronóstico.
- En la sección quinta se realizan las experimentaciones en base al caso
- de estudio y se evaluan los resultados obtenidos.
 \end_layout
 
 \end_body

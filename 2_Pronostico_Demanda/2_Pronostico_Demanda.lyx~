@@ -140,21 +140,12 @@ te la cantidad o volumen de productos para reponer el stock y que sirvan
 El stock o existencia de una empresa es el conjunto de materiales y artículos
  que se almacenan, tanto aquellos que son necesarios para el proceso productivo
  como los destinados a la venta.
- La función que desempeña el stock o existencia en una empresa son:
-\end_layout
-
-\begin_layout Itemize
-Evitar la escasez, ante la incertidumbre de la demanda o ante un posible
- retraso en la reposición o suministro de los pedidos.
-\end_layout
-
-\begin_layout Itemize
-Aprovechar la disminución de los costes a medida que aumenta el volumen
+ La función que desempeña el stock o existencia en una empresa son: Evitar
+ la escasez, ante la incertidumbre de la demanda o ante un posible retraso
+ en la reposición o suministro de los pedidos.
+ Aprovechar la disminución de los costes a medida que aumenta el volumen
  de compras o de fabricación.
-\end_layout
-
-\begin_layout Itemize
-Lograr un equilibrio entre las compras y las ventas para alcanzar la máxima
+ Lograr un equilibrio entre las compras y las ventas para alcanzar la máxima
  competitividad.
 \end_layout
 
@@ -516,14 +507,9 @@ constante de suavizamiento
 \noindent
 \align left
 El método de suavizamiento exponencial con tendencia:
-\end_layout
-
-\begin_layout Standard
-\noindent
-\align left
-
 \shape italic
 \size small
+
 \begin_inset Formula 
 \begin{equation}
 P=\alpha\left(UV\right)+\left(1\text{-}\alpha\right)\left(UP\right)+T

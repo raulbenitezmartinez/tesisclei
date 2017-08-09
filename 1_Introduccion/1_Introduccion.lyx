@@ -137,17 +137,5 @@ En la etapa de Machine Learning se utilizan como entrada las series de KPI
  ventas futuras.
 \end_layout
 
-\begin_layout Standard
-
-\lang spanish
-En la segunda sección se abordan los conceptos de Pronóstico de la Demanda.
- En la tercera sección se definen conceptos de Business Intelligence y la
- primera fase de modelado del problema.
- En la cuarta sección se abordan conceptos de Machine Learning, en la quinta
- sección se implementa la segunda fase del modelado del problema y se analizan
- los resultados experimentales.
- En la última sección se realiza la conclusión general.
-\end_layout
-
 \end_body
 \end_document

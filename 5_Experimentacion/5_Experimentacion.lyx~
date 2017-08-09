@@ -245,7 +245,11 @@ reference "tab:algoritmosWekaVsReales"
 
 .
  Otra forma de categorizar los clasificadores incluidos en WEKA es como
- sigue: Bayesianos como BayesNet, NaiveBayes, NaiveBayesUpdateable.
+ sigue:
+\end_layout
+
+\begin_layout Itemize
+Bayesianos: BayesNet, NaiveBayes, NaiveBayesUpdateable.
 \end_layout
 
 \begin_layout Itemize
