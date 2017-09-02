@@ -514,7 +514,6 @@ status open
 \begin_layout LyX-Code
 
 \series bold
-\size tiny
 for cada próximo período a pronosticar {mensual,quincenal,semanal}:
 \end_layout
 
@@ -522,7 +521,6 @@ for cada próximo período a pronosticar {mensual,quincenal,semanal}:
 \begin_layout LyX-Code
 
 \series bold
-\size tiny
 for cada producto:
 \end_layout
 
@@ -530,28 +528,24 @@ for cada producto:
 \begin_layout LyX-Code
 
 \series bold
-\size tiny
 obtener KPIs del período actual finalizado;
 \end_layout
 
 \begin_layout LyX-Code
 
 \series bold
-\size tiny
 ejecutar su mejor clasificador (KPIs);
 \end_layout
 
 \begin_layout LyX-Code
 
 \series bold
-\size tiny
 obtener etiqueta {nada,poco,medio,mucho}
 \end_layout
 
 \begin_layout LyX-Code
 
 \series bold
-\size tiny
 extrapolar a valores continuos(criterio experto);
 \end_layout
 
@@ -559,7 +553,6 @@ extrapolar a valores continuos(criterio experto);
 \begin_layout LyX-Code
 
 \series bold
-\size tiny
 endfor;
 \end_layout
 
@@ -567,7 +560,6 @@ endfor;
 \begin_layout LyX-Code
 
 \series bold
-\size tiny
 endfor;
 \end_layout
 
